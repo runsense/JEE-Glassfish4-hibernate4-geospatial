@@ -1,0 +1,37 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>redirect telechargemùent</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+function RedirectSmartphone(url){
+    if (url && url.length > 0 && IsSmartphone())
+    window.location = url;
+}
+function IsSmartphone(){
+    if (DetectUagent("android")) return true;
+    else if (DetectUagent("iphone")) return true;
+    else if (DetectUagent("ipod")) return true;
+    else if (DetectUagent("symbian")) return true;
+    else if (DetectUagent("Mac")) return true;
+    else if (DetectUagent("Windows")) return false;
+    return false;
+}
+function DetectUagent(name){
+    var uagent = navigator.userAgent.toLowerCase();
+    if (uagent.search(name) > -1)
+    return true;
+    else
+    return false;
+}
+RedirectSmartphone("http://m.google.fr/earth");
+</script>
+    </head>
+    <body>
+        <div>detection navigateur mobile</div>
+    </body>
+</html>

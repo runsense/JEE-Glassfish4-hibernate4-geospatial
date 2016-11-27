@@ -1,0 +1,8 @@
+<PUBLIC:ATTACH EVENT="onmouseover" ONEVENT="bulleinf()" />
+<SCRIPT LANGUAGE="JScript">
+	function bulleinf()
+	{
+		bulleinfhtc();
+	};
+
+</SCRIPT LANGUAGE="JScript">

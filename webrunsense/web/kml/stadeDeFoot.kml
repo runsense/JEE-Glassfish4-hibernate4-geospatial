@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>stadeDeFoot.kml</name>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>île de la Reunion</name>
+		<open>1</open>
+		<Folder>
+			<name>Nord</name>
+			<Folder>
+				<name>LaPossession</name>
+				<Placemark>
+					<name>STADE VALENTIN ABRAL</name>
+					<description>zoneActivité: stade de foot_
+STADE VALENTIN ABRAL La Possession 97419 LA POSSESSION</description>
+					<LookAt>
+						<longitude>55.71632520372503</longitude>
+						<latitude>-21.03520024633111</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1572820207015113</heading>
+						<tilt>24.60532936459566</tilt>
+						<range>330.1616679707792</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.34135000000001,-20.926866,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE YOURI GAGARINE</name>
+					<description>zoneActivité: stade de foot_
+STADE YOURI GAGARINE La Possession 97419 LA POSSESSION</description>
+					<LookAt>
+						<longitude>55.33143939653671</longitude>
+						<latitude>-20.93394953729803</latitude>
+						<altitude>0</altitude>
+						<heading>-0.02555593758941434</heading>
+						<tilt>29.08874318936256</tilt>
+						<range>279.0066978742528</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.33194334280037,-20.93391808194836,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>LePort</name>
+				<Placemark>
+					<name>COMPLEXE SPORTIF</name>
+					<description>zoneActivité: stade de foot_
+COMPLEXE SPORTIF 1 TERRAIN A Le Port 97420 LE PORT</description>
+					<LookAt>
+						<longitude>55.56155770833406</longitude>
+						<latitude>-21.26214851659887</latitude>
+						<altitude>0</altitude>
+						<heading>0.05764850589551306</heading>
+						<tilt>31.07368797853479</tilt>
+						<range>28248.46003934813</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.2899611111111,-20.948384,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE GEORGES LAMBRAKIS</name>
+					<description>zoneActivité: stade de foot_
+STADE GEORGES LAMBRAKIS 1 AVENUE RAYMOND MONDON 97420 LE PORT</description>
+					<LookAt>
+						<longitude>55.4973354668415</longitude>
+						<latitude>-20.91600654329989</latitude>
+						<altitude>0</altitude>
+						<heading>-0.08831772267543311</heading>
+						<tilt>32.6493985732555</tilt>
+						<range>998.1651711217235</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.30084,-20.932899,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SainteMarie</name>
+				<Placemark>
+					<name>STADE DUPARC</name>
+					<description>zoneActivité: stade de foot_
+STADE DUPARC Rue Marcel Goulette 97438 STE MARIE</description>
+					<LookAt>
+						<longitude>55.52135664305511</longitude>
+						<latitude>-20.90325306047419</latitude>
+						<altitude>0</altitude>
+						<heading>0.06451623632798355</heading>
+						<tilt>27.48052123848785</tilt>
+						<range>328.4780116163243</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.52101029929088,-20.90310562247694,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintDenis</name>
+				<Placemark>
+					<name>STADE DU MOUFIA</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE DU MOUFIA St Denis 97400 ST DENIS</description>
+					<LookAt>
+						<longitude>55.48177674389056</longitude>
+						<latitude>-20.90796837471667</latitude>
+						<altitude>0</altitude>
+						<heading>0.08417328906082922</heading>
+						<tilt>41.46013663288579</tilt>
+						<range>459.7582505559499</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.48230826933606,-20.90798882823142,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE CHAUDRON</name>
+					<description>zoneActivité: stade de foot_
+STADE CHAUDRON B St Denis 97400 ST DENIS</description>
+					<LookAt>
+						<longitude>55.48885012399489</longitude>
+						<latitude>-20.88909778632803</latitude>
+						<altitude>0</altitude>
+						<heading>0.07423162256163289</heading>
+						<tilt>33.40002613496289</tilt>
+						<range>256.9559818594076</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.4888706131531,-20.88898222422334,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DEUX CANONS</name>
+					<description>zoneActivité: stade de foot_
+STADE DEUX CANONS St Denis 97400 ST DENIS</description>
+					<LookAt>
+						<longitude>55.47493639305998</longitude>
+						<latitude>-20.89105123628195</latitude>
+						<altitude>0</altitude>
+						<heading>0.08418431326118175</heading>
+						<tilt>29.66925927913506</tilt>
+						<range>506.5255691351083</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47503833264367,-20.89068821042726,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DE L EST JEAN IVOULA</name>
+					<description>zoneActivité: stade de foot_
+STADE DE L EST JEAN IVOULA 10 RUE DU STADE DE L EST COMMUNE PRIMA 97490 ST DENIS</description>
+					<LookAt>
+						<longitude>55.50112786891783</longitude>
+						<latitude>-20.895504473637</latitude>
+						<altitude>0</altitude>
+						<heading>-0.07082583774465083</heading>
+						<tilt>20.27496350559188</tilt>
+						<range>327.37629335446</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.50146091657843,-20.89510963737571,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DE LA BRETAGNE</name>
+					<description>zoneActivité: stade de foot_
+STADE DE LA BRETAGNE St Denis 97400 ST DENIS</description>
+					<LookAt>
+						<longitude>55.49605680894918</longitude>
+						<latitude>-20.91492648597356</latitude>
+						<altitude>0</altitude>
+						<heading>-0.08366499491559733</heading>
+						<tilt>29.24540959919889</tilt>
+						<range>282.3718462304053</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.49644284429315,-20.9148939898187,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE Olympique PAUL JULIUS BENARD</name>
+					<description>zoneActivité: stade de foot_
+STADE PAUL JULIUS BENARD RUE JACQUOT 97460 ST PAUL</description>
+					<LookAt>
+						<longitude>55.29048084859026</longitude>
+						<latitude>-20.98271743355696</latitude>
+						<altitude>0</altitude>
+						<heading>0.1485167631320896</heading>
+						<tilt>29.66223234467207</tilt>
+						<range>1138.269872342747</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.29027663012494,-20.98246925828941,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintSuzanne</name>
+				<Placemark>
+					<name>STADE GEORGES REPIQUET</name>
+					<description>zoneActivité: stade de foot_
+STADE GEORGES REPIQUET BOCAGE 97441 STE SUZANNE</description>
+					<LookAt>
+						<longitude>55.61317311103719</longitude>
+						<latitude>-20.91269699738314</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1278152681558308</heading>
+						<tilt>27.34197594329116</tilt>
+						<range>463.5477824382506</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.61398878033809,-20.91258082487644,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Ouest</name>
+			<Folder>
+				<name>SaintLeu</name>
+				<Placemark>
+					<name>STADE DU CENTRE VILLE</name>
+					<description>zoneActivité: stade de foot_
+STADE DU CENTRE VILLE RUE DU GENERAL LAMBERT 97436 ST LEU</description>
+					<LookAt>
+						<longitude>55.28821949900886</longitude>
+						<latitude>-21.16730206969999</latitude>
+						<altitude>0</altitude>
+						<heading>0.04983632490030435</heading>
+						<tilt>41.11759239676963</tilt>
+						<range>525.2104027816112</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28895100293287,-21.16770350575415,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>TroisBassins</name>
+				<Placemark>
+					<name>STADE SERGE SAINT ALME</name>
+					<description>zoneActivité: stade de foot_
+STADE SERGE SAINT ALME Trois Bassins 97426 LES TROIS BASSINS</description>
+					<LookAt>
+						<longitude>55.71632520379528</longitude>
+						<latitude>-21.03520024620376</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1572820205828269</heading>
+						<tilt>24.60558177777557</tilt>
+						<range>330.1617218802844</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.29254722222221,-21.104307,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintGille</name>
+			</Folder>
+			<Folder>
+				<name>SaintPaul</name>
+				<Placemark>
+					<name>STADE DE PLATEAU CAILLOUX</name>
+					<description>zoneActivité: stade de foot_
+STADE DE PLATEAU CAILLOUX st paul 97460 ST PAUL</description>
+					<LookAt>
+						<longitude>55.70108653919909</longitude>
+						<latitude>-21.17149032433138</latitude>
+						<altitude>0</altitude>
+						<heading>0.006509206530945773</heading>
+						<tilt>31.44202318805899</tilt>
+						<range>108146.6251147325</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.26864,-21.028735,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DE TAN ROUGE</name>
+					<description>zoneActivité: stade de foot_
+STADE DE TAN ROUGE st paul 97460 ST PAUL</description>
+					<LookAt>
+						<longitude>55.70108653919909</longitude>
+						<latitude>-21.17149032433138</latitude>
+						<altitude>0</altitude>
+						<heading>0.006509206530945773</heading>
+						<tilt>31.44202318805899</tilt>
+						<range>108146.6251147325</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.33192222222223,-21.241535,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DU CORBEIL</name>
+					<description>zoneActivité: stade de foot_
+STADE DU CORBEIL st paul 97460 ST PAUL</description>
+					<LookAt>
+						<longitude>55.47493639305998</longitude>
+						<latitude>-20.89105123628195</latitude>
+						<altitude>0</altitude>
+						<heading>0.08418431326118175</heading>
+						<tilt>29.66925927913506</tilt>
+						<range>506.5255691351083</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.27886899999999,-21.068535,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE LA PALMERAIE</name>
+					<description>zoneActivité: stade de foot_
+STADE LA PALMERAIE LE BOURG 97460 ST PAUL</description>
+					<LookAt>
+						<longitude>55.28767443159942</longitude>
+						<latitude>-20.98143034073124</latitude>
+						<altitude>0</altitude>
+						<heading>0.01985558918722074</heading>
+						<tilt>24.79271449997453</tilt>
+						<range>428.7976640105545</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28793736360784,-20.98089532880649,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Mafate</name>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Sud</name>
+			<Folder>
+				<name>PlaineDesCafres</name>
+			</Folder>
+			<Folder>
+				<name>LesAvirons</name>
+			</Folder>
+			<Folder>
+				<name>SaintLouis</name>
+				<Placemark>
+					<name>STADE LUDOVIC VIADÈRE LE</name>
+					<description>zoneActivité: stade de foot_
+STADE LUDOVIC VIADÈRE LE BOURG 97450 ST LOUIS</description>
+					<LookAt>
+						<longitude>55.28767443159942</longitude>
+						<latitude>-20.98143034073124</latitude>
+						<altitude>0</altitude>
+						<heading>0.01985558918722074</heading>
+						<tilt>24.79271449997453</tilt>
+						<range>428.7976640105545</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.438006,-21.267752,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE THÉOPHILE HOARAU</name>
+					<description>zoneActivité: stade de foot_
+STADE THÉOPHILE HOARAU 1 TERRAIN (A) 97450 ST LOUIS</description>
+					<LookAt>
+						<longitude>55.71632520379528</longitude>
+						<latitude>-21.03520024620376</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1572820205828269</heading>
+						<tilt>24.60558177777557</tilt>
+						<range>330.1617218802844</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.40388888888888,-21.28778055555556,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>EntreDeux</name>
+			</Folder>
+			<Folder>
+				<name>EtangSale</name>
+			</Folder>
+			<Folder>
+				<name>Cilaos</name>
+				<Placemark>
+					<name>STADE IRÉNÉE ACCOT</name>
+					<description>zoneActivité: stade de foot_
+STADE IRÉNÉE ACCOT 1 RUE DU STADE 97413 CILAOS</description>
+					<LookAt>
+						<longitude>55.52135664305511</longitude>
+						<latitude>-20.90325306047419</latitude>
+						<altitude>0</altitude>
+						<heading>0.06451623632798355</heading>
+						<tilt>27.48052123848785</tilt>
+						<range>328.4780116163243</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.4749,-21.1367,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Tampon</name>
+				<Placemark>
+					<name>STADE BRAS CREUX</name>
+					<description>zoneActivité: stade de foot_
+STADE BRAS CREUX Le Tampon 97430 LE TAMPON</description>
+					<LookAt>
+						<longitude>55.48898319292728</longitude>
+						<latitude>-20.88904049273092</latitude>
+						<altitude>0</altitude>
+						<heading>0.07418413648157546</heading>
+						<tilt>33.40139024997794</tilt>
+						<range>532.7835806988958</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.515319,-21.274849,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE KLEBERT PICARD</name>
+					<description>zoneActivité: stade de foot_
+STADE KLEBERT PICARD 57 RUE ROLAND GARROS 97430 LE TAMPON</description>
+					<LookAt>
+						<longitude>55.61317311076419</longitude>
+						<latitude>-20.91269699736941</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1278152685514912</heading>
+						<tilt>27.34197594330544</tilt>
+						<range>463.5477881934328</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.52191111111111,-21.272457,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>PetiteIle</name>
+			</Folder>
+			<Folder>
+				<name>SaintPierre</name>
+				<Placemark>
+					<name>STADE MICHEL VOLNAY</name>
+					<description>zoneActivité: stade de foot_
+STADE MICHEL VOLNAY 20 RUE CAYENNE 97410 ST PIERRE</description>
+					<LookAt>
+						<longitude>55.6140745066507</longitude>
+						<latitude>-20.91277668270367</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1281370207926769</heading>
+						<tilt>27.34177916648759</tilt>
+						<range>467.7525972637429</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.468125,-21.338615,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintJoseph</name>
+				<Placemark>
+					<name>STADE RAPHAËL BABET</name>
+					<description>zoneActivité: stade de foot_
+STADE RAPHAËL BABET LE BOURG 97480 ST JOSEPH</description>
+					<LookAt>
+						<longitude>55.61537206737677</longitude>
+						<latitude>-21.37668086464163</latitude>
+						<altitude>0</altitude>
+						<heading>-81.50513116031458</heading>
+						<tilt>34.172915148639</tilt>
+						<range>834.6494460093286</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.61472733238401,-21.37837707874041,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>saintPhillipe</name>
+			</Folder>
+			<Folder>
+				<name>enclosTremblet</name>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Est</name>
+			<Folder>
+				<name>SainteAnne</name>
+			</Folder>
+			<Folder>
+				<name>SaintAndre</name>
+			</Folder>
+			<Folder>
+				<name>SaintBenoit</name>
+				<Placemark>
+					<name>STADE ROLAND ARNOUX</name>
+					<description>zoneActivité: stade de foot_
+STADE ROLAND ARNOUX St Benoit 97470 ST BENOIT</description>
+					<LookAt>
+						<longitude>55.71632520372503</longitude>
+						<latitude>-21.03520024633111</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1572820207015113</heading>
+						<tilt>24.60532936459566</tilt>
+						<range>330.1616679707792</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.71595990066702,-21.03483603734256,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>BrasPanon</name>
+			</Folder>
+			<Folder>
+				<name>SainteRose</name>
+			</Folder>
+			<Folder>
+				<name>LaPlaineDesPalmiste</name>
+			</Folder>
+			<Folder>
+				<name>Salazie</name>
+			</Folder>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

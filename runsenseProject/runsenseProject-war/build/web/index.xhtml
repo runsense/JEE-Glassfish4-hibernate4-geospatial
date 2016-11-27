@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+
+      xmlns:p3="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+  
+    
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./Template.xhtml">
+   
+    <!--<ui:define name="top" >
+          <div id="ident" >         
+
+              <h:form>
+                  <p3:growl id="growl" showDetail="true" sticky="true" />  
+                    <h:panelGrid columns="3" >              
+                        <h:outputText value="#{msg.login_user} :" />  
+                        <p3:inputText id="user" value="#{Ident.username}" title="Identité" >
+                            <f:validateLength minimum="2" /> 
+                        </p3:inputText>
+                        <p3:message for="user"/>
+                        <h:outputText value="#{msg.login_pswd}  :" />  
+                        <p3:password id="pswd" value="#{Ident.password}" feedback="false" title="Mot de passe"/>  
+                        <p3:message for="pswd"/>
+                    </h:panelGrid> 
+                    <h:panelGrid columns="3" > 
+                        <h:outputText value="#{msg.bouton} :" /> 
+                        <p3:button id="bouton" outcome="Gere" value="Plateforme"  />  
+                        <p3:commandButton action="#{Ident.validateRegister(actionEvent)}" value="#{msg.login_boutton} " update="growl"/>
+                    </h:panelGrid>
+                    </h:form> 
+                                              
+            </div>
+    </ui:define>-->
+        
+    <ui:define name="left">
+                <span id="actualité" >
+                    
+                    <h2 > #{msg.actualite}  </h2>
+                    <h3 > #{msg.actu_titre} </h3>
+                    <p > #{msg.actu_msg}</p>
+
+                </span>
+    </ui:define>
+
+    
+    <ui:define name="content">
+        <script type="text/javascript" >
+            function centrage()
+            {
+                document.location='map3d';
+                
+            }
+        </script>     
+        <h:form>  
+            
+             <p3:tabView effect="blind" effectDuration="normal">  
+
+                 <p3:tab title="#{msg.accueil_titre}">  
+                    <h:panelGrid columns="2" cellpadding="10">  
+                   <span  > <!-- Contenu principal -->
+                    
+  
+                    <span><h2>#{msg.acc_avtPhoto}</h2>
+                        <div id="bloc_photo_right">  <img src="image/base_de_donne.jpg"/> </div>
+                  <h2>#{msg.acc_apPhoto}</h2></span>   
+                  
+                   #{msg.acc_msg}
+                </span>
+                 
+                    </h:panelGrid>  
+                </p3:tab>
+                 <p3:tab title="Recherche sentier" >
+                     <h:form  >
+                        
+                        <p3:growl id="growl_tree" for="tree_admin"  />
+                        
+                       <p3:treeTable id="tree_admin" value="#{treetable.root}" var="document">  
+                                    <f:facet name="header">  
+                                        <h:outputText value="Sommaire des visites" />   
+                                    </f:facet>  
+
+                                    <p3:column style="width:100px; text-align: center;">  
+                                        <f:facet name="header">  
+                                            Nom  
+                                        </f:facet>  
+                                        <h:outputText value="#{document.nom}" />  
+                                    </p3:column>  
+
+                                     
+                                    
+                                    <p3:column style="width:20px"> 
+                                        <!---->
+                                        
+                                        <p3:commandLink update=":f_left:kml-url, :f_left:kml-tracer" target="map3d" title="View Detail"  styleClass="ui-icon ui-icon-search"  oncomplete="fetchKml()"  >  
+                                            <f:setPropertyActionListener value="#{document}"   
+                                                                        target="#{treetable.selectedDocument}"  />  
+                                            
+                                        </p3:commandLink>  
+                                    </p3:column>
+                                </p3:treeTable>
+   
+        
+                       </h:form>
+                 </p3:tab>
+                <!--<p3:tab title="Applications">  
+                     <h1>Applications</h1>
+                     <p3:lightBox styleClass="img"> 
+                        <table id="image">
+                            <tr >
+                                <td > <h:outputLink value="../image/photoVoltaique.jpg" title="photoVoltaique"><p3:graphicImage value="/image/photoVoltaique.jpg" height="150px" width="240px"/></h:outputLink></td>  
+                             <td > <h:outputLink value="../image/gateway.jpg" title="gateway"><p3:graphicImage value="/image/gateway.jpg" height="150px" width="240px"/></h:outputLink> </td>   
+                             <td > <h:outputLink value="../image/Materiel.jpeg" title="Materiel"><p3:graphicImage value="/image/Materiel.jpeg" height="150px" width="240px"/></h:outputLink> </td>  
+                            </tr>
+                            <tr >
+                                <td > <h:outputLink value="../image/Reseau-XBee.jpg" title="Reseau-XBee"><p3:graphicImage value="/image/Reseau-XBee.jpg" height="150px" width="240px"/></h:outputLink>  </td>
+                                <td ><h:outputLink value="../image/base_de_donne.jpg" title="bdd"> <p3:graphicImage value="/image/base_de_donne.jpg" height="150px" width="240px"/></h:outputLink> </td> 
+                                <td > <h:outputLink value="../image/Securite.png" title="Securite"><p3:graphicImage value="/image/Securite.png" height="150px" width="240px"/></h:outputLink> </td>                           
+                            </tr>
+                        </table> 
+                     </p3:lightBox>
+                </p3:tab> --> 
+                 <p3:tab title="#{msg.contact_titre}" > 
+                     
+                     <h:form styleClass="corp" >
+                         <p3:growl id="message" showDetail="true" life="5000"/>
+                         <h:panelGrid id="ctcgrid" columns="3" >
+                            <h:outputLabel value="#{msg.contact_civ} : " for="civi" />  
+                            <p3:inputText id="civi" value="#{contact.ctc.civilite}" required="true" />
+                            <p3:message id="msgcivi" for="civi"/>   
+                            
+                            <h:outputLabel value="#{msg.contact_nom} :" for="nm"/>
+                            <p3:inputText id="nm" value="#{contact.ctc.nom}" required="true"/>
+                            <p3:message id="msgnm" for="nm"/>    
+
+                            <h:outputLabel value="#{msg.contact_pre} :" for="pre"/>
+                            <p3:inputText id="pre" value="#{contact.ctc.prenom}" required="true" />
+                            <p3:message id="msgpre" for="pre"/>    
+
+                            <h:outputLabel value="#{msg.contact_add} :" for="ctc"/>
+                            <p3:inputText id="ctc" value="#{contact.ctc.contact}" required="true" />
+                            <p3:message id="msgctc" for="ctc"/>    
+
+                            <h:outputLabel value="#{msg.contact_msg} :" for="cmt"/>
+                            <p3:inputTextarea id="cmt" value="#{contact.ctc.comment}" rows="10" cols="33" required="true" />
+                            <p3:message id="msgcmt" for="cmt"/>    
+                        </h:panelGrid>
+                        <p3:commandButton value="Reset" type="reset"/>  
+                        <p3:commandButton id="btn_add" value="Add"   
+                                          action="#{contact.reinit()}" update="ctcgrid" >  
+                            <p3:collector value="#{contact.ctc}"   
+                                          addTo="#{contact.l_ctc}" />  
+                            
+                        </p3:commandButton> 
+                        <p3:ajax event="click" listener="#{contact.addMsg()}"  update="message" />
+                         
+                    </h:form> 
+                </p3:tab>  
+                 
+            </p3:tabView>  
+
+        </h:form> 
+    </ui:define>
+
+</ui:composition>
+ 
+</html>

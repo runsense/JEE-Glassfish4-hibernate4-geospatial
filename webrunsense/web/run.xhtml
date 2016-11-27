@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:pe="http://primefaces.org/ui/extensions"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+  
+
+   
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./Template.xhtml">
+   
+    <ui:define  name="content" >
+        
+         <script type="text/javascript">
+            
+          
+            cmplte = function(xhr, statuts, args)
+            {
+                alert('complete');
+                try{
+                fetchKml('visite');
+                }catch( ex)
+                {
+                    alert(ex);
+                }
+                document.getElementById("map3d:tlb_aff").focus();
+                debloque();
+            };
+            
+            ctrlFrame=function()
+            {
+                var frame = document.getElementById('f_haut:webcam');
+                    frame = frame.contentDocument || frame.document;
+            }
+        </script> 
+        <h:form id="f_stat">
+        <span  style="position: absolute; top: 1px;left:1px;" >            
+            #{rchBean.titres[0]}  #{rchBean.stat} 
+            <h:outputText styleClass="txtRouge" value="#{rchBean.categ.nom}" />
+            &nbsp;
+            <h:outputText styleClass="txtRouge" value="#{rchBean.zone.nom}"/>
+        </span>
+            
+        </h:form>
+       
+        <h:form  style="position: absolute; top: 1px;right: 1px;z-index: 1;">
+            <h:panelGrid columns="2">
+                      <p:themeSwitcher id="swtch" value="#{rchBean.theme}" style="width: 150px;" effect="fade" >
+                          <p:ajax update="@all" />
+                            <f:selectItems value="#{rchBean.lthm}" />
+                      </p:themeSwitcher>
+                                      
+            <p:selectOneRadio  value="#{rchBean.lg}"   >
+                
+                <p:ajax event="valueChange" listener="#{rchBean.changeLang}" onsuccess="fetchKml('visite');PF('wgt_mapblck').unblock();" 
+                        update=":f_rch,:map3d:tlbr, :f_stat,:f_reponse"  />
+                <f:selectItem itemLabel="kréol" itemValue="kréol" />
+                <f:selectItem itemLabel="francais" itemValue="francais" />
+                <f:selectItem itemLabel="english" itemValue="english" />
+                <f:selectItem itemLabel="deutschlang" itemValue="allemand" />
+                <f:selectItem itemLabel="português" itemValue="portugais" />
+                <f:selectItem itemLabel="español" itemValue="espagnol" />
+                <f:selectItem itemLabel="中国的" itemValue="chinois" />
+                <f:selectItem itemLabel="தமிழ் " itemValue="tamoul" />
+            </p:selectOneRadio>
+         </h:panelGrid>        
+            
+        </h:form>
+             
+                <!--<p:hotkey bind="t" action="#{rchBean.slcLHotkey('t')}" handler="document.getElementById('f_haut:swtch').focus();" />
+                <p:hotkey bind="c" action="#{rchBean.slcLHotkey('c')}" handler="document.getElementById('f_haut:rctg').focus();" />
+                <p:hotkey bind="x" action="#{rchBean.slcLHotkey('x')}" handler="document.getElementById('f_haut:rchxctg').focus();" />
+                <p:hotkey bind="z" action="#{rchBean.slcLHotkey('z')}" handler="document.getElementById('f_haut:rzone').focus();" />
+                <p:hotkey bind="v" action="#{rchBean.slcLHotkey('v')}" handler="document.getElementById('f_haut:rville').focus();" />
+                <p:hotkey bind="b" action="#{rchBean.slcLHotkey('b')}" handler="document.getElementById('f_haut:dt_tr').focus();" />
+                -->
+                <h:panelGrid columns="12"   style="position:relative;padding-top: 9px;z-index: 0; "  >
+                     <h:panelGrid  > 
+                                   
+                           <h:form id="f_rch">
+                               <p:remoteCommand name="cmdMeteo" actionListener="#{rchBean.preToMeteo()}"
+                                                 oncomplete="PF('dlgpre').show();" 
+                                                process=":f_rch" update=":f_rch:description,:f_rch:dlgpre"/>
+                               <p:growl id="barmsg" globalOnly="true" />
+                               <h:panelGrid columns="6"  >
+                                   
+                                  <p:fragment id="frg_ctg" >
+                                      
+                                   <h:panelGrid columns="1" style="width: 200px;"  >
+                                      
+                                       <h:panelGrid   >
+                                            <p:selectOneListbox id="rchctg"  value="#{rchBean.categ}" converter="ctgConverter" var="ctg"  >
+                                                <p:ajax event="change" listener="#{rchBean.initCateg()}" oncomplete="fetchKml('visite');"
+                                                                          update=":f_reponse, :f_rch:frg_ctg, :f_rch:description, :f_rch:dt_tr, :f_stat"
+                                                                                          />
+                                                <f:selectItems value="#{rchBean.lctg}" var="vctg"  />
+                                                    <p:column>
+                                                        <p:graphicImage value="/image/icone/#{ctg.liens}" width="18"/>
+                                                    </p:column>
+                                                    <p:column>
+                                                        #{ctg.nom}
+                                                    </p:column>
+                                           </p:selectOneListbox>
+                                       </h:panelGrid> 
+                                       <h:panelGrid  rendered="#{rchBean.bssact}">
+                                            <p:selectOneListbox id="rchxctg"  value="#{rchBean.categ}" converter="ctgConverter" var="chxctg"   >
+                                                <p:ajax event="change" listener="#{rchBean.chgCateg}" oncomplete="fetchKml('visite');"
+                                                                          update=":f_rch:rchxctg,:f_reponse, :f_rch:description, :f_rch:dt_tr, :f_stat"
+                                                                                          />
+                                                <f:selectItems value="#{rchBean.lchxctg}" var="vxctg"  />
+                                                   
+                                                    <p:column>
+                                                        <p:graphicImage value="/image/icone/#{chxctg.liens}" width="18"/>
+                                                    </p:column>
+                                                    <p:column>
+                                                        #{chxctg.nom}
+                                                    </p:column>
+                                                
+                                           </p:selectOneListbox>
+                                       </h:panelGrid> 
+                                    </h:panelGrid>
+                                </p:fragment> 
+                                <p:fragment id="frg_zone" >
+                                    
+                                    <h:panelGrid columns="1" style="width: 200px;"   >
+                                  
+                                        <h:panelGrid >
+                                            <p:selectOneListbox id="rzone" value="#{rchBean.zone}"   converter="mtoConverter" var="z"   >
+                                                <p:ajax event="change" listener="#{rchBean.slcZone()}" oncomplete="fetchKml('visite');cmdMeteo();" 
+                                                                      update=":f_reponse, :f_rch:frg_zone, :f_rch:description, :f_rch:dt_tr, :f_stat "
+                                                                                      />
+                                                
+                                                <f:selectItems value="#{rchBean.lzone}" var="zone"    
+                                                              />
+                                                <p:column>
+                                                    <p:graphicImage value="/image/temps/#{z.liens}.png" width="18"/>
+                                                </p:column>
+                                                <p:column>
+                                                    #{z.nom}
+                                                </p:column>
+                                            
+                                            </p:selectOneListbox>
+                                        </h:panelGrid>
+                                        <h:panelGrid rendered="#{rchBean.bsszone}" >
+                                            <p:selectOneListbox id="rville" value="#{rchBean.ville}"  converter="mtoConverter" var="v"   >
+                                                <p:ajax event="change" listener="#{rchBean.slcVille()}" oncomplete="fetchKml('visite');cmdMeteo();" 
+                                                                      update=":f_reponse, :f_rch:description, :f_rch:dt_tr, :f_stat"
+                                                                                      />
+                                                
+                                                <f:selectItems value="#{rchBean.lville}" var="ville"  
+                                                              />
+                                                <p:column>
+                                                    <p:graphicImage value="/image/temps/#{v.liens}.png" width="18"/>
+                                                </p:column>
+                                                <p:column>
+                                                    #{v.nom}
+                                                </p:column>
+                                            
+                                            </p:selectOneListbox>
+                                        </h:panelGrid>
+                                      </h:panelGrid>
+                                    
+                               </p:fragment>
+                                   <p:fragment id="description" >
+                                       
+                                       <h:panelGrid style="width:  180px;"  columns="1" rendered="#{rchBean.bdesc}">
+                                             <f:facet name="footer">
+                                                     #{rchBean.slcent.nom}
+                                             </f:facet> 
+                                           
+                                           <p:outputLabel for="dlgpre" value="#{rchBean.slcent.description}" style="height: 150px;"  />
+                                                 
+                                                 
+                                            <p:dialog id="dlgpre" position="left,top" widgetVar="dlgpre" 
+                                                      header="prévision" dynamic="true"  closable="true" >
+                                                
+                                                <p:dataGrid columns="1"  value="#{rchBean.lcli}" var="pre"  >
+                                                 <p:column>
+                                                     <h:outputText value="#{pre.jour}" />                                              
+                                                 </p:column>
+                                                    <p:column>
+                                                        <h:outputText value="basse:#{pre.low}  haute:#{pre.hight}" />
+                                                    </p:column>
+                                                    <p:column>
+                                                        <h:outputText value="#{pre.pre}" />
+                                                    </p:column>
+                                             </p:dataGrid>
+                                            </p:dialog>
+                                         </h:panelGrid>
+                                        <h:panelGrid style="width:  330px;"    columns="1" rendered="#{rchBean.blien}">
+                                            <f:facet name="footer">
+                                                     #{rchBean.slcent.nom}
+                                             </f:facet> 
+                                            <p:button href="#" onclick="window.open('#{rchBean.slcent.description}','_blank');" value=" liens pour #{rchBean.slcent.nom}"  />
+
+                                            <iframe id="webcam" src="#{rchBean.slcent.description}" name="Webcam" ></iframe> 
+                                        </h:panelGrid>
+                                       <h:panelGrid style="width:  330px!important;"    columns="1" rendered="#{rchBean.bevnmt}">
+                                           <f:facet name="footer">
+                                                     #{rchBean.slcent.nom}
+                                             </f:facet> 
+                                           <p:dataTable  var="evnmt"   value="#{rchBean.levnmt}"   
+                                                          rowKey="#{evnmt.id}"  selectionMode="single" 
+                                                          frozenRows="#{rchBean.lfltTbEvnt}"  filteredValue="#{rchBean.lfltTbEvnt}" scrollable="true" scrollHeight="100" 
+                                                     emptyMessage="#{msg.Aucunerecherche}"  >
+                                            
+                                               <f:facet name="header">
+                                                     <h:outputText value="#{rchBean.titres[6]}  #{rchBean.levnmt.size()}" />
+                                                 </f:facet>
+                                               <p:column headerText="categ" sortBy="#{evnmt.categ}" filterBy="#{evnmt.categ}" >
+                                                     
+                                                         <h:outputText value="#{evnmt.categ}" />
+                                                 </p:column>
+                                               <p:column headerText="nom" sortBy="#{evnmt.nom}" filterBy="#{evnmt.nom}" >
+                                                     
+                                                         <h:outputText value="#{evnmt.nom}" />
+                                                 </p:column>
+                                               <p:column headerText="date" sortBy="#{evnmt.dt}" filterBy="#{evnmt.dt}" >
+                                                     
+                                                   <h:outputText value="#{evnmt.dt}" />
+                                                 </p:column>
+                                               <p:column headerText="fin" sortBy="#{evnmt.fin}" filterBy="#{evnmt.fin}" >
+                                                     
+                                                   <h:outputText value="#{evnmt.fin}" />
+                                                 </p:column>
+                                            </p:dataTable>
+                                        </h:panelGrid>
+                                       
+                                   </p:fragment>
+                                   <p:fragment>
+                                           <h:panelGrid  columns="1" rendered="#{!rchBean.biti}" >
+                                            
+                                               <p:dataTable id="dt_tr"  var="fam"   value="#{rchBean.ltabRun}"  widgetVar="dt_tr"  
+                                                          rowKey="#{fam.id}" selection="#{rchBean.tabrun}" selectionMode="single" 
+                                                          frozenRows="#{rchBean.lfltTbRun}"  filteredValue="#{rchBean.lfltTbRun}" scrollable="true" scrollHeight="#{rchBean.multtab}" 
+                                                      emptyMessage="#{msg.Aucunerecherche}"  >
+
+
+                                                <!-- <p:ajax event="filter"  javascript animation filtre 
+                                                                   /> -->
+                                                <p:ajax event="colReorder" listener="#{rchBean.updFiltre}"  update="@this" />
+                                                 <p:ajax event="rowSelect" listener="#{rchBean.catchTab}" oncomplete="fetchKml('visite');" 
+                                                                  update=":f_rch:description, :f_reponse" /> 
+                                                
+                                                 <f:facet name="header">
+                                                     <h:outputText value="#{rchBean.titres[6]}  #{rchBean.ltabRun.size()} OBJETS" />
+                                                 </f:facet>
+                                                 <p:column width="18">
+                                                     <p:graphicImage value="/image/icone/#{fam.icone}" width="18"/>
+                                                 </p:column>
+                                                 <p:column headerText="#{rchBean.titres[7]}" sortBy="#{fam.nom}" filterBy="#{fam.nom}" >
+                                                     
+                                                         <h:outputText value="#{fam.nom}" />
+                                                 </p:column>
+                                                 <p:column id="lieu" headerText="#{rchBean.titres[8]}" sortBy="#{fam.lieu}"  >
+                                                    
+                                                          <h:outputText value="#{fam.lieu}" />
+                                                          
+                                                 </p:column> 
+                                                 <p:column id="categ" headerText="#{rchBean.titres[2]}"  sortBy="#{fam.categ}" filterBy="#{fam.categ}">
+                                                     
+                                                          <h:outputText value="#{fam.categ}" />
+                                                          
+                                                 </p:column>
+                                                 
+
+                                             </p:dataTable>
+                                        </h:panelGrid>
+                                        <h:panelGrid id="pnl_iti" columns="2" border="0" rendered="#{rchBean.biti}">
+                        
+                                                   <p:watermark for="iti_d" value="#{msg.cliquericipuissurlacarte} "/>
+                                                   <p:watermark for="iti_a" value="#{msg.cliquericipuissurlacarte} "/>
+
+                                                      <h:panelGrid columns="2" style="width: 100% !important;" >
+                                                          <p:outputLabel for="iti_d" value="#{msg.Pointdedépart} :" />
+                                                          <p:inputText styleClass="iti_d"  id="iti_d" value="#{rchBean.itijsf.dep}" 
+                                                                            >
+                                                             
+                                                              <p:ajax event="focus" onstart="additi('iti_d');"  >
+                                                              </p:ajax>
+                                                                        
+                                                          </p:inputText>
+
+                                                          <p:outputLabel for="iti_a" value="#{msg.Pointdarrivé} :"/>
+                                                          <p:inputText id="iti_a"   value="#{rchBean.itijsf.arv}"  
+                                                                        >  <!--onclick="this.value=null;"-->
+                                                              
+                                                              <p:ajax event="focus" onstart="additi('iti_a');" >
+                                                              </p:ajax>
+                                                         </p:inputText>
+                                                      </h:panelGrid>                    
+                                                       <p:commandButton id="cmd_iti"   value="#{msg.traceritinéraire}" 
+                                                                        accesskey="i" style="width: 100% !important;" action="#{rchBean.iticentre()}"
+                                                                        onstart="PF('wgt_mapblck').block();"
+                                                                        onclick="window.open('#{rchBean.itijsf.iti}','_blank');"
+                                                                        oncomplete="fetchKml('visite');PF('wgt_mapblck').unblock();"
+                                                                        update=":f_reponse"  >
+                                                                                      
+
+                                                       </p:commandButton>
+                                                  <!--     <p:separator style="height: 9px;" />
+                                                                          
+
+                                                       <p:inputText id="iti" type="hidden"  value="{rchBean.itijsf.iti}" />
+
+                                                                         {rchBean.liti}" var="inf" id="infiti"  style="width: 100% !important;"
+                                                                          paginator="true" rows="5"  
+                                                                          paginatorTemplate="{PreviousPageLink} {CurrentPageReport} {NextPageLink} {RowsPerPageDropdown}"  
+                                                                          rowsPerPageTemplate="5,10,15" type="none" >  
+
+                                                                              <f:facet name="header">  
+                                                                                 {msg.infoportionitinéraire}
+                                                                              </f:facet>  
+
+                                                                              <p:commandLink   title="Itinéraire" 
+                                                                                                action="{rchBean.vuePortIti()}"  
+                                                                                                partialSubmit="true"
+                                                                                                 update=":map3d:gwl_map3d,:f_reponse:kml_lat,:f_reponse:kml_long ,:map3d">  
+                                                                                  <f:setPropertyActionListener value="{inf}" target="{rchBean.itineraire}" /> 
+                                                                                  <h:outputText value="{inf.inform}, {msg.pendant} :{inf.dure}, {msg.sur} : {inf.distance}" style="margin-left:10px" />  
+                                                                              </p:commandLink>  
+
+
+                                                                              <br /> 
+                                                                         </p:dataList>   
+                                                            <p:dialog id="dlgiti" position="center" widgetVar="dlgiti" header="prévision"  closable="true" >
+                                                                <iframe id="webiti" src="http://localhost:8080/webRunsense/itineraire.html?dep={rchBean.itijsf.dep}&amp;?ar={rchBean.itijsf.arv};" name="Webcam" ></iframe> 
+                                                            </p:dialog>     -->      
+                                                   
+                                         </h:panelGrid>   
+                                   </p:fragment>    
+                                        
+                                        </h:panelGrid>
+                                   </h:form>
+                               </h:panelGrid>
+                             
+                               
+                               <h:form id="f_graph">
+                                <h:panelGrid columns="2" rendered="#{rchBean.belev}">
+                                    
+                                    <p:panel>
+                                        <p:chart id="id_gph" title="graph"  value="#{rchBean.mdlgrph}" legendPosition="e"
+                                                  style="  height: 300px;" showMarkers="true"   showDatatip="false"/>
+                                    </p:panel>
+                                </h:panelGrid>
+                               </h:form> 
+                      </h:panelGrid>
+                
+                      
+ 
+        <h:form id="f_tlbr"  style="position: relative;">
+            <p:hotkey bind="shift+b" handler="document.getElementById('f_tlbr:tlb_but').focus();" />
+            <p:hotkey bind="shift+d" handler="document.getElementById('f_tlbr:date').focus();" />
+            <p:hotkey bind="shift+r" handler="document.getElementById('f_tlbr:res').focus();" />
+            
+            
+        </h:form>
+        <h:form id="map3d" style="position: relative; height: 450px; width: 100%;"   > 
+            <pe:spotlight blocked="false" widgetVar="wgt_mapblck"  >
+                <p:ajaxStatus id="ajstt"  onstart="PF('wgt_mapblck').block();" onerror="PF('wgt_mapblck').unblock();" onsuccess="PF('wgt_mapblck').unblock();"    >  
+                </p:ajaxStatus>   
+            
+                 <!--   <p:growl id="gwl_map3d" autoUpdate="true" for="map3d " widgetVar="wdg_map3d" />  
+                            <p3:growl  autoUpdate="true" for="slct_djv" /> --> 
+
+               
+             </pe:spotlight>
+            <p:toolbar id="tlbr" >
+                    <p:toolbarGroup align="left" style="width: 25%;" rendered="true" >
+                                    <p:menuButton value="Module" >
+                                        <p:menuitem  outcome="Total" value="plein écran" />
+                                        <p:menuitem  outcome="Mobile" value="#{rchBean.titres[11]}" />
+                                        <p:menuitem outcome="Gere" value="#{rchBean.titres[12]}" onstart="#{rchBean.setpltfrm(true)}"  />
+                                        
+                                    </p:menuButton>
+                                 </p:toolbarGroup>
+                 <!--   <p:toolbarGroup id="tlb_but" style="width: 35%;" rendered="true" >
+                         
+                        
+                        <p:selectOneRadio   value="#{rchBean.gbool}" >
+                            <p:ajax event="valueChange" listener="#{rchBean.vrfRenderer()}" 
+                                    update=":f_rch,:f_webcam,:f_cli,:f_iti,:f_graph,:f_reponse" />
+                                            <f:selectItem itemLabel="#{rchBean.titres[13]}"  itemValue="rech"  />
+                                            <f:selectItem itemLabel="#{rchBean.titres[14]}" itemValue="webcam" />
+                                            <f:selectItem itemLabel="#{rchBean.titres[15]}" itemValue="méteo" />
+                                            <f:selectItem itemLabel="#{rchBean.titres[16]}" itemValue="iti" />
+                                            <f:selectItem itemLabel="#{rchBean.titres[17]}" itemValue="elev" />
+                          </p:selectOneRadio> 
+                         
+                    </p:toolbarGroup>-->
+                <p:toolbarGroup  rendered="true" >
+                    <p:selectBooleanButton onLabel="désactive itinéraire"  offLabel="itinéraire" value="#{rchBean.biti}" >
+                        <p:ajax oncomplete="additi('iti_a');getAddressFromLatLong(0,0,null);additi('iti_d');" update=":f_rch,:f_reponse" />
+                    </p:selectBooleanButton>
+                    <p:commandButton async="true" ajax="false" onclick="centreVue();" value="vue intégrale" /> 
+                </p:toolbarGroup>
+                
+                
+                    <p:toolbarGroup id="tlb_aff" style="text-decoration-color: indianred; border-color: green;
+                                    text-align: center;" rendered="true"  >
+                        <p:calendar id="date" value="#{rchBean.calend}" effect="fold" navigator="true" >
+                            <p:ajax event="dateSelect" listener="#{rchBean.chgCalend}" 
+                                    update=":f_rch,:f_reponse" />
+                        </p:calendar>
+                        <p:watermark for="ac" value="#{rchBean.titres[18]} :"/>
+                        <h:outputText id="res"  value="#{rchBean.res}"
+                                       />
+                                    <p:autoComplete
+                                            id="ac"
+                                            value="#{rchBean.res}"
+                                            completeMethod="#{rchBean.complete}" onclick="this.value=null;"
+                                            maxResults="10" itemtipMyPosition="right bottom" 
+                                            styleClass="otocplte" 
+                                            title="#{msg.completionauto}"
+                                            >
+                                        <p:effect type="hightlight" event="select"/>
+                                            <p:ajax event="itemSelect"
+                                                    listener="#{rchBean.chgComplete()}" oncomplete="fetchKml('visite');"
+                                                      
+                                                     update=":f_rch,:f_reponse" />
+
+
+                                </p:autoComplete>
+                       
+                        
+                                
+                    </p:toolbarGroup>
+                                
+                                
+                                <p:toolbarGroup align="right"  rendered="true" >
+                                    <p:menuButton value="install">
+                                        <p:menuitem id="mitm_inst" value="plugin google earth " outcome="install" />
+                                    </p:menuButton>
+                                </p:toolbarGroup>
+                 </p:toolbar> 
+               </h:form> 
+        
+           
+        
+           <h:form id="f_reponse" style="position: fixed; top: 100%; z-index: -1;" >
+               
+                        <p:inputText id="kml_alt" type="hidden"  value="#{rchBean.altkml}" >
+                            
+                                      
+                        </p:inputText> 
+                        <p:inputText id="kml_lat" type="hidden"   value="#{rchBean.latkml}" >
+                            
+                        </p:inputText>
+                        <p:inputText id="kml_long" type="hidden"  value="#{rchBean.lngkml}" >
+                                                
+                        </p:inputText>
+               <!-- 
+                    clickMap -->
+                        
+               
+                    
+                    <p:commandButton id="updrep" async="true" action="#{rchBean.lancement()}"  style="display: none;"
+                                     onclick="PF('wgt_mapblck').block();" 
+                                   oncomplete="fetchKml('visite');PF('wgt_mapblck').unblock();"
+                                                 update=":f_rch,f_reponse" />
+                        
+                    <p:commandButton id="hiddenDblClick"  async="true" action="#{rchBean.catchSouris()}" style="display: none;"
+                                   onclick="PF('wgt_mapblck').block();" 
+                                   oncomplete="fetchKml('visite');PF('wgt_mapblck').unblock();"
+                                                 update=":f_rch:description,:f_rch:frg_ctg,:f_rch:frg_zone,f_reponse" />
+                <p:commandButton id="hiddenClick" async="true"  action="#{rchBean.clickSouris()}" style="display: none;"
+                                   onclick="PF('wgt_mapblck').block();" 
+                                   oncomplete="fetchKml('visite');PF('wgt_mapblck').unblock();"
+                                                 update=":f_rch,f_reponse" />
+                <p:commandButton id="hiddenIti" async="true"  action="#{rchBean.addItiJsf()}"   style="display: none;"
+                                 update=":f_rch:iti_a, :f_rch:iti_d, :f_rch:cmd_iti,:f_rch:description,
+                                 f_reponse:kml_lat,f_reponse:kml_long"
+                                                 />
+                
+                <p:commandButton id="hiddendesc"  async="true" action="#{rchBean.chgdesc()}" style="display: none;"                   
+                                       update=":f_rch:description" />
+                
+                <p:commandButton id="static_meteo" async="true"  action="#{rchBean.barMsg()}" style="display: none;" 
+                                       
+                                       update=":f_rch:barmsg" />
+                
+                     <p:inputText  id="kml_cli" type="hidden"   value="#{rchBean.clitoKml}"/>
+                        
+                        <h:inputHidden  id="kml_tracer"   value="#{rchBean.trKml}"/>
+                          
+                        <h:inputHidden  id="kml_tour"   value="#{rchBean.tourKml}"/>
+                        <p:inputText id="kml_res" type="hidden"   value="#{rchBean.res}">
+                            <p:ajax />
+                        </p:inputText>
+                        
+            </h:form>
+  
+    </ui:define>
+    
+</ui:composition>
+
+
+    
+</html>

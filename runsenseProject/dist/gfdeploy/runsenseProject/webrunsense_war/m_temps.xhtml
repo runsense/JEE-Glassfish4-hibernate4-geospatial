@@ -1,0 +1,76 @@
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:pm="http://primefaces.org/mobile"
+        contentType="text/html"
+    renderKitId="PRIMEFACES_MOBILE">
+
+    <pm:page title="Runsense mobile prévision météo">
+        <f:facet name="preinit">
+            
+            <link type="text/css" rel="stylesheet"
+            href="#{request.contextPath}/resources/css/run.min.css" />
+
+        </f:facet>
+        <!-- Main View -->
+        <f:facet name="header" >
+                   
+                        <p:button value="Recherche" icon="search" href="m_entrer.re" styleClass="ui-btn-active"/>
+
+                        <p:button value="carte 2d" icon="info" href="#map?reverse=true" />
+        </f:facet>
+                   
+                    <f:facet name="right">
+                        <p:button value="Settings" icon="gear" href="#settings" />
+                    </f:facet>
+                
+
+             <h:form id="mainForm" >
+        <f:facet name="content" >
+
+                        <h:outputText value="Choix de ville:" />
+                        <h:selectOneMenu value="#{weatherController.city}">
+                            <f:selectItems value="#{weatherController.cities}" />
+                        </h:selectOneMenu>
+
+                        <p:separator />
+
+                        <p:commandButton value="Vue du temps" update="display" actionListener="#{weatherController.retrieveConditions}"/>
+
+                        <p:outputPanel layout="block" style="text-align:center">
+                            <h:outputText id="display" value="#{weatherController.conditions}" escape="false" />
+                        </p:outputPanel>
+                        <h:outputText id="text"/> 
+        </f:facet>
+            </h:form>
+    </pm:page>
+
+        <!-- Settings View -->
+        <pm:page id="settings">
+            <f:facet name="header" >
+                <f:facet name="left"><p:button value="Back" icon="back" href="#main?reverse=true"/></f:facet>
+            </f:facet>
+
+            <f:facet name="content" >
+                <h:form id="settingsForm">
+
+                    <h:outputText value="Select Unit:" />
+                    <h:selectOneMenu value="#{weatherController.unit}">
+                        <f:selectItem itemLabel="Celcius" itemValue="c" />
+                        <f:selectItem itemLabel="Fahrenheit" itemValue="f" />
+                    </h:selectOneMenu>
+
+                    <p:separator />
+
+                    <p:commandButton value="Save" actionListener="#{weatherController.saveSettings}" update=":mainForm:display"
+                                      action="pm:main"/>
+                   
+                </h:form>
+            </f:facet>
+       
+
+    </pm:page>
+
+</f:view>
+

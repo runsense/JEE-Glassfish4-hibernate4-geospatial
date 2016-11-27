@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+<faces-config version="2.0"
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd">
+
+<application>
+    <locale-config>
+        <default-locale>fr</default-locale>
+        <supported-locale>en</supported-locale>
+        <supported-locale>kr</supported-locale>
+    </locale-config>
+    <resource-bundle>
+        <base-name>langue.francais</base-name>
+        <var>msg</var>
+    </resource-bundle>
+
+</application>
+<application>
+    <navigation-handler>
+        org.primefaces.mobile.application.MobileNavigationHandler
+    </navigation-handler>
+</application>
+<!--<application>
+        <resource-handler>runsense.plateformeweb.ressource.CDNResourceHandler</resource-handler>
+</application>-->
+<navigation-rule>
+
+    <navigation-case>
+            <from-outcome>Accueil</from-outcome>
+            <to-view-id>/visite.xhtml</to-view-id>
+    </navigation-case>    
+
+
+    <navigation-case>
+            <from-outcome>install</from-outcome>
+            <to-view-id>http://www.google.fr/earth/explore/products/plugin.html</to-view-id>
+    </navigation-case>    
+
+
+    <navigation-case>
+            <from-outcome>Web</from-outcome>
+            <to-view-id>/run.xhtml</to-view-id>
+    </navigation-case> 
+    <navigation-case>
+            <from-outcome>Total</from-outcome>
+            <to-view-id>/f.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+            <from-outcome>Gere</from-outcome>
+            <to-view-id>/plateforme.xhtml</to-view-id>
+    </navigation-case>    
+    
+    <navigation-case>
+            <from-outcome>Mobile</from-outcome>
+            <to-view-id>/m_entrer.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+            <from-outcome>Carte</from-outcome>
+            <to-view-id>/m_map.xhtml</to-view-id>
+    </navigation-case>
+    <navigation-case>
+            <from-outcome>Climat</from-outcome>
+            <to-view-id>/m_temps.xhtml</to-view-id>
+    </navigation-case> 
+</navigation-rule>
+<managed-bean>
+    <managed-bean-name>rchBean</managed-bean-name>
+    <managed-bean-class>runsense.plateformeweb.bean.RchBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope> 
+</managed-bean>
+
+<managed-bean>
+    <managed-bean-name>BeanPltfrm</managed-bean-name>
+    <managed-bean-class>runsense.plateformeweb.bean.BeanPltfrm</managed-bean-class> 
+    <managed-bean-scope>view</managed-bean-scope>
+</managed-bean>
+
+<managed-bean>
+        
+        <description>bean mobile</description>
+        
+        <managed-bean-name>mobileBean</managed-bean-name>
+        <managed-bean-class>runsense.plateformeweb.bean.MobileBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+        
+        <managed-property>
+            <property-name>res</property-name>
+            <property-class>java.lang.String</property-class>
+        </managed-property> 
+
+
+    </managed-bean>
+
+    <managed-bean>
+        
+        <description>bean climat</description>
+        
+        <managed-bean-name>weather</managed-bean-name>
+        <managed-bean-class>runsense.plateformeweb.climat.WeatherController</managed-bean-class>
+        <managed-bean-scope>view</managed-bean-scope>
+        
+        <managed-property>
+            <property-name>city</property-name>
+            <property-class>java.lang.String</property-class>
+        </managed-property> 
+
+    </managed-bean>
+    
+ 
+    <converter>
+        <converter-id>runConverter</converter-id>
+        <converter-class>runsense.converter.OtoConverter</converter-class>
+    </converter>
+    <converter>
+        <converter-id>mtoConverter</converter-id>
+        <converter-class>runsense.converter.MtoConverter</converter-class>
+    </converter>
+    <converter>
+        <converter-id>ctgConverter</converter-id>
+        <converter-class>runsense.converter.CtgConverter</converter-class>
+    </converter>
+    
+</faces-config>

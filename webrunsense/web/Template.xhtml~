@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <f:view>
+    
+    <h:head>
+        <!--id bing -->
+        <meta name="msvalidate.01" content="D338E487A839830CD45141EF5545AAA8" />
+        <meta name="google-site-verification" content="pxSCEvO2QDnHvV_38l3V6h44Qs3k0eT6MlHC-xS1wz0" />
+        
+        <!--referencement -->
+        <meta name="Description" content="3d sentier itinéraire activités culturelles sportives ile de la Réunion gîte hotel plage lieu dit randonne " />
+        <meta name="Keywords" content="ile de la réunion, reunion, sentier, gite, hôtel, restaurant,snack,
+                                        randonnée, randonné, jet ski, ski-nautique, kart, quad, équitation,
+                                        visite, monument historique,
+                                        sport, plongé, surf, canoé, kayak, hydrospeed, équitation" />
+        <meta name="Author" content="DALLEAU Pascal" />
+        <meta name="Reply-to" content="runsense974@gmail.com" />
+        <meta name="Copyright" content="Pascal DALLEAU" />
+        <meta name="robots" content="Index, follow" />
+        
+        <meta name="refresh" content="360" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="./resources/css/default.css" rel="stylesheet" type="text/css" />
+        <link href="./resources/css/cssLayout.css" rel="stylesheet" type="text/css" />
+        <link href="./resources/css/overPfce.css" rel="stylesheet" type="text/css" />
+        <link href="./photoSS.css" rel="stylesheet" type="text/css" />
+        <script src="http://www.google.com/jsapi?key=AIzaSyCl2nYYzm_mdBtvbEyAQzX1ZEOJcOteEO0?sensor=true" type="text/javascript"></script>
+       <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl2nYYzm_mdBtvbEyAQzX1ZEOJcOteEO0?sensor=false" type="text/javascript"></script>-->
+       
+        
+        <h:outputScript library="primefaces" name="jquery/jquery.js" />
+
+        <script type="text/javascript" src="processing.js"></script>
+        
+        <script type="text/javascript" src="init.js">
+            
+        </script>
+        
+        <title>#{msg.titre}</title>
+        <script type="text/javascript" src="./resources/js/geo-0.2.pack.js"></script>
+        <script type="text/javascript" src="./resources/js/extensions-0.2.1.pack.js"></script>
+        <script type="text/javascript" src="./resources/js/fetch.js"/>
+        <script type="text/javascript" src="./resources/js/iti.js"/>    
+
+        <script type="text/javascript" src="./resources/js/custmPri.js"/>
+        <script type="text/javascript" src="./resources/js/htc.js"/>
+        <script type="text/javascript" src="./resources/js/redirect.js">
+            
+        </script>
+          
+        <style>
+            @font-face{
+            font-family: "oneway";
+            src: url("oneway.ttf");
+            }
+
+            #control {
+            font-family: "oneway";
+        }
+        </style> 
+    </h:head>
+
+    <h:body onload="init();"  >
+       
+    <div class="confirm" id="instPlug"/> 
+    
+    <div id="fb-root"></div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+       <!--<div class="fond"> 
+                     <script type="application/processing">
+                       float a=0.0;
+                                void setup() 
+                                {
+                                    size($(window).width()/2, $(window).height()/4, P3D);
+                                    PFont font = createFont("LuggerBug-wbk.ttf"); 
+                                    //PFont font = loadFont("LuggerBug");
+                                    textFont(font,54); 
+                                } 
+
+                                void draw(){
+
+                                
+                                a += 0.015;
+                                if(a > TWO_PI) { 
+                                    a = 0.0; 
+                                }
+
+                                translate(800, 600);
+                                rotateY(a);
+                                //rotateY(a * 2.0);
+
+                                //rect(5, 5, 20, 5);
+                                fill(67,110,238);
+                                text("RunSense", 72, -75, 9);
+                                //text("second");
+                                fill(236,0,0);
+                                text("Run$en$e", 72, -75, 0); 
+                                //text("trois");
+                                fill(67,110,238);
+                                text("RunSen$e", 72, -75, -9); 
+
+                                }
+                    </script>
+                        <canvas ></canvas>
+                    </div>-->
+    
+                
+         
+    
+      
+        <div id="top">
+            
+            <ui:insert name="top"></ui:insert>
+ 
+        </div>
+
+    <div id="content" class="content">
+            
+                       
+            <div style="position: absolute;top: 27%;width: 100%;" >
+              <h:form id="map3d"   style="position: relative; height: 450px;width: 70%;padding: 5px;" > 
+                 <script type="text/javascript">
+                      bloque=function()
+                      {
+                          buiMp.show();
+                      };
+                      debloque=function()
+                      {
+                          buiMp.hide();
+                      };
+                      
+                  </script>
+                
+                <p:toolbar >
+                    <p:toolbarGroup align="left" style="width: 25%;">
+                                    <p:menuButton value="Navigation" >
+                                        <p:menuitem value="#{msg.itinéraire}" url="#f_iti:infiti"  onclick="additi('iti_a');"/>
+                                        <p:menuitem value="#{msg.Recherche}" url="#f_oto:ac"/>
+                                        <p:menuitem value="Information" url="#f_rght"/>
+                                        <p:menuitem value="#{msg.PrévisionMétéo}"  outcome="Climat"/>
+                                    </p:menuButton>
+                                 </p:toolbarGroup>
+                    <p:toolbarGroup style="width: 40%;">
+                              
+                        <p:selectCheckboxMenu id="chkx_rep" value="#{autoComplete.selection}" label="#{msg.Repas}" panelStyle="width:220px">  
+                                        <f:selectItems value="#{autoComplete.trepas}" />  
+                                        <p:ajax  listener="#{autoComplete.slcCrit}" />
+                                    </p:selectCheckboxMenu> 
+                        <p:selectCheckboxMenu id="chkx_heb"  value="#{autoComplete.selection}" label="#{msg.hebergement}" panelStyle="width:220px">  
+                                        <f:selectItems value="#{autoComplete.theb}" />  
+                                        <p:ajax  listener="#{autoComplete.slcCrit}" />
+                                    </p:selectCheckboxMenu> 
+                        <p:selectCheckboxMenu id="chkx_lois"  value="#{autoComplete.selection}" label="#{msg.loisir}" panelStyle="width:220px">  
+                                        <f:selectItems value="#{autoComplete.tloisir}" />  
+                                        <p:ajax  listener="#{autoComplete.slcCrit}" />
+                                    </p:selectCheckboxMenu> 
+                    </p:toolbarGroup>
+                                
+                                
+                                <p:toolbarGroup align="right" >
+                                    <p:menuButton value="#{msg.outilsdevue}">
+                                        <p:menuitem value="elevation" url="#f_oto:id_gph" />
+                                        <p:menuitem value="webcam" url="#"/>
+                                    </p:menuButton>
+                                </p:toolbarGroup>
+                 </p:toolbar> 
+                  
+                   <p:growl id="gwl_map3d" autoUpdate="true" for="map3d " widgetVar="wdg_map3d" />  
+                            <!--<p3:growl  autoUpdate="true" for="slct_djv" /> --> 
+
+                 <p:blockUI block="map3d" widgetVar="buiMp">
+                            <p:graphicImage width="50%" height="50%" value="./image/loader.gif" />
+                </p:blockUI>          
+               </h:form>             
+             
+             
+         
+                 
+                <div id="info">
+                     
+                    <ui:insert name="content"></ui:insert>
+                   
+                </div>
+                
+            </div>
+              
+        </div>
+      <!--  <div id="left">         
+                <ui:insert name="left"></ui:insert>
+        </div>-->
+        <div id="right"> 
+            <div id="map" /> 
+                <ui:insert name="right"></ui:insert>
+                 
+        </div>
+            
+        <div id="bottom">
+                    <em > Copyright &copy; 2012 Runsense -Ile de la reunion - 974</em>
+                    
+                    
+        </div>    
+    </h:body>
+    </f:view>
+</html>

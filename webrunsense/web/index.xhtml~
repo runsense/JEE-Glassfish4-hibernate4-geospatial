@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+
+      xmlns:p3="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+  
+    
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./Template.xhtml">
+   
+    <ui:define name="top" >
+          <div id="ident" >         
+
+              <h:form>
+                  <p3:growl id="growl" showDetail="true" sticky="true" />  
+                    <h:panelGrid columns="3" >              
+                        <h:outputText value="#{msg.login_user} :" />  
+                        <p3:inputText id="user" value="#{Ident.username}" title="Identité" >
+                            <f:validateLength minimum="2" /> 
+                        </p3:inputText>
+                        <p3:message for="user"/>
+                        <h:outputText value="#{msg.login_pswd}  :" />  
+                        <p3:password id="pswd" value="#{Ident.password}" feedback="false" title="Mot de passe"/>  
+                        <p3:message for="pswd"/>
+                    </h:panelGrid> 
+                    <h:panelGrid columns="3" > 
+                        <h:outputText value="#{msg.bouton} :" /> 
+                        <p3:button id="bouton" outcome="Gere" value="Plateforme"  />  
+                        <p3:button id="bout" onclick="addEvent()" value="Plateforme"  />  
+                        <p3:commandButton action="#{Ident.validateRegister(actionEvent)}" value="#{msg.login_boutton} " update="growl"/>
+                    </h:panelGrid>
+                    </h:form> 
+                                              
+            </div>
+    </ui:define>
+   
+    <ui:define name="left">
+                <span id="actualité" >
+                    
+                    <h2 > #{msg.actualite}  </h2>
+                    <h3 > #{msg.actu_titre} </h3>
+                    <p > #{msg.actu_msg}</p>
+
+                </span>
+        <h:form id="f_lft">
+            <p3:growl for="f_lft" autoUpdate="true"/>
+            
+        </h:form>
+        
+    </ui:define>
+    <script type="text/javascript" >
+            function centrage()
+            {
+                document.location='map3d';
+                
+            }
+        </script> 
+    <ui:define  name="content">
+            
+       
+        <div id="coeur">     
+        <p3:panel id="pnl_oto">  
+                
+                    <h:form id="f_oto" >
+                        <p3:watermark for="ac" value="Entrer une recherche :"/>
+                        <p3:progressBar id="id_pgb" ajax="true" value="#{autoComplete.progress}" displayOnly="true"  />
+                        
+                        <p3:panelGrid id="pg_oto" columns="2" style="width: 100%;"> 
+                            
+                            <p3:outputLabel for="slc_fld" value="Catégorie de la recherche"/>
+                               <p3:panelGrid columns="3">
+                                   <h:selectOneMenu id="slc_fld" value="#{autoComplete.lFied}" onchange="#{reponseBean.slcMenu()}"  style="">
+                                        <f:selectItem itemValue="nom" itemLabel="nom" />
+                                        <f:selectItem itemValue="description" itemLabel="description" />
+                                        <f:selectItem itemValue="adresse" itemLabel="adresse" />
+                                        <p3:ajax  update="@form" />
+                                        <p3:ajax event="change"
+                                                 onsuccess="#{autoComplete.chgTab()}" />
+                                    </h:selectOneMenu>
+                                   <p3:selectOneMenu id="slc_ville" value="#{reponseBean.res}"  style="">
+                                                  
+                                        <f:selectItems value="#{autoComplete.lVille}" var="tvil" itemValue="#{tvil}" itemLabel="#{tvil}"/>
+                                        <p3:ajax event="change" listener="#{reponseBean.slcVille()}"  update=":f_reponse:tArea_desc,:f_reponse:id_gph,:f_reponse:acpnl,
+                                                 :f_reponse:dtlst, :f_reponse:slct_djv, :f_oto:id_pgb ,:f_reponse:kml_url,:f_reponse:kml_tracer" />
+                                        
+                                    </p3:selectOneMenu>
+                                   
+                                </p3:panelGrid>
+                            <p3:outputLabel for="ac" value="Complétion"/>
+                                <p3:autoComplete
+                                        id="ac"
+                                        value="#{autoComplete.res}"
+                                        completeMethod="#{autoComplete.complete}"
+                                        maxResults="10" itemtipMyPosition="left bottom" 
+                                        styleClass="otocplte"
+                                        >
+                                        <p3:ajax event="itemSelect"
+                                                 listener="#{autoComplete.handleSelect}" oncomplete="fetchKml()"
+                                                 update=":f_reponse:tArea_desc,:f_reponse:id_gph,:f_reponse:acpnl,
+                                                 :f_reponse:dtlst, :f_reponse:slct_djv,
+                                                 :f_reponse:id_gph,id_pgb ,:f_reponse:kml_url,:f_reponse:kml_tracer" />
+                                        
+                            </p3:autoComplete>
+                            
+
+                            <p3:outputLabel for="ajstt" value="Informations serveur"/>
+                            <p3:ajaxStatus id="ajstt" >
+                                <f:facet name="default">
+                                    <h:outputText value="Information de recherche"/>
+                                </f:facet>
+                                <f:facet name="prestart">
+                                    <h:outputText value="application serveur"/>
+
+                                </f:facet>
+
+                                <f:facet name="complete">
+                                    <h:outputText value="solution de la recherche"/>
+                                </f:facet>
+                            </p3:ajaxStatus>
+                        </p3:panelGrid>
+                        </h:form>
+            <h:form id="f_reponse">
+                        <p3:watermark for="slct_djv" value="Liste de sentier  "/>
+                        <p3:panelGrid id="pg_rep" columns="2" style="width: 100%;"> 
+                            
+                            <p3:inputTextarea id="tArea_desc" value="#{autoComplete.res}" />
+                            
+                            <p3:dataList id="dtlst" value="#{autoComplete.dejaVue}" var="lchoix" itemType="i" >
+                                #{lchoix.nom}
+                            </p3:dataList>
+                            
+                            <p3:selectOneMenu id="slct_djv" 
+                                              
+                                              editable="true" effect="explode"
+                                              label="vue des sentier entourant la Sélection"
+                                              value="#{reponseBean.slcent}"
+                                              styleClass="menu"
+                                              style="width: 90%;" 
+                                              >
+
+                                <f:selectItems value="#{autoComplete.autour}" var="sentier" itemLabel="#{sentier.adresse}"  itemValue="#{sentier}" ></f:selectItems>
+                       
+                                <p3:ajax event="change" listener="#{reponseBean.slcVille()}"  update="tArea_desc,id_gph,acpnl,
+                                                 dtlst, slct_djv, :f_oto:id_pgb ,kml_url,kml_tracer" />
+                                        
+                                
+                            </p3:selectOneMenu>
+                        
+                            
+                            
+                            
+                        </p3:panelGrid> 
+                        <p3:accordionPanel id="acpnl" value="#{autoComplete.famille}" var="pDesc" >
+                                        <p3:tab  title="#{pDesc.nom}">
+                                             #{pDesc.description}
+                                            </p3:tab>
+                        </p3:accordionPanel>
+                        <p3:growl autoUpdate="true" for="id_gph"/>
+                        <p3:lineChart id="id_gph" title="valeur des pentes"  value="#{GrphElv.mdlgrph}" legendPosition="e"
+                                      style=" width: 450px; height: 15%;" showMarkers="true"  showDatatip="false"/>
+                        
+                        
+                        <p3:inputText id="kml_url"   value="#{autoComplete.urlKml}">
+                            <p3:ajax event="valueChange"
+                                     listener="#{reponseBean.chargeDepuisCo()}" 
+                                                 update="tArea_desc,id_gph,acpnl, dtlst, slct_djv,:f_oto:id_pgb ,kml_url,kml_tracer" />
+                        </p3:inputText>
+                        <p3:inputText id="kml_tracer"  value="#{autoComplete.trKml}">
+                           
+                        </p3:inputText>
+                        
+                        
+                        
+
+                        
+            </h:form>     
+                  
+                 
+            </p3:panel>  
+        </div>
+        
+        
+    </ui:define>
+    <ui:define name="right">
+        <p3:panel>
+               <h:form id="f_rght"  >
+                   
+                    <p3:growl for="f_rght" autoUpdate="true"/>
+                    
+                
+                </h:form>
+            </p3:panel>
+    </ui:define>
+</ui:composition>
+    
+
+    
+</html>

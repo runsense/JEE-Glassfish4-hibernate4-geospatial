@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <f:view>
+    
+    <h:head>
+        <!--id bing 
+        <meta name="msvalidate.01" content="D338E487A839830CD45141EF5545AAA8" />
+        <meta name="google-site-verification" content="pxSCEvO2QDnHvV_38l3V6h44Qs3k0eT6MlHC-xS1wz0" />
+        
+        referencement -->
+        <meta name="Description" content="visite 3d de sentier avec itinéraires des activités culturelles, ludique et sportives de l'ile de la Réunion gîte hotel plage lieu dit randonne " />
+        <meta name="Keywords" content="runsense runsens visite plan ile de la réunion reunion sentiers gite hôtel restaurant snack
+                                        randonnée randonné jet ski ski-nautique kart quad équitation
+                                        visite monument historique
+                                        sport plongé surf canoé kayak hydrospeed équitation
+                                        foret plage
+reservation vacance " />
+        <meta name="Author" content="DALLEAU Pascal" />
+        <meta name="Reply-to" content="runsense974@gmail.com" />
+        <meta name="Copyright" content="Pascal DALLEAU" />
+        <!--<meta name="robots" content="Index, follow" />
+        
+        <meta name="refresh" content="360" />-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="./resources/css/default.css" rel="stylesheet" type="text/css" />
+       
+        <link href="./resources/css/overPfce.css" rel="stylesheet" type="text/css" />
+
+        <link href="./photoSS.css" rel="stylesheet" type="text/css" />
+        <script src="http://www.google.com/jsapi?key=AIzaSyD2otijFAsU4Dr1PrkLb8wzFanEkUV268U?sensor=true" type="text/javascript"></script>
+
+        
+        <h:outputScript library="primefaces" name="jquery/jquery.js" />
+       
+        <script type="text/javascript" src="processing.js"></script>
+        
+        <script type="text/javascript" src="init.js">
+            
+        </script>
+        
+        <title>#{msg.titre}</title>
+        <script type="text/javascript" src="./resources/js/geo-0.2.pack.js"></script>
+        <script type="text/javascript" src="./resources/js/extensions-0.2.1.pack.js"></script>
+        <script type="text/javascript" src="./resources/js/fetch.js"/>
+        <script type="text/javascript" src="./resources/js/iti.js"/>    
+
+        <!--<script type="text/javascript" src="./resources/js/custmPri.js"/>-->
+       
+        <script type="text/javascript" src="./resources/js/redirect.js"/>
+        
+        
+        <script type="text/javascript" >
+            PrimeFaces.locales ['fr'] = {
+                closeText: 'Fermer',
+                prevText: 'na retourn',
+                nextText: 'sa t après',
+                monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre' ],
+                monthNamesShort: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc' ],
+                dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+                dayNamesShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+                dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+                weekHeader: 'Semaine',
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix:'',
+                timeOnlyTitle: 'Choisir l\'heure',
+                timeText: 'Heure',
+                hourText: 'Heures',
+                minuteText: 'Minutes',
+                secondText: 'Secondes',
+                currentText: 'Estèr',
+                ampm: false,
+                month: 'Mois',
+                week: 'Semaine',
+                day: 'Jour',
+                allDayText: 'Toute la journée'
+            };
+        </script>  
+       
+    </h:head>
+
+    <h:body onload="init();"   >
+       
+        <div class="confirm" id="instPlug" style="z-index: -1;"/> 
+    
+   <!-- <div id="fb-root"></div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>-->
+       <!--<div class="fond"> 
+                     <script type="application/processing">
+                       float a=0.0;
+                                void setup() 
+                                {
+                                    size($(window).width()/2, $(window).height()/4, P3D);
+                                    PFont font = createFont("LuggerBug-wbk.ttf"); 
+                                    //PFont font = loadFont("LuggerBug");
+                                    textFont(font,54); 
+                                } 
+
+                                void draw(){
+
+                                
+                                a += 0.015;
+                                if(a > TWO_PI) { 
+                                    a = 0.0; 
+                                }
+
+                                translate(800, 600);
+                                rotateY(a);
+                                //rotateY(a * 2.0);
+
+                                //rect(5, 5, 20, 5);
+                                fill(67,110,238);
+                                text("RunSense", 72, -75, 9);
+                                //text("second");
+                                fill(236,0,0);
+                                text("Run$en$e", 72, -75, 0); 
+                                //text("trois");
+                                fill(67,110,238);
+                                text("RunSen$e", 72, -75, -9); 
+
+                                }
+                    </script>
+                        <canvas ></canvas>
+                    </div>-->
+       
+      
+        <div id="top" style="position: absolute;top: 1%">
+            
+   
+                    <ui:insert name="content"></ui:insert>
+                   
+                     
+              
+        </div>
+       <div id="right" style="position: absolute; top: 40%; right: 1px;"> 
+            
+                            <ui:insert name="right"></ui:insert>
+
+                    </div>   
+        
+            
+            <div id="bas" style="position: absolute;bottom: 1%">
+                <ui:insert name="bas"></ui:insert>
+            </div>
+       <!--  <div id="bottom">
+          <a id="google" style="text-decoration-color: indianred;" href="https://plus.google.com/100407527874594501820" rel="publisher">Google+</a>  
+           <em > Copyright &copy; 2012 Runsense -Ile de la reunion - 974</em>
+           <div style="position: absolute;" class="fb-like" data-send="true"  data-show-faces="true" data-colorscheme="dark"></div>
+        </div>  -->  
+    </h:body>
+    </f:view>
+</html>

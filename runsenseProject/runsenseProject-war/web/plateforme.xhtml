@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      
+      xmlns:p3="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./Template.xhtml">
+    
+<script type="text/javascript" >
+            window.onload = function () {
+                recharge();
+                fetchKmlFrom();
+            }
+            
+            
+        </script>
+    <ui:define name="top">
+          <div id="ident">         
+
+              <h:form>
+                  
+                    <h:panelGrid columns="3" > 
+                        <p3:growl id="growl" showDetail="true" sticky="true" />  
+                        
+                        <!--<h:outputText value="#{msg.login_user} :" />  
+                        <h:outputText value="#{Ident.username} :" /> 
+                        
+                        <h:outputText value="#{msg.login_pswd}  :" />  
+                        <h:outputText value="#{Ident.password} :" /> -->
+                        
+                        <p3:button outcome="Accueil" value="retour accueil" >  
+                            
+                        </p3:button> 
+                        
+                    </h:panelGrid> 
+                    </h:form> 
+                                              
+            </div>
+    </ui:define>
+    
+
+    <ui:define name="content" >
+        
+            <p3:tabView id="tab" effect="blind" effectDuration="normal">  
+                
+                <p3:tab title="Connection">                                      
+                
+                <p3:panel id="pnlTree" header="Tableau de recherche"> 
+                    <h:form>
+                        
+                        <p3:growl id="growl_tree" for="tree_admin"  />
+                        
+                        <p3:treeTable id="tree_admin" value="#{treetable.root}" var="document" parent="">  
+                                    <f:facet name="header">  
+                                        <h:outputText value="Sommaire des visites" />   
+                                    </f:facet>  
+
+                                    <p3:column style="width:100px; text-align: center;">  
+                                        <f:facet name="header">  
+                                            Nom  
+                                        </f:facet>  
+                                        <h:outputText value="#{document.nom}" />  
+                                    </p3:column>  
+
+                                     
+   
+                                    <p3:column style="width:20px">  
+                                        <!---->
+                                        <p3:commandLink  update=":f_left:kml-url"  title="View Detail"  styleClass="ui-icon ui-icon-search" oncomplete="fetchKml()" >  
+                                            <f:setPropertyActionListener value="#{document}"   
+                                                                        target="#{treetable.selectedDocument}"/>  
+                                            
+                                        </p3:commandLink>  
+                                    </p3:column>
+                                </p3:treeTable>
+   
+        
+                       </h:form>
+                </p3:panel>
+
+                 </p3:tab>
+                
+           </p3:tabView>   
+                
+        
+       
+    </ui:define>
+
+</ui:composition>
+</html>

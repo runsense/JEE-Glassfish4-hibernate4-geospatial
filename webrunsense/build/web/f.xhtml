@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:pe="http://primefaces.org/ui/extensions"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+  
+
+   
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./Template.xhtml">
+   
+    <ui:define  name="content" >
+        
+         <script type="text/javascript">
+            
+          
+            cmplte = function(xhr, statuts, args)
+            {
+                alert('complete');
+                try{
+                fetchKml('visite');
+                }catch( ex)
+                {
+                    alert(ex);
+                }
+                document.getElementById("map3d:tlb_aff").focus();
+                debloque();
+            };
+            
+            ctrlFrame=function()
+            {
+                var frame = document.getElementById('f_haut:webcam');
+                    frame = frame.contentDocument || frame.document;
+            }
+        </script> 
+       
+        <h:form id="f_tlbr"  style="position: relative;">
+            <p:hotkey bind="shift+b" handler="document.getElementById('f_tlbr:tlb_but').focus();" />
+            <p:hotkey bind="shift+d" handler="document.getElementById('f_tlbr:date').focus();" />
+            <p:hotkey bind="shift+r" handler="document.getElementById('f_tlbr:res').focus();" />
+            <p:toolbar >
+                    <p:toolbarGroup align="left" style="width: 25%;" rendered="true" >
+                                    <p:menuButton value="Module" >
+                                        <p:menuitem  outcome="Web" value="normal" />
+                                        <p:menuitem  outcome="Mobile" value="#{rchBean.titres[11]}" />
+                                        <p:menuitem outcome="Gere" value="#{rchBean.titres[12]}" onstart="#{rchBean.setpltfrm(true)}"  />
+                                        
+                                    </p:menuButton>
+                                 </p:toolbarGroup>
+               
+                
+                    <p:toolbarGroup id="tlb_aff" style="text-decoration-color: indianred; border-color: green;
+                                    text-align: center;" rendered="true"  >
+                        <p:calendar id="date" value="#{rchBean.calend}" effect="fold" navigator="true" >
+                            <p:ajax event="dateSelect" listener="#{rchBean.chgCalend}" 
+                                    update="@all" />
+                        </p:calendar>
+                        <p:watermark for="ac" value="#{rchBean.titres[18]} :"/>
+                        <h:outputText id="res"  value="#{rchBean.res}"
+                                       />
+                                    <p:autoComplete
+                                            id="ac"
+                                            value="#{rchBean.res}"
+                                            completeMethod="#{rchBean.complete}" onclick="this.value=null;"
+                                            maxResults="10" itemtipMyPosition="right bottom" 
+                                            styleClass="otocplte" 
+                                            title="#{msg.completionauto}"
+                                            >
+                                        <p:effect type="hightlight" event="select"/>
+                                            <p:ajax event="itemSelect"
+                                                    listener="#{rchBean.chgComplete()}" oncomplete="fetchKml('visite');"
+                                                      
+                                                     update="@all" />
+
+
+                                </p:autoComplete>
+                       
+                        
+                                
+                    </p:toolbarGroup>
+                                
+                                
+                                <p:toolbarGroup align="right"  rendered="true" >
+                                    <p:menuButton value="install">
+                                        <p:menuitem id="mitm_inst" value="plugin google earth " outcome="install" />
+                                    </p:menuButton>
+                                </p:toolbarGroup>
+                 </p:toolbar> 
+            
+        </h:form>
+        <h:form id="map3d"   style="position: relative; padding-top: 1%;height: 600px; width: 100%;" > 
+            <pe:spotlight blocked="false" widgetVar="wgt_mapblck" >
+                <p:ajaxStatus id="ajstt"  onstart="PF('wgt_mapblck').block();routeTerrain(false);" onerror="PF('wgt_mapblck').unblock();" onsuccess="PF('wgt_mapblck').unblock();routeTerrain(true);"    >  
+                </p:ajaxStatus>   
+            
+                   <p:growl id="gwl_map3d" autoUpdate="true" for="map3d " widgetVar="wdg_map3d" />  
+                            <!-- <p3:growl  autoUpdate="true" for="slct_djv" /> --> 
+
+               
+             </pe:spotlight>
+               </h:form> 
+        
+           
+        
+           <h:form id="f_reponse" style="position: fixed; z-index: -1;" >
+               
+                        <p:inputText id="kml_alt" type="hidden"  value="#{rchBean.altkml}" >
+                            
+                                      
+                        </p:inputText> 
+                        <p:inputText id="kml_lat" type="hidden"   value="#{rchBean.latkml}" >
+                            
+                        </p:inputText>
+                        <p:inputText id="kml_long" type="hidden"  value="#{rchBean.lngkml}" >
+                                                
+                        </p:inputText>
+               <!-- 
+                    clickMap -->
+              
+                    
+                    <p:commandButton id="updrep" async="true" action="#{rchBean.lancement()}"  style="display: none;"
+                                     onclick="PF('wgt_mapblck').block();" 
+                                   oncomplete="fetchKml('visite');PF('wgt_mapblck').unblock();"
+                                                update="@all" />
+                        
+                    <p:commandButton id="hiddenDblClick"  async="true" action="#{rchBean.catchSouris()}" style="display: none;"
+                                   onclick="PF('wgt_mapblck').block();" 
+                                   oncomplete="fetchKml('visite');PF('wgt_mapblck').unblock();"
+                                                 update="@all" />
+                <p:commandButton id="hiddenClick" async="true"  action="#{rchBean.clickSouris()}" style="display: none;"
+                                   onclick="PF('wgt_mapblck').block();" 
+                                   oncomplete="fetchKml('visite');PF('wgt_mapblck').unblock();"
+                                                 update="@all" />
+                <p:commandButton id="hiddenElv" async="true" action="#{rchBean.addAlt()}"  style="display: none;"
+                                 
+                                                 />
+                
+               <p:commandButton id="hiddendesc" async="true" action="#{rchBean.chgdesc()}" style="display: none;" 
+                                       onclick="PF('wgt_mapblck').block();" 
+                                       oncomplete="PF('wgt_mapblck').unblock();" 
+                                       update="@all" />
+               
+                
+                     <p:inputText  id="kml_cli" type="hidden"   value="#{rchBean.clitoKml}"/>
+                        
+                        <h:inputHidden  id="kml_tracer"   value="#{rchBean.trKml}"/>
+                          
+                        <h:inputHidden  id="kml_tour"   value="#{rchBean.tourKml}"/>
+                       <p:inputText id="kml_res" type="hidden"   value="#{rchBean.res}"/>
+                        
+            </h:form>
+  
+    </ui:define>
+    
+</ui:composition>
+
+
+    
+</html>

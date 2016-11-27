@@ -1,0 +1,9 @@
+/* 
+    Document   : behavcss
+    Created on : 3 mai 2013, 19:57:55
+    Author     : runsense
+    Description:
+        evenement de la souris
+*/
+
+.ui-ring-item {behavior: url(vst.htc); }

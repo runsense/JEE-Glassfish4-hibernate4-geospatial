@@ -1,0 +1,2274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>île de la Reunion(festival).kml</name>
+	<open>1</open>
+	<StyleMap id="m_ylw-pushpin7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl040</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl04</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl040">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl04">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>île de la Reunion</name>
+		<open>1</open>
+		<Folder>
+			<name>Nord</name>
+			<Folder>
+				<name>LaPossession</name>
+			</Folder>
+			<Folder>
+				<name>LePort</name>
+				<Placemark>
+					<name>Le Dodo Palmé</name>
+					<description>festival: Ad Libitum
+_
+période: VEN 27 JUIN 2014 - 19:30
+_
+tél: 06 92 77 60 71</description>
+					<LookAt>
+						<longitude>55.28276553029787</longitude>
+						<latitude>-20.94671038341319</latitude>
+						<altitude>0</altitude>
+						<heading>0.00521059677702823</heading>
+						<tilt>26.00364842716745</tilt>
+						<range>470.6468061570786</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.2817515372321,-20.94598519357243,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Kabardock</name>
+					<description>festival: Chinese Man Records - The 10 years tour, Zebda
+_
+période: SAM 4 OCT 2014 - 21:00, VEN 24 OCT 2014 - 21:00
+_
+tél: 02 62 54 05 40</description>
+					<LookAt>
+						<longitude>55.29170728599734</longitude>
+						<latitude>-20.93887047241076</latitude>
+						<altitude>0</altitude>
+						<heading>1.96287932166521e-011</heading>
+						<tilt>0</tilt>
+						<range>1002.833097133241</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.29166736401652,-20.93887513304434,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SainteMarie</name>
+			</Folder>
+			<Folder>
+				<name>SaintDenis</name>
+				<Placemark>
+					<name>le club 138</name>
+					<open>1</open>
+					<description>activité: boite de nuits
+_
+festival: Salsa &amp; kizomba
+_
+période: 09/07/2014</description>
+					<LookAt>
+						<longitude>55.46831290906345</longitude>
+						<latitude>-20.88592138040276</latitude>
+						<altitude>0</altitude>
+						<heading>-0.05065257198385263</heading>
+						<tilt>19.67979253704489</tilt>
+						<range>6380.022602274541</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46577561939154,-20.87638245772589,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Saint Hubert</name>
+					<description>festival: Soirée Karaoké
+_
+période: VEN 20 JUIN 2014 - 21:00, MAR 24 JUIN 2014 - 21:00, VEN 27 JUIN 2014 - 21:00, MAR 1 JUIL 2014 - 21:00, VEN 4 JUIL 2014 - 21:00</description>
+					<LookAt>
+						<longitude>55.45116379015738</longitude>
+						<latitude>-20.87781120864025</latitude>
+						<altitude>0</altitude>
+						<heading>-3.514288145266463e-006</heading>
+						<tilt>21.6577869054228</tilt>
+						<range>299.5049961149355</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.45116080189776,-20.87779138793369,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Les Pot’irons</name>
+					<description>festival: El Hijo Diabolico, Nayah &quot;Back to fundamentals&quot;, Alex Rolland &quot;Free your fish&quot;, Ker Faya Sound System, Patrik Manent + DJ La Poussière
+_
+période: VEN 20 JUIN 2014 - 20:00, MER 25 JUIN 2014 - 20:00, JEU 26 JUIN 2014 - 20:00, VEN 27 JUIN 2014 - 20:00, SAM 28 JUIN 2014 - 14:37
+_
+tél: 0262 31 51 29</description>
+					<LookAt>
+						<longitude>55.4612785877702</longitude>
+						<latitude>-20.89037137000665</latitude>
+						<altitude>0</altitude>
+						<heading>6.032087815188591e-005</heading>
+						<tilt>18.88256325682909</tilt>
+						<range>337.3063082637142</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46156873850552,-20.89045258702923,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>CREPS St Denis</name>
+					<description>festival: Les liaisons dangereuses (théatre)
+_
+période: du 20 au 20/06/14 de 20h30, 20h30, 17h30
+_
+tél: 02 62 94 71 94</description>
+					<LookAt>
+						<longitude>55.46987991058691</longitude>
+						<latitude>-20.88937853270563</latitude>
+						<altitude>0</altitude>
+						<heading>-0.004895912335072266</heading>
+						<tilt>41.86901036432897</tilt>
+						<range>1009.380154390139</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47104457908975,-20.89042935767302,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Villa Angélique</name>
+					<description>festival: DJ Fabrice (clubbing)
+_
+période: SAM 21 JUIN 2014 - 18:00
+_
+tél: 02 62 48 41 48</description>
+					<LookAt>
+						<longitude>55.4514224473295</longitude>
+						<latitude>-20.8837450942798</latitude>
+						<altitude>0</altitude>
+						<heading>-0.04144468674597743</heading>
+						<tilt>24.29025953002383</tilt>
+						<range>599.3014760540303</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.45011486730368,-20.88305432924221,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Bar A Cas</name>
+					<description>festival: Tapes + Hippyclean + The Reactors + Mofk + Me &amp; Chewbacca + Nø Comment + Thee Orlando’s
+_
+période: SAM 21 JUIN 2014 - 19:00
+_
+tél: 0262 20 17 68</description>
+					<LookAt>
+						<longitude>55.44983118734422</longitude>
+						<latitude>-20.87907155277979</latitude>
+						<altitude>0</altitude>
+						<heading>-1.544148277228566e-007</heading>
+						<tilt>0</tilt>
+						<range>1017.554544404369</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.44983118734422,-20.87907155277979,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>L’Artocarpe</name>
+					<description>activité: restaurant
+_
+tél: 02 62 21 55 48
+_
+festival: La Biscotte de La Mer
+_
+période: SAM 21 JUIN 2014 - 19:30</description>
+					<LookAt>
+						<longitude>55.44878381118192</longitude>
+						<latitude>-20.87682117449206</latitude>
+						<altitude>0</altitude>
+						<heading>-8.87422464448543e-011</heading>
+						<tilt>0</tilt>
+						<range>1009.751984687253</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.44877377160012,-20.8769102873531,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Théâtre Luc Donat</name>
+					<description>festival: Gala du centre chorégraphique Chantal Brown (danse), À droite ! (spectacle), Alice &amp; Thierry : Sakinn un bout’ (spectacle), Alice &amp; Thierry : Sakinn un bout’ (spectacle), Mickaël Pouvin, L’histoire d’amour de Roméo et Juliette (théatre), À l’aube du romantisme, Le livre vermeil de Montserrat
+_
+période: SAM 21 JUIN 2014 - 20:00, VEN 27 JUIN 2014 - 20:00, VEN 8 AOÛ 2014 - 20:00, SAM 9 AOÛ 2014 - 20:00, JEU 14 AOÛ 2014 - 20:00, MAR 23 SEP 2014 - 20:00, VEN 26 SEP 2014 - 20:00, VEN 10 OCT 2014 - 20:00
+_
+tél: 0262 27 24 36</description>
+					<LookAt>
+						<longitude>55.52187963882349</longitude>
+						<latitude>-21.27794446870672</latitude>
+						<altitude>0</altitude>
+						<heading>0.0001024041717526619</heading>
+						<tilt>28.33983282520325</tilt>
+						<range>458.624074153574</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.52178378715939,-21.27798423204913,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Ainsi parlait Zarathoustra</name>
+					<description>activité: restaurant
+_
+festival: Duo Tempo
+_
+période: JEU 26 JUIN 2014 - 20:00</description>
+					<LookAt>
+						<longitude>55.44845809583531</longitude>
+						<latitude>-20.87684772450552</latitude>
+						<altitude>0</altitude>
+						<heading>-0.03531174154776622</heading>
+						<tilt>30.00067855602103</tilt>
+						<range>151.2842509582626</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.44894978042984,-20.8768536739469,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Chez Zot</name>
+					<description>activité: restaurant
+_
+tél: 02 62 88 27 96 
+_
+gsm 06 93 30 70 41
+_
+festival: Après-midi jeux (loisir), Le goût des livres (rencontre), Après-midi jeux (loisir), Le goût des livres (rencontre)
+_
+période: MAR 24 JUIN 2014 - 15:00, JEU 26 JUIN 2014 - 15:00, MAR 1 JUIL 2014 - 15:00, JEU 3 JUIL 2014 - 15:00</description>
+					<LookAt>
+						<longitude>55.60990700029541</longitude>
+						<latitude>-21.38135999981217</latitude>
+						<altitude>0</altitude>
+						<heading>-1.076935815143547e-010</heading>
+						<tilt>0</tilt>
+						<range>1000.000114421036</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.60990700029541,-21.38135999981217,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>KTDral</name>
+					<description>activité: bar
+_
+tél: 0692 95 92 00
+_
+festival: Vintage K’ars, After work, Sund’Ri Feeling, After work
+_
+période: du 14/06/14 au 16/07/14, LUN 23 JUIN 2014 - 17:00, VEN 27 JUIN 2014 - 20:00, LUN 30 JUIN 2014 - 17:00</description>
+					<LookAt>
+						<longitude>55.44944591790122</longitude>
+						<latitude>-20.87725184511496</latitude>
+						<altitude>0</altitude>
+						<heading>-0.04776776269772648</heading>
+						<tilt>25.59374275311031</tilt>
+						<range>270.2056169873411</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.44913853210726,-20.87717894714501,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Palaxa</name>
+					<description>festival:Rock à la buse
+_
+période: du 27 au 28/06/14 de 20h
+_
+tél: 02 62 92 09 90</description>
+					<LookAt>
+						<longitude>55.46726421658634</longitude>
+						<latitude>-20.88434958802346</latitude>
+						<altitude>0</altitude>
+						<heading>-0.02565071816705433</heading>
+						<tilt>0.01117737256556185</tilt>
+						<range>1009.573076247194</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46726421658634,-20.88434958802346,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>So Hype</name>
+					<description>activité: magasin
+_
+festival: Legaux (peinture)
+_
+tél: 02 62 21 18 79</description>
+					<LookAt>
+						<longitude>55.45072394445919</longitude>
+						<latitude>-20.88084938494717</latitude>
+						<altitude>0</altitude>
+						<heading>2.157878448070004e-005</heading>
+						<tilt>21.20727609606517</tilt>
+						<range>338.5640161894727</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.45072394445919,-20.88084938494718,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Téat Champ Fleuri</name>
+					<description>festival: Cyrano de Bergerac (théatre)
+_
+période: du 05 au 06/09/14 de 20h
+_
+tél: 0262 419 325</description>
+					<LookAt>
+						<longitude>55.46635314520468</longitude>
+						<latitude>-20.88877664876195</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0001627030164069993</heading>
+						<tilt>16.27876080723695</tilt>
+						<range>387.5491109134917</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46581094834931,-20.88874274918649,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>les Bains de minuits</name>
+					<description>activité: boite de nuits ( clubbing)
+_
+période: de 19h à 5h
+_
+festival: soirée tropical (clubbing), au bonheur des dames ( clubbing)
+_
+période: 09/07/2014 de 22h, 10/07/2014 de 23h</description>
+					<LookAt>
+						<longitude>55.4498560088136</longitude>
+						<latitude>-20.87216321084501</latitude>
+						<altitude>0</altitude>
+						<heading>0.001374470031669427</heading>
+						<tilt>30.00038570904033</tilt>
+						<range>86.07564985643236</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.44986484916819,-20.87224626838158,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>le boy&apos;s</name>
+					<description>activité: soirée ( clubbing)
+_
+période: vendredi au samedi de 22h</description>
+					<LookAt>
+						<longitude>55.45526422407495</longitude>
+						<latitude>-20.87756576944512</latitude>
+						<altitude>0</altitude>
+						<heading>-7.660035067502957e-005</heading>
+						<tilt>22.81549226726426</tilt>
+						<range>262.8842750842863</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.45530034626601,-20.87764800962373,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>le Gin Get</name>
+					<description>activité: boite de nuits( clubbing)
+_
+période: mardi, jeudi,vendredi, samedi de 23h à 7h
+_
+tél:  02 62 41 56 27</description>
+					<LookAt>
+						<longitude>55.46429993018078</longitude>
+						<latitude>-20.88785733280088</latitude>
+						<altitude>0</altitude>
+						<heading>-3.666167160315635e-005</heading>
+						<tilt>16.31170468914108</tilt>
+						<range>430.6148764684075</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46441022412827,-20.88798777224653,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SainteSuzanne</name>
+				<Placemark>
+					<name>Discopoly&apos;s</name>
+					<description>activité: restaurant , boite de nuits( gratuits pour les dames jusqu&apos;à minuit, et samedi jusqu&apos;à 23h)
+_
+période: vendredi, samedi et veille de jour férié
+_
+tél: 0262 46 70 95</description>
+					<LookAt>
+						<longitude>55.63797218674159</longitude>
+						<latitude>-20.93196643637996</latitude>
+						<altitude>0</altitude>
+						<heading>0.04515838928463526</heading>
+						<tilt>26.2704177921471</tilt>
+						<range>642.9215158282894</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.63784423717487,-20.93196401331723,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Ouest</name>
+			<Folder>
+				<name>SaintLeu</name>
+				<Placemark>
+					<name>Rondavelle de Saint-Leu</name>
+					<open>1</open>
+					<description>festival: Mangloo, concert, Gilbert Barcaville, Fabio Marouvin, concert, La Tipica Del 974, Donato, Arnold, Kafmaron, Aster, Zadig 2.0, Koté Manouche, Gainsbourg  du jazz dans la ravine, Filigramme 21, Soul Side, Le Pain Des Fous, Natacha Tortillard
+ _
+
+période: VEN 20 JUIN 2014 - 18:30, SAM 21 JUIN 2014 - 18:30, DIM 22 JUIN 2014 - 18:30, VEN 27 JUIN 2014 - 18:30, SAM 28 JUIN 2014 - 18:30, DIM 29 JUIN 2014 - 18:30, MAR 8 JUIL 2014 - 18:30, DIM 13 JUIL 2014 - 18:30, DIM 20 JUIL 2014 - 18:30, DIM 3 AOÛ 2014 - 18:30, DIM 31 AOÛ 2014 - 18:30, DIM 21 SEP 2014 - 18:30, VEN 24 OCT 2014 - 18:30, DIM 26 OCT 2014 - 18:30, DIM 2 NOV 2014 - 18:30, DIM 9 NOV 2014 - 18:30, DIM 16 NOV 2014 - 18:30</description>
+					<LookAt>
+						<longitude>55.28670354531663</longitude>
+						<latitude>-21.16847645407837</latitude>
+						<altitude>0</altitude>
+						<heading>0.01987884826916752</heading>
+						<tilt>44.29882040132019</tilt>
+						<range>263.1854110975484</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28642198522536,-21.16913708795507,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le 211</name>
+					<description>festival: Sauvage
+_
+période: VEN 20 JUIN 2014 - 20:00</description>
+					<LookAt>
+						<longitude>55.28777033426675</longitude>
+						<latitude>-21.17297088431621</latitude>
+						<altitude>0</altitude>
+						<heading>3.54275724712395e-005</heading>
+						<tilt>29.24684019512483</tilt>
+						<range>324.474154382984</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28781697488942,-21.17354188761523,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Soluna Kafé</name>
+					<description>festival: Tumbao, Blind test musical, Ouistitisax Groove Machine, Donato, Emmanuelle Peters , Sund’Ri Feeling, R’Play, Manouchkaïa, Saint John’s Groovin Factory, Daniel Riesser &amp; Olivier Lauret, Le festin des idées noires, Affair Affair 
+_
+période: VEN 20 JUIN 2014 - 21:00, MAR 24 JUIN 2014 - 19:30, VEN 27 JUIN 2014 - 21:00, MAR 1 JUIL 2014 - 19:30, VEN 4 JUIL 2014 - 21:00, MAR 8 JUIL 2014 - 19:30, VEN 11 JUIL 2014 - 21:00, MAR 15 JUIL 2014 - 19:30, VEN 18 JUIL 2014 - 21:00, MAR 22 JUIL 2014 - 19:30, VEN 25 JUIL 2014 - 21:00, MAR 29 JUIL 2014 - 19:30
+_
+tél: 0262913721</description>
+					<LookAt>
+						<longitude>55.28712400603848</longitude>
+						<latitude>-21.16952832016254</latitude>
+						<altitude>0</altitude>
+						<heading>0.0197269991007995</heading>
+						<tilt>44.29806933290433</tilt>
+						<range>262.3702667065167</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28679763588324,-21.16989319383032,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Leu 46</name>
+					<description>festival: David Doré &amp; Fatroby, Koté Manouche, Oslo’s Revenge, Rit, Free Jam, Samuell’s, Run Soul
+_
+période: VEN 20 JUIN 2014 - 18:00, SAM 21 JUIN 2014 - 18:30, SAM 28 JUIN 2014 - 18:30, SAM 5 JUIL 2014 - 18:30, SAM 12 JUIL 2014 - 18:30, SAM 19 JUIL 2014 - 18:30, SAM 26 JUIL 2014 - 18:30</description>
+					<LookAt>
+						<longitude>55.28717831137821</longitude>
+						<latitude>-21.17527165823623</latitude>
+						<altitude>0</altitude>
+						<heading>0.002823935919897685</heading>
+						<tilt>29.30025628823648</tilt>
+						<range>215.5451317109867</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28714971023865,-21.17546871542564,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Zinc</name>
+					<description>festival:  rodeecox,  Katwaly
+_
+période:  05/07/2014 de 22h ,SAM 16 AOÛ 2014 - 20:00
+_
+tél: 0692464546</description>
+					<LookAt>
+						<longitude>55.28734818938345</longitude>
+						<latitude>-21.1699180006627</latitude>
+						<altitude>0</altitude>
+						<heading>-1.208031960464524e-005</heading>
+						<tilt>20.49249383402085</tilt>
+						<range>523.0288635111961</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin00</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28735321208479,-21.17045876055943,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>parc du 20 décembre</name>
+					<description>festival: musique
+_
+période: SAM 21 JUIN 2014 - 09:00</description>
+					<LookAt>
+						<longitude>55.28805442766085</longitude>
+						<latitude>-21.16522066899806</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0003770261103121285</heading>
+						<tilt>51.27321605129367</tilt>
+						<range>302.813328102001</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28807475853581,-21.16608771705033,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Hôtel des Postes</name>
+					<description>festival: BLOP (multi-supports)
+_
+période: du 16/05/14 au 02/08/14</description>
+					<LookAt>
+						<longitude>55.287122299187</longitude>
+						<latitude>-21.16535559520771</latitude>
+						<altitude>0</altitude>
+						<heading>6.048644160459355e-005</heading>
+						<tilt>50.58295379582436</tilt>
+						<range>388.1671531087653</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28709724928681,-21.16621894831906,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Il était une fois</name>
+					<description>festival: Mes Louloutes(peinture)
+_
+période: 20/05/14 au 20/07/14</description>
+					<LookAt>
+						<longitude>55.28797898494752</longitude>
+						<latitude>-21.16894999884662</latitude>
+						<altitude>0</altitude>
+						<heading>-5.022780978514772e-005</heading>
+						<tilt>33.57240329022559</tilt>
+						<range>199.6042534656287</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28802378256749,-21.16937400787828,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Atypik Music</name>
+					<description>festival: Vast( peinture)
+_
+période: du 06/06/14 au 04/07/14
+_
+tél: 02 62 49 95 52</description>
+					<LookAt>
+						<longitude>55.28741526664964</longitude>
+						<latitude>-21.17096743086254</latitude>
+						<altitude>0</altitude>
+						<heading>4.046842889775454e-005</heading>
+						<tilt>20.78511432502116</tilt>
+						<range>323.5042631144871</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28748944507689,-21.17096581457822,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Maison Bédier Fonds régional d’art contemporain</name>
+					<description>festival: Chercher le motif
+_
+période: du 12/06/14 au 05/09/14</description>
+					<LookAt>
+						<longitude>55.29529447332492</longitude>
+						<latitude>-21.19986477853278</latitude>
+						<altitude>0</altitude>
+						<heading>6.618843703206619e-007</heading>
+						<tilt>2.690203434528735</tilt>
+						<range>1017.415267699623</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.29532489206937,-21.19986963536649,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Namasté</name>
+					<description>activité: restaurant
+_
+tél: 0262 34 99 62
+_
+festival: Katwaly
+_
+période: DIM 13 JUIL 2014 - 20:00</description>
+					<LookAt>
+						<longitude>55.28796000015971</longitude>
+						<latitude>-21.16497700012783</latitude>
+						<altitude>0</altitude>
+						<heading>-5.763960221482258e-011</heading>
+						<tilt>0</tilt>
+						<range>1000.000118134815</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28795999997896,-21.16503741517444,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Maison Grand Cour</name>
+					<description>festival: Opus Pocus 2014 : Fred Wesley &amp; The New JB’s + Karl Hungus, Opus Pocus 2014 : Miguel Gomez Orquesta + Salsa Metys, Opus Pocus 2014 : The Skatalites + Rocksteady Sporting Club
+_
+période: SAM 2 AOÛ 2014 - 20:00, MAR 5 AOÛ 2014 - 20:00, MER 6 AOÛ 2014 - 20:00</description>
+					<LookAt>
+						<longitude>55.28149250014904</longitude>
+						<latitude>-21.00141399973422</latitude>
+						<altitude>0</altitude>
+						<heading>-5.340469365645392e-011</heading>
+						<tilt>0</tilt>
+						<range>1680.622927708616</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.2810072843584,-21.0037491688113,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>TroisBassins</name>
+			</Folder>
+			<Folder>
+				<name>SaintGille</name>
+				<Placemark>
+					<name>Bar de la Marine</name>
+					<description>activité: bar
+_
+tél: 02 62 24 03 03
+_
+festival: karaoké(soirée), karaoké(soirée), karaoké(soirée)
+_
+période: SAM 21 JUIN 2014 - 21:00, SAM 28 JUIN 2014 - 21:00, SAM 5 JUIL 2014 - 21:00</description>
+					<LookAt>
+						<longitude>55.22502234705411</longitude>
+						<latitude>-21.0557229889361</latitude>
+						<altitude>0</altitude>
+						<heading>0.08421500881193808</heading>
+						<tilt>18.09627541490172</tilt>
+						<range>378.3017349519432</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22407254129994,-21.0556169570969,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Saint-Alexis</name>
+					<open>1</open>
+					<description>festival: Affair Affair, JC &amp; Koreen, Ziia, Joël Manglou, Affair Affair, Joël Manglou, Kazz À Swing, JC &amp; Koreen, Jean-Claude T’ &amp; Annick, Joël Manglou, Kazz À Swing, JC &amp; Koreen</description>
+					<LookAt>
+						<longitude>55.22559444993789</longitude>
+						<latitude>-21.0297900287861</latitude>
+						<altitude>0</altitude>
+						<heading>0.01551174383937351</heading>
+						<tilt>38.63854973282024</tilt>
+						<range>453.5804066394318</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22517704933537,-21.03070292950186,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Boucan Canot</name>
+					<description>festival: Trio des Îles, Hat’Mosphère, Jean-Claude T’ &amp; Annick, Affair Affair
+_
+période: VEN 20 JUIN 2014 - 19:30, SAM 21 JUIN 2014 - 19:30, VEN 27 JUIN 2014 - 19:30, SAM 28 JUIN 2014 - 19:30
+_
+tél: 0262334444</description>
+					<LookAt>
+						<longitude>55.22662665629122</longitude>
+						<latitude>-21.02726261782086</latitude>
+						<altitude>0</altitude>
+						<heading>-4.669673050892004e-006</heading>
+						<tilt>14.31559803060313</tilt>
+						<range>469.1492829605977</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22662665629122,-21.02726261782086,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Domaine des Mascareignes</name>
+					<description>festival: Djiomeli, Free Jam, Djiomeli, Soirée Karaoké
+_
+période: VEN 20 JUIN 2014 - 20:00, SAM 21 JUIN 2014 - 20:00, VEN 27 JUIN 2014 - 20:00, SAM 28 JUIN 2014 - 20:00
+_
+tél: 02 62 49 49 90</description>
+					<LookAt>
+						<longitude>55.22801661448721</longitude>
+						<latitude>-21.03122639093143</latitude>
+						<altitude>0</altitude>
+						<heading>-4.049881270164047e-005</heading>
+						<tilt>21.64937022817464</tilt>
+						<range>447.3643007817365</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22737899490126,-21.03119317379061,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Hôtel Novotel</name>
+					<description>festival: Degadezo, Variety Duo + DJ Kdance, Lyzea, JC &amp; Koreen, DJ Kdance, DJ Kdance
+_
+période: VEN 20 JUIN 2014 - 20:00, SAM 21 JUIN 2014 - 18:30, MER 25 JUIN 2014 - 19:00, VEN 27 JUIN 2014 - 20:00, SAM 28 JUIN 2014 - 20:00, SAM 5 JUIL 2014 - 20:00
+_
+tél: 0262 24 44 44</description>
+					<LookAt>
+						<longitude>55.22419945269502</longitude>
+						<latitude>-21.07614701083904</latitude>
+						<altitude>0</altitude>
+						<heading>0.0007664758021780473</heading>
+						<tilt>4.276147205520234</tilt>
+						<range>472.8861786127399</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22265617652895,-21.0771458716554,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Mex</name>
+					<description>festival: DJ Planet (clubbing)
+_
+période: VEN 20 JUIN 2014 - 20:00, SAM 21 JUIN 2014 - 20:00, VEN 27 JUIN 2014 - 20:00, SAM 28 JUIN 2014 - 20:00, VEN 4 JUIL 2014 - 20:00, SAM 5 JUIL 2014 - 20:00
+_
+tél: 0262 33 04 05</description>
+					<LookAt>
+						<longitude>55.22704340446205</longitude>
+						<latitude>-21.05193512254267</latitude>
+						<altitude>0</altitude>
+						<heading>1.250786187170887e-006</heading>
+						<tilt>28.38299019966803</tilt>
+						<range>393.4615136649193</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.2267068716253,-21.05176428540806,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>centre ville saint-gille</name>
+					<description>festival: Tumbao, Grand Boucan 2014 (fête)
+_
+période: SAM 21 JUIN 2014 - 18:30, DIM 22 JUIN 2014 - 14:00</description>
+					<LookAt>
+						<longitude>55.227146192253</longitude>
+						<latitude>-21.05233594391257</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0008903802284380302</heading>
+						<tilt>35.51478103474764</tilt>
+						<range>256.8712438624688</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.2267233925631,-21.05226629135348,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Coco Beach</name>
+					<description>activité: restaurant
+_
+festival: Mothra Slapping Orchestra + Le Bacar + Zon, DJ Titi (clubbing), DJ Titi (clubbing), Soirée Kizomba (danse), DJ set au Coco Beach (clubbing), DJ Titi (clubbing), Saodaj’, DJ Titi (clubbing), Saïfah, Frédéric Piot, Zambavil, Didyé Kérgrin ék bann Soul Kamayann’ 
+_
+période: SAM 21 JUIN 2014 - 19:00, SAM 21 JUIN 2014 - 20:00, DIM 22 JUIN 2014 - 20:00, MER 25 JUIN 2014 - 18:00, SAM 28 JUIN 2014 - 17:00, SAM 28 JUIN 2014 - 20:00, DIM 29 JUIN 2014 - 19:00, DIM 29 JUIN 2014 - 20:00, VEN 4 JUIL 2014 - 19:00, VEN 11 JUIL 2014 - 19:00, VEN 18 JUIL 2014 - 19:00, VEN 25 JUIL 2014 - 19:00  
+_
+tél: 02 62 33 38 90</description>
+					<LookAt>
+						<longitude>55.22835678885532</longitude>
+						<latitude>-21.07833348665326</latitude>
+						<altitude>0</altitude>
+						<heading>9.430597931508694e-005</heading>
+						<tilt>8.224897225347963</tilt>
+						<range>2709.892318171417</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22224640138538,-21.07958346219109,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>La Bodega 974</name>
+					<description>activité: restaurant
+_
+tél: 02 62 35 66 69
+_
+festival: La Tipica Del 974, Katwaly, Katwaly + Sakyroots
+_
+période: DIM 22 JUIN 2014 - 18:00, DIM 27 JUIL 2014 - 18:00, JEU 14 AOÛ 2014 - 18:00</description>
+					<LookAt>
+						<longitude>55.24262299987145</longitude>
+						<latitude>-21.09906800018415</latitude>
+						<altitude>0</altitude>
+						<heading>4.627866089263489e-011</heading>
+						<tilt>0</tilt>
+						<range>1000.000123539576</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.24262299987144,-21.09906800018415,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Ti Boucan</name>
+					<description>activité: bar
+_
+tél: 02 62 24 85 08
+_
+festival: Brasil Kabar
+_
+période: VEN 27 JUIN 2014 - 18:00</description>
+					<LookAt>
+						<longitude>55.22601000006466</longitude>
+						<latitude>-21.028975999596</latitude>
+						<altitude>0</altitude>
+						<heading>-2.320532695595782e-011</heading>
+						<tilt>0</tilt>
+						<range>1000.000184698354</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22601000006466,-21.02897599959601,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>La tête dans les étoiles</name>
+					<description>festival: Morceaux choisis (peinture)
+_
+période: du 07/06/14 au 06/07/14</description>
+					<LookAt>
+						<longitude>55.22571307110922</longitude>
+						<latitude>-21.05279286167879</latitude>
+						<altitude>0</altitude>
+						<heading>0.008409970730665364</heading>
+						<tilt>15.41076180176776</tilt>
+						<range>435.8375942763832</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22454958090852,-21.05270852772879,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>La Bodega 974</name>
+					<description>activité: restaurant
+_
+tél: 02 62 35 66 69
+_
+festival: La Tipica Del 974, Katwaly, Katwaly + Sakyroots
+_
+période: DIM 22 JUIN 2014 - 18:00, DIM 27 JUIL 2014 - 18:00, JEU 14 AOÛ 2014 - 18:00</description>
+					<LookAt>
+						<longitude>55.23658850429507</longitude>
+						<latitude>-21.09308896669005</latitude>
+						<altitude>0</altitude>
+						<heading>0.0001610194349693197</heading>
+						<tilt>30.00076157612346</tilt>
+						<range>169.3114109002212</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.23652612997006,-21.09345407036523,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Plage de Cap Homard</name>
+					<description>festival: Kudeta Run Beach Party
+_
+période: SAM 5 JUIL 2014 - 16:00</description>
+					<LookAt>
+						<longitude>55.2230041607128</longitude>
+						<latitude>-21.03400981180172</latitude>
+						<altitude>0</altitude>
+						<heading>-0.001257694459072054</heading>
+						<tilt>3.46765117398566</tilt>
+						<range>1147.481655998454</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22206914554649,-21.03334208104812,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Lo Zargonot</name>
+					<description>festival: Katwaly
+_
+période: SAM 9 AOÛ 2014 - 20:00</description>
+					<LookAt>
+						<longitude>55.24081500019919</longitude>
+						<latitude>-21.0934960004271</latitude>
+						<altitude>0</altitude>
+						<heading>-7.166743863741744e-011</heading>
+						<tilt>0</tilt>
+						<range>1000.000185298919</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.24081500019918,-21.0934960004271,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>La Varangue du Lagon / Chez Denis</name>
+					<description>activité: restaurant
+_
+tél: 02 62 32 06 15
+_
+festival: Katwaly + Sakyroots
+_
+période: DIM 24 AOÛ 2014 - 18:30</description>
+					<LookAt>
+						<longitude>55.22956799981465</longitude>
+						<latitude>-21.08639799996239</latitude>
+						<altitude>0</altitude>
+						<heading>6.668350945156409e-011</heading>
+						<tilt>0</tilt>
+						<range>1060.123974672426</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22956799981465,-21.08639799996239,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Métis Café</name>
+					<description>activité: bar
+_
+tél: 06 92 67 67 00
+_
+festival: Sawyer + We Believe In Dub, La Tipica Del 974, Ouistitisax Groove Machine
+_
+période: SAM 21 JUIN 2014 - 16:00, SAM 28 JUIN 2014 - 20:00, SAM 5 JUIL 2014 - 20:00</description>
+					<LookAt>
+						<longitude>55.22135111393595</longitude>
+						<latitude>-21.07359986854518</latitude>
+						<altitude>0</altitude>
+						<heading>1.377889440767669e-009</heading>
+						<tilt>0</tilt>
+						<range>1011.245087069588</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22135111393596,-21.07359986854518,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>le Loft</name>
+					<description>activité: bar  
+_
+période: de 22h à 5h
+festival: soirée(clubbing)
+_
+période: vendredi et samedi  de 21h30h à 6h
+_
+gsm: 0692 67 44 54</description>
+					<LookAt>
+						<longitude>55.22237224458997</longitude>
+						<latitude>-21.07014928716417</latitude>
+						<altitude>0</altitude>
+						<heading>0.003000076431682336</heading>
+						<tilt>32.39688334443002</tilt>
+						<range>301.8549617245246</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22252210244901,-21.07026673031787,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>la boite</name>
+					<description>activité: boite de nuits ( clubbing)
+_
+période: samedi
+_
+festival: nuit blanche ( clubbing)
+_
+période: 05/07/014, 12/07/2014
+_
+tél: 08 99 18 65 79</description>
+					<LookAt>
+						<longitude>55.22183641587796</longitude>
+						<latitude>-21.04767352404367</latitude>
+						<altitude>0</altitude>
+						<heading>-6.289076558230873e-005</heading>
+						<tilt>20.66362641199811</tilt>
+						<range>334.096986781129</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22161032194823,-21.0477221931999,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>la Villa</name>
+					<description>activité: boite de nuits (clubbing)
+_
+période:mercredi, vendredi, samedi, dimanche
+_
+festival:Saturday Party Mix (clubbing), PULL UP - SHOWCASE KAF MALBAR, STUDENTS FUCK SCHOOL, SATURDAY PARTY MIX(clubbing), SO FRENCH(clubbing),Seduce Me, édition coquine(clubbing)
+_
+période:05/06/2014, 09/06/2014, 11/06/2014, 12/06/2014, 13/06/2014, 18/06/2014
+_
+gsm :0692 601 900</description>
+					<LookAt>
+						<longitude>55.22286980282819</longitude>
+						<latitude>-21.07024300335453</latitude>
+						<altitude>0</altitude>
+						<heading>-1.572181242503607e-006</heading>
+						<tilt>17.73701085340015</tilt>
+						<range>389.2882578537236</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22287763535989,-21.07012968876839,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>casino , cooun bar lounge</name>
+					<description>activité: jeux, bar, soirée ( clubbing)
+_
+tél: 0262 24 47 00
+_
+festival: before (clubbing)
+_
+période: du lundi au dimanche</description>
+					<LookAt>
+						<longitude>55.22353014499784</longitude>
+						<latitude>-21.0706789519606</latitude>
+						<altitude>0</altitude>
+						<heading>0.01042930989015414</heading>
+						<tilt>34.08207538128846</tilt>
+						<range>280.4656714982478</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22343258394199,-21.07080942956875,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Cubana club</name>
+					<description>activité: bar, boite de nuits
+_
+période: de 18h à 21h, 21h à 4h
+_
+festival: soirée de la femme, Salsa &amp; mojito party
+_
+période: mardi, jeudi
+_
+tél: 0262 33 24 91</description>
+					<LookAt>
+						<longitude>55.22739436872005</longitude>
+						<latitude>-21.05116735541982</latitude>
+						<altitude>0</altitude>
+						<heading>0.003037763362690011</heading>
+						<tilt>56.1902619422699</tilt>
+						<range>311.6822776943265</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22738010987549,-21.05200328210265,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>le Klub</name>
+					<description>activité: boite de nuits
+_
+période: vendredi, samedi, veille de jour férié</description>
+					<LookAt>
+						<longitude>55.22112308819531</longitude>
+						<latitude>-21.07363138004257</latitude>
+						<altitude>0</altitude>
+						<heading>6.92407364598636e-005</heading>
+						<tilt>27.74263765809544</tilt>
+						<range>226.596140983331</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22133464921713,-21.07358352842028,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>le Moulin du tango</name>
+					<description>activité: boite de nuits
+_
+période: vendredi, samedi et veille de jour férié</description>
+					<LookAt>
+						<longitude>55.22421144729667</longitude>
+						<latitude>-21.07044554640931</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0004939396786560297</heading>
+						<tilt>20.92854465369273</tilt>
+						<range>289.3690246856559</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22292795289139,-21.07009268385072,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>les Roches noires</name>
+					<description>activité: boite de nuits
+_
+festival: gratuit pour les dames (22h à 22h30)
+_
+période: samedi et veille de jour férié de 19h à 5h
+_
+tél: 0262 244415
+gsm: 0692 505099</description>
+					<LookAt>
+						<longitude>55.22817869443641</longitude>
+						<latitude>-21.05306862675532</latitude>
+						<altitude>0</altitude>
+						<heading>-0.002135781167453239</heading>
+						<tilt>27.26436342219095</tilt>
+						<range>173.7889319501167</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22818926321163,-21.05301118461028,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>le privé</name>
+					<description>activité: boite de nuits, restaurant de nuits
+_
+période: du mardi au dimanche de 23h à 5h
+_
+festival: femmes libérées ( gratuit pour femme entrer et boissons), soiré homme (gratuit pour tous  strip), électro
+_
+ période: mardi, jeudi, dimanche</description>
+					<LookAt>
+						<longitude>55.22183641587796</longitude>
+						<latitude>-21.04767352404367</latitude>
+						<altitude>0</altitude>
+						<heading>-6.289076558230873e-005</heading>
+						<tilt>20.66362641199811</tilt>
+						<range>334.096986781129</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22183964126485,-21.04791593552743,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintPaul</name>
+				<Placemark>
+					<name>festival de la musique</name>
+					<open>1</open>
+					<description>festival: musique
+_
+période: du 20 au 22/06/14 de 18h, 17h, 18h</description>
+					<LookAt>
+						<longitude>55.27429836224167</longitude>
+						<latitude>-21.00549479577505</latitude>
+						<altitude>0</altitude>
+						<heading>0.01067906468313013</heading>
+						<tilt>36.55318471166484</tilt>
+						<range>1343.746572864378</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.27451060706278,-21.00674180823589,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Léspas Culturel Leconte de Lisle</name>
+					<description>festival: Jazz &amp; classique, Les compagnies des Indes, histoire et anthropologie (rencontre), À droite !(spectacle), Lékol est finie(soirée), Kafmaron, Les cristaux de sucre et les charbons ardents (danse)
+_
+période: VEN 20 JUIN 2014 - 20:00, MER 25 JUIN 2014 - 18:00, JEU 26 JUIN 2014 - 20:00, VEN 4 JUIL 2014 - 19:00, VEN 22 AOÛ 2014 - 20:00, VEN 21 NOV 2014 - 20:00
+_
+tél: 02 62 59 39 70</description>
+					<LookAt>
+						<longitude>55.27273101257932</longitude>
+						<latitude>-21.00803193536152</latitude>
+						<altitude>0</altitude>
+						<heading>0.00886567311637243</heading>
+						<tilt>25.58237781818075</tilt>
+						<range>490.8412704899463</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.27227179973563,-21.00779553745777,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>La Cerise</name>
+					<description>festival: Saïfah, Christine Salem + Sauvage, Venise zigouillée, Café Repaire, Pierre Desproges au Théâtre Grévin 1984, Airzik, Kitch boom, Kaplawsé, Katwaly
+_
+période: VEN 20 JUIN 2014 - 20:00, SAM 21 JUIN 2014 - 20:00, MAR 24 JUIN 2014 - 20:00, MER 25 JUIN 2014 - 20:00, JEU 26 JUIN 2014 - 20:00, VEN 27 JUIN 2014 - 20:00, SAM 28 JUIN 2014 - 20:00, SAM 5 JUIL 2014 - 20:00, VEN 18 JUIL 2014 - 20:00
+_
+tél: 0262 96 21 69</description>
+					<LookAt>
+						<longitude>55.27197487880306</longitude>
+						<latitude>-21.00772181875929</latitude>
+						<altitude>0</altitude>
+						<heading>0.005777626264652786</heading>
+						<tilt>28.98114212716624</tilt>
+						<range>232.1505358322158</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.27207713908896,-21.0076982658244,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Là-bas, Ter la</name>
+					<description>activité: restaurant
+_
+festival: Jean-Marie Cathelain (peinture)
+_
+période:du 29/04/14 au 28/06/14
+_
+tél: 02 62 57 10 51</description>
+					<LookAt>
+						<longitude>55.27394733386369</longitude>
+						<latitude>-21.00679082397569</latitude>
+						<altitude>0</altitude>
+						<heading>0.01001978467044982</heading>
+						<tilt>29.41945020185911</tilt>
+						<range>443.4343834275588</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.27280928867608,-21.00739241300754,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Safari night</name>
+					<description>activité: boite de nuits
+_
+té: 0262259913</description>
+					<LookAt>
+						<longitude>55.29834236509705</longitude>
+						<latitude>-20.986612083002</latitude>
+						<altitude>0</altitude>
+						<heading>-0.01242098316780577</heading>
+						<tilt>29.80823291070499</tilt>
+						<range>510.5155659776981</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.29757669663935,-20.98669736219554,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Mafate</name>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Sud</name>
+			<Folder>
+				<name>PlaineDesCafres</name>
+			</Folder>
+			<Folder>
+				<name>LesAvirons</name>
+				<Placemark>
+					<name>festival de la musique</name>
+					<description>festival: musique _
+période: du 20 au 21/06/14 de 17h, 15h</description>
+					<LookAt>
+						<longitude>55.33306411356328</longitude>
+						<latitude>-21.23880645506105</latitude>
+						<altitude>0</altitude>
+						<heading>0.01798483941862797</heading>
+						<tilt>59.32913950324831</tilt>
+						<range>355.4797302948181</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.33280616188489,-21.23933389458712,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintLouis</name>
+				<Placemark>
+					<name>Etang du Gol</name>
+					<description>festival: Les Rencontres Alternatives 
+_ 
+période: DIM 22 JUIN 2014 - 10:00</description>
+					<LookAt>
+						<longitude>55.39046681087326</longitude>
+						<latitude>-21.28526668821777</latitude>
+						<altitude>0</altitude>
+						<heading>0.03204437973239833</heading>
+						<tilt>14.4215416372377</tilt>
+						<range>1222.853020782717</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.39248009476094,-21.28681268353241,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>EntreDeux</name>
+			</Folder>
+			<Folder>
+				<name>EtangSale</name>
+				<Placemark>
+					<name>Théâtre des Sables</name>
+					<description>festival: Avenue des artistes (danse), Avenue des artistes (danse), Le chat qui apprend à la mouette à danser (danse), Danyèl Waro + Apolonia
+_
+période: SAM 21 JUIN 2014 - 19:00, DIM 22 JUIN 2014 - 17:00, SAM 28 JUIN 2014 - 20:00, SAM 22 NOV 2014 - 20:00
+_
+tél: 02 62 26 50 97</description>
+					<LookAt>
+						<longitude>55.37052597588149</longitude>
+						<latitude>-21.26834564561186</latitude>
+						<altitude>0</altitude>
+						<heading>0.0004663297017813686</heading>
+						<tilt>19.22452305622492</tilt>
+						<range>426.3851410781583</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.37081447759456,-21.26854898165905,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Bambou</name>
+					<description>festival: Patrick Vongxay (peinture)
+_
+période: du 28/04/14 au 25/06/14
+_
+tél: 02 62 91 70 28</description>
+					<LookAt>
+						<longitude>55.33410998361968</longitude>
+						<latitude>-21.26564337217453</latitude>
+						<altitude>0</altitude>
+						<heading>-1.971484162869839e-006</heading>
+						<tilt>5.458775909411855</tilt>
+						<range>752.9207663741939</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.33410998361968,-21.26564337217453,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Atelier Aurellll’Art</name>
+					<description>festival: Décollage(multi-supports)
+_
+période: du 05/05/14 au 30/06/14
+_
+tél: 06 92 41 28 70</description>
+					<LookAt>
+						<longitude>55.36557122393679</longitude>
+						<latitude>-21.26367087649021</latitude>
+						<altitude>0</altitude>
+						<heading>-0.005693200114616535</heading>
+						<tilt>33.3640725353323</tilt>
+						<range>499.9882405266806</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.36483106908338,-21.26356483714391,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Cilaos</name>
+			</Folder>
+			<Folder>
+				<name>Tampon</name>
+				<Placemark>
+					<name>La Diligence / Le Grillanoo</name>
+					<open>1</open>
+					<description>festival: Déjeuner-concert avec Mickaël Pouvin
+_
+période: DIM 29 JUIN 2014 - 12:00</description>
+					<LookAt>
+						<longitude>55.57758827543191</longitude>
+						<latitude>-21.19419242817108</latitude>
+						<altitude>0</altitude>
+						<heading>-0.002660009132679045</heading>
+						<tilt>15.26659616799742</tilt>
+						<range>818.4835875199002</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.57700959940202,-21.19426374882641,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Salle Rita et Charles Beaudemoulin</name>
+					<open>1</open>
+					<description>activité: musée
+_
+tél: 0262 57 62 66
+_
+fesival: Games banality (multi-supports)
+_
+période: du 31/05/14 au 27/06/14</description>
+					<LookAt>
+						<longitude>55.51613488794998</longitude>
+						<latitude>-21.27815684127467</latitude>
+						<altitude>0</altitude>
+						<heading>-0.001275911443919226</heading>
+						<tilt>22.57973418922879</tilt>
+						<range>467.2190691911437</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.51561822457661,-21.27803332094741,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Vintage Café</name>
+					<description>festival: Boodoo Fighters + Miroots + Kaliko Musik Band
+_
+période: VEN 20 JUIN 2014 - 20:00
+tél :0262265167</description>
+					<LookAt>
+						<longitude>55.51158004579069</longitude>
+						<latitude>-21.27182719659983</latitude>
+						<altitude>0</altitude>
+						<heading>0.003675106167533967</heading>
+						<tilt>19.51364248094672</tilt>
+						<range>339.7641049602894</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.51139437696962,-21.27192447075336,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Ravine Blanche</name>
+					<description>festival: La krwazé des suds
+_
+période: DIM 29 JUIN 2014 - 19:00</description>
+					<LookAt>
+						<longitude>55.46113267722443</longitude>
+						<latitude>-21.33811798175474</latitude>
+						<altitude>0</altitude>
+						<heading>0.0004139443990229991</heading>
+						<tilt>9.153453620385863</tilt>
+						<range>607.5870193897551</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.45998083082272,-21.33843038481016,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>O’Zambrocal</name>
+					<description>activité: bar
+_
+festival:Dîner-concert avec Run Soul
+_
+période: SAM 5 JUIL 2014 - 19:00</description>
+					<LookAt>
+						<longitude>55.45085137046079</longitude>
+						<latitude>-21.32084202475953</latitude>
+						<altitude>0</altitude>
+						<heading>0.0004729258784921651</heading>
+						<tilt>21.75006332924448</tilt>
+						<range>1343.528575553691</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.44873383053875,-21.32216287976459,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>PetiteIle</name>
+			</Folder>
+			<Folder>
+				<name>SaintPierre</name>
+				<Placemark>
+					<name>LE SHAMROCK&apos;S</name>
+					<open>1</open>
+					<description>activité:café, bar, snack, boite de nuits
+_
+période: du lundi au jeudi de 22h à 4h, vendredi et samedi de 23h à 5h
+_
+gsm: 06 92 26 16 35</description>
+					<LookAt>
+						<longitude>55.47965400035722</longitude>
+						<latitude>-21.33113199987313</latitude>
+						<altitude>0</altitude>
+						<heading>-1.299352004018291e-010</heading>
+						<tilt>0</tilt>
+						<range>1000.000125814366</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47965400035722,-21.33113199987313,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>festival de la musique</name>
+					<open>1</open>
+					<description>festival: musique _
+période: du 20 au 22/06/14 de 17h, 18h, 15h</description>
+					<LookAt>
+						<longitude>55.47711555998232</longitude>
+						<latitude>-21.33966506286141</latitude>
+						<altitude>0</altitude>
+						<heading>8.702247096603685e-005</heading>
+						<tilt>35.85197734814808</tilt>
+						<range>654.5180639735506</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47670372634322,-21.33949837638384,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Long Board Café</name>
+					<description>festival: Run Soul, concert, concert, Soirée Karaoké, Soirée Karaoké, Hat’Mosphère + soirée belge, Soirée belge, Soirée Karaoké, Soirée Karaoké, Soirée Karaoké 
+_
+période: VEN 20 JUIN 2014 - 20:00, VEN 20 JUIN 2014 - 22:30, SAM 21 JUIN 2014 - 22:30, DIM 22 JUIN 2014 - 21:00, MAR 24 JUIN 2014 - 21:00, VEN 27 JUIN 2014 - 22:00, SAM 28 JUIN 2014 - 20:00, DIM 29 JUIN 2014 - 21:00, MAR 1 JUIL 2014 - 21:00, DIM 6 JUIL 2014 - 21:00
+_
+tél: 0262391799</description>
+					<LookAt>
+						<longitude>55.46991474771797</longitude>
+						<latitude>-21.34416641194061</latitude>
+						<altitude>0</altitude>
+						<heading>-1.15033918684973e-005</heading>
+						<tilt>16.79225096834997</tilt>
+						<range>402.1533393863982</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46987062070193,-21.34417219359032,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Little Italy</name>
+					<description>festival: Saodaj’_
+période: VEN 20 JUIN 2014 - 19:30_
+tél: 02 62 70 00 92</description>
+					<LookAt>
+						<longitude>55.47696699936693</longitude>
+						<latitude>-21.34297600040559</latitude>
+						<altitude>0</altitude>
+						<heading>2.30453450554802e-010</heading>
+						<tilt>0</tilt>
+						<range>1000.000078350064</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47695701462881,-21.34309225592896,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Long Board Café</name>
+					<description>festival: Run Soul, concert, concert, karaoké, karaoké, Hat’Mosphère + soirée belge, Soirée belge, karaoké,karaoké,karaoké
+_
+période: VEN 20 JUIN 2014 - 20:00, VEN 20 JUIN 2014 - 22:30, SAM 21 JUIN 2014 - 22:30, DIM 22 JUIN 2014 - 21:00, MAR 24 JUIN 2014 - 21:00, VEN 27 JUIN 2014 - 22:00, SAM 28 JUIN 2014 - 20:00, DIM 29 JUIN 2014 - 21:00, MAR 1 JUIL 2014 - 21:00, DIM 6 JUIL 2014 - 21:00
+_
+tél: 0262 39 17 99</description>
+					<LookAt>
+						<longitude>55.46990415708299</longitude>
+						<latitude>-21.34420090765475</latitude>
+						<altitude>0</altitude>
+						<heading>-8.732491747402308e-006</heading>
+						<tilt>19.0023033016602</tilt>
+						<range>369.0304313935476</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46988566113733,-21.34414880424766,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Ô Pub à Tapas</name>
+					<description>festival: Miguy ek Badoumpok, Ak Fisa + scène ouverte, KaraÔpub(soirée), Dubstep Run : DJ Ago &amp; dalons (clubbing), Concert de fin d’année de l’EMA Réunion, KaraÔpub(soirée), Katwaly
+_
+période: VEN 20 JUIN 2014 - 22:00, SAM 21 JUIN 2014 - 22:00, JEU 26 JUIN 2014 - 20:30, VEN 27 JUIN 2014 - 22:00, SAM 28 JUIN 2014 - 22:00, JEU 3 JUIL 2014 - 20:30, VEN 4 JUIL 2014 - 22:00
+_
+tél: 0262 34 61 94</description>
+					<LookAt>
+						<longitude>55.47229300007616</longitude>
+						<latitude>-21.34161900003538</latitude>
+						<altitude>0</altitude>
+						<heading>-2.768831877948065e-011</heading>
+						<tilt>0</tilt>
+						<range>1000.000099924313</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47229300007616,-21.34161900003539,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Centre Culturel Lucet Langenier</name>
+					<description>festival: Vavangue se met en scène, Spectacle gagnant des &quot;petits spect’Acteurs&quot; (théatre), Le Golem (théatre),Tout bo or not tout bo ? (spectacle), Johny Guichard &quot;To bo or not to bo&quot; (spectacle)
+_
+période: SAM 21 JUIN 2014 - 18:30, SAM 21 JUIN 2014 - 20:00, SAM 28 JUIN 2014 - 20:00, SAM 5 JUIL 2014 - 20:00, SAM 5 JUIL 2014 - 20:00
+_
+tél: 0262 96 24 50</description>
+					<LookAt>
+						<longitude>55.4658580001124</longitude>
+						<latitude>-21.33357100017616</latitude>
+						<altitude>0</altitude>
+						<heading>-4.086535682478398e-011</heading>
+						<tilt>0</tilt>
+						<range>1000.000092328489</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46585800011239,-21.33357100017616,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>O’Flamboyant</name>
+					<description>festival: Regards croisés (photographie)
+_
+période: du 01/06/14 au 31/07/14
+_
+tél: 02 62 35 02 15</description>
+					<LookAt>
+						<longitude>55.47774811795122</longitude>
+						<latitude>-21.33669381387717</latitude>
+						<altitude>0</altitude>
+						<heading>-3.545893865781846e-009</heading>
+						<tilt>0</tilt>
+						<range>1002.52451486849</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47774811795122,-21.33669381387717,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Hôpital de St Pierre</name>
+					<description>activité: hopital
+_
+tél: 02 62 35 90 00
+_
+festival: Griotte (peinture)
+_
+période: du 16/06/14 au 6/07/14</description>
+					<LookAt>
+						<longitude>55.49312912562477</longitude>
+						<latitude>-21.34676258419738</latitude>
+						<altitude>0</altitude>
+						<heading>-0.003718053880725959</heading>
+						<tilt>14.02275231146757</tilt>
+						<range>491.0287154801066</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.49222120774819,-21.34684745779109,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Les Sal’Gosses</name>
+					<description>activité: bar
+_
+tél: 02 62 96 70 36
+_
+festival: Jimmy Robert
+_
+période: MER 25 JUIN 2014 - 20:00</description>
+					<LookAt>
+						<longitude>55.47452499953742</longitude>
+						<latitude>-21.34355099981227</latitude>
+						<altitude>0</altitude>
+						<heading>1.683626620632713e-010</heading>
+						<tilt>0</tilt>
+						<range>1000.000167922707</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47452499953742,-21.34355099981227,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Centre de langues K’osez</name>
+					<description>festival: Afrikabar
+_
+période: SAM 28 JUIN 2014 - 14:30
+_
+tél: 06 92 62 28 26</description>
+					<LookAt>
+						<longitude>55.47964600014907</longitude>
+						<latitude>-21.33466999977636</latitude>
+						<altitude>0</altitude>
+						<heading>-5.421891565490857e-011</heading>
+						<tilt>0</tilt>
+						<range>1000.00008216742</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47964600014908,-21.33466999977636,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Chapiteau</name>
+					<description>activité: discothèque, restaurant
+_ 
+tél: 0262310081
+_
+gsm: 080599
+_
+festival: au must (clubbing), a l&apos;arena (clubbing), 974 BEACH PARTY , 40e anniversaire (clubbing)
+_
+période:  vendredi  samedi de 22h à 5h, samedi de 2h à 7h, 05/07/2014, 12/07/2014</description>
+					<LookAt>
+						<longitude>55.52221553613617</longitude>
+						<latitude>-21.33519416140652</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0004368393735922413</heading>
+						<tilt>10.31581816004807</tilt>
+						<range>1625.245453206017</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.52080716514898,-21.33593312426859,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>l&apos;Africa queen</name>
+					<description>activité: boite de nuits (clubbing)
+_
+période: vendredi, samedi, et veille de jour férié de 23h30
+_
+festival: passe avec tes copines (clubbing), fiesta saturday
+_
+période: vendredi, samedi
+_
+tél: 0262 25 28 09
+gsm: 0692 38 38 06</description>
+					<LookAt>
+						<longitude>55.4742671135018</longitude>
+						<latitude>-21.34390295961207</latitude>
+						<altitude>0</altitude>
+						<heading>0.00485377349081325</heading>
+						<tilt>37.67033702538682</tilt>
+						<range>151.4594912922643</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47415579305871,-21.34400590195313,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>le Blue Cat</name>
+					<description>activité: bar, boite de nuits (clubbing)
+_
+période: du mardi au dimanche de 23h à 5h</description>
+					<LookAt>
+						<longitude>55.46820525643668</longitude>
+						<latitude>-21.34363739787964</latitude>
+						<altitude>0</altitude>
+						<heading>-1.562322036650671e-005</heading>
+						<tilt>29.03288473351447</tilt>
+						<range>240.2028806604531</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46800996674229,-21.34367613794624,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>le Khalif</name>
+					<description>activité: boite de nuits
+_
+festival: TROPICAL OBSESSION, soirée( clubbing)
+_
+période: samedi, vendredi
+_
+gsm: 06 93 00 97 21</description>
+					<LookAt>
+						<longitude>55.47476519739308</longitude>
+						<latitude>-21.34365276037891</latitude>
+						<altitude>0</altitude>
+						<heading>0.0008943736003930616</heading>
+						<tilt>29.22970263582284</tilt>
+						<range>230.3461194819183</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.4742479473511,-21.3437428105311,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>le zaza club</name>
+					<description>activité: boite de nuits
+_
+période: mercredi au samedi et les veille de jour férié de 23h</description>
+					<LookAt>
+						<longitude>55.47806999929678</longitude>
+						<latitude>-21.34128800007165</latitude>
+						<altitude>0</altitude>
+						<heading>2.559694504868431e-010</heading>
+						<tilt>0</tilt>
+						<range>1000.000182599316</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47806999929678,-21.34128800007165,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintJoseph</name>
+				<Placemark>
+					<name>St Joseph</name>
+					<description>festival: musique
+_
+période: SAM 21 JUIN 2014 - 19:00</description>
+					<LookAt>
+						<longitude>55.62021111511622</longitude>
+						<latitude>-21.37855821087622</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1190920734680015</heading>
+						<tilt>34.98840451044041</tilt>
+						<range>1202.646599983009</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.61825387683619,-21.37849091155148,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>le Moulin rouge</name>
+					<description>activité: boite de nuits
+_
+tél: 0262.56.27.40</description>
+					<LookAt>
+						<longitude>55.61358700007087</longitude>
+						<latitude>-21.37564799989106</latitude>
+						<altitude>0</altitude>
+						<heading>-2.582928456816522e-011</heading>
+						<tilt>0</tilt>
+						<range>1000.000167367758</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.61358700007087,-21.37564799989106,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>saintPhillipe</name>
+				<open>1</open>
+			</Folder>
+			<Folder>
+				<name>enclosTremblet</name>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Est</name>
+			<Folder>
+				<name>SainteAnne</name>
+			</Folder>
+			<Folder>
+				<name>SaintAndre</name>
+				<Placemark>
+					<name>le collosse</name>
+					<description>festival: musique
+_
+période: SAM 21 JUIN 2014 - 15:00</description>
+					<LookAt>
+						<longitude>55.66146044828854</longitude>
+						<latitude>-20.92973859876098</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1153974542866373</heading>
+						<tilt>27.88941500538604</tilt>
+						<range>934.120798608258</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.66172154529839,-20.92879359040141,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintBenoit</name>
+				<Placemark>
+					<name>Conservatoire à Rayonnement Régional de St Benoît</name>
+					<description>activité: conservatoire
+_
+tél: 02 62 50 42 72
+_
+festival: Zambavil
+_
+période: SAM 21 JUIN 2014 - 20:00</description>
+					<LookAt>
+						<longitude>55.71595639334917</longitude>
+						<latitude>-21.04753484759895</latitude>
+						<altitude>0</altitude>
+						<heading>0.0003616050761541041</heading>
+						<tilt>21.16538963136032</tilt>
+						<range>293.2831908312683</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.71564736251121,-21.04808219203638,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Théâtre Les Bambous</name>
+					<description>festival: L’ambiance mauricienne, Voyaz samb la danse
+_
+période: SAM 21 JUIN 2014 - 20:30, SAM 28 JUIN 2014 - 16:00</description>
+					<LookAt>
+						<longitude>55.72100814161444</longitude>
+						<latitude>-21.03825311764544</latitude>
+						<altitude>0</altitude>
+						<heading>-0.002024883306631796</heading>
+						<tilt>24.59843798235701</tilt>
+						<range>1396.048651847122</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.71796035496728,-21.03912134690449,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>BrasPanon</name>
+			</Folder>
+			<Folder>
+				<name>SainteRose</name>
+				<Placemark>
+					<name>roz D&apos;zil</name>
+					<description>activité: boite de nuits
+_
+période: vendredi et samedi
+_
+tél: 0262.47.36.06</description>
+					<LookAt>
+						<longitude>55.80583305660542</longitude>
+						<latitude>-21.13599971902769</latitude>
+						<altitude>0</altitude>
+						<heading>-3.177085255924799e-005</heading>
+						<tilt>7.276552701822267</tilt>
+						<range>671.5551637878814</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.80646202506258,-21.13608339473225,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>LaPlaineDesPalmiste</name>
+			</Folder>
+			<Folder>
+				<name>Salazie</name>
+			</Folder>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

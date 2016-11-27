@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="webPU" transaction-type="JTA">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <jta-data-source>selekta</jta-data-source>
+    <!-- <exclude-unlisted-classes>false</exclude-unlisted-classes>-->
+    <class>run.ejb.base.entite.TempKml</class>
+    <class>run.ejb.entite.client.Contact</class>
+    <class>run.ejb.entite.client.Compte</class>
+    <class>run.ejb.entite.climat.PrevMt</class>
+    <class>run.ejb.entite.climat.Meteo</class>
+    <class>run.ejb.entite.geo.Evnmt</class>
+    <class>run.ejb.entite.geo.Coord</class>
+    <class>run.ejb.entite.geo.Prmtr</class>
+    <class>run.ejb.entite.geo.Pt</class>
+    <class>run.ejb.entite.geo.Tour</class>
+    <class>run.ejb.entite.geo.Ligne</class>
+    <class>run.ejb.entite.geo.Localite</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <validation-mode>NONE</validation-mode>
+    <properties>
+      <property name="hbm2ddl.auto" value="create"/>
+      <property name="hibernate.cache.use_second_level_cache" value="true"/>
+      <!-- hsql db -->
+      <!-- Database connection settings -->
+      <!--<property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver"/>
+      <property name="hibernate.connection.url" value="jdbc:hsqldb:file:runsensedb [runsense on PUBLIC]"/>
+      <property name="hibernate.connection.user" value="runsense"/>
+      <property name="hibernate.connection.password" value="runsense974"/>
+      <property name="hibernate.connection.driver_class" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="hibernate.connection.url" value="jdbc:derby://localhost:1527/KmlBdd [runsense on RUNSENSE]"/>
+      <property name="hibernate.connection.user" value="runsense"/>
+      <property name="hibernate.connection.password" value="runsense974"/>-->
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.format" value="true"/>
+      <property name="hibernate.connection.characterEncoding" value="utf8"/>
+      <property name="hibernate.id.new_generator_mappings" value="true"/>
+      <property name="hibernate.archive.autodetection" value="class"/>
+      <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+      <!-- <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
+      <property name="hibernate.dialect" value=" org.hibernate.dialect.DerbyDialect"/>-->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+      <property name="hibernate.generateDdl" value="true"/>
+      <!--<property name="hibernate.transaction.flush_before_completion" value="true"/>-->
+      <!--<property name="hibernate.transaction.manager_lookup_class" value="org.hibernate.transaction.SunONETransactionManagerLookup"/>-->
+      <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+      <!--<property name="hibernate.ejb.cfgfile" value="META-INF/hibernate.cfg.xml"/>-->
+      <property name="hibernate.transaction.factory_class" value="org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory"/>
+      <!--<property name="hibernate.transaction.factory_class" value="org.hibernate.ejb.transaction.JoinableCMTTransactionFactory"/>-->
+      <!--<property name="hibernate.search.default.directory_provider" value="fileSystem"/>-->
+      <property name="hibernate.search.default.directory_provider" value="org.hibernate.search.store.impl.FSDirectoryProvider"/>
+      <property name="hibernate.search.default.indexBase" value="/home/runsense/index/"/>
+      <property name="hibernate.search.Rules.directory_provider" value="org.hibernate.search.store.impl.RAMDirectoryProvider"/>
+      <property name="hibernate.search.lucene_version" value="LUCENE_CURRENT"/>
+      <!-- <property name="org.hibernate.ejb.HibernatePersistence" value="org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider"/>-->
+      <!--<property name="hibernate.c3p0.min_size" value="8"/>
+      <property name="hibernate.c3p0.max_size" value="32"/>
+      <property name="hibernate.c3p0.timeout" value="300"/>
+      <property name="hibernate.c3p0.max_statements" value="100"/>
+      <property name="hibernate.c3p0.idle_test_period" value="3000"/>-->
+      <!--<property name="javax.persistence.lock.timeout" value="0"/>-->
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="javax.persistence.schema-generation-action" value="create"/>
+      <property name="javax.persistence.schema-generation-target" value="database"/>
+    </properties>
+  </persistence-unit>
+</persistence>

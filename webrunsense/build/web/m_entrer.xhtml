@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pm="http://primefaces.org/mobile">
+     
+    <f:view renderKitId="PRIMEFACES_MOBILE" />
+     
+    <h:head>
+        <link type="text/css" rel="stylesheet"
+            href="#{request.contextPath}/resources/css/run.min.css" />
+    </h:head>
+     
+    <h:body>
+        
+        <pm:page id="first" title="recherche">
+            <pm:header title="Navigation" swatch="a">
+                <p:panelGrid columns="3">
+                    <p:button value="Sentier" icon="search"  href="#ville?reverse=true" />
+                    <p:button value="carte 2d"  href="m_map.re"  />
+                    <p:button value="climat" icon="info" href="m_temps.re"  />
+                </p:panelGrid>
+            </pm:header>
+
+            <pm:content >
+                <h:form>
+                    <p:panelGrid columns="2">
+                           <p:button value="recherche rapide" icon="search" href="#rchRap?reverse=false" />
+                           <p:button value="recherche thématique"  href="#rchTheme?reverse=false"  /> 
+                    </p:panelGrid>
+                    
+                    <p:separator />
+                    
+                  
+                        <h:outputScript name="titre" value="recherche des sentiers sur zone" />
+                        <p:dataList id="m-zone"  value="#{mobileBean.lzone}" var="tzone" >
+                            <f:facet name="header">
+                                #{tzone}
+                            </f:facet>
+                            <p:commandButton action="pm:ville?transition=slidedown" value="#{tzone}" 
+                                             update=":ville:flville">
+                                <f:setPropertyActionListener target="#{mobileBean.res}" value="#{tzone}"  />
+                            </p:commandButton >
+                        </p:dataList>
+                      
+                
+                </h:form>        
+            </pm:content>
+        </pm:page>
+        <pm:page id="ville" >
+            <pm:header title="Choix de sentier" swatch="a">
+                <a data-rel="back">Back</a>
+               
+                    <p:button value="Zone" icon="home" href="#main?reverse=true" styleClass="ui-btn-active"/>
+                    <p:button value="carte 2d" icon="info" href="m_map.re" />
+                    <p:button value="climat" icon="info" href="m_temps.re" />
+                
+            </pm:header>
+            <pm:content>
+                <h:form id="flville">
+                  
+                        
+                <p:panel id="pnllville" header=" Secteur : #{mobileBean.ligne}" >
+                
+                    <h:outputText value="#{mobileBean.ligne.nom}" />
+                            <h:outputText value="#{mobileBean.ligne.description}" />
+                      
+                            <p:dataList id="m-ville" value="#{mobileBean.lville}" var="tville">
+                                <p:commandButton action="pm:sentier?transition=flow" value="#{tville}"
+                                                 update=":sentier">
+                            
+                                    <f:setPropertyActionListener target="#{mobileBean.res}" value="#{tville}" /> 
+                                </p:commandButton>
+                            </p:dataList>
+                
+                </p:panel>
+                    
+              </h:form>  
+            </pm:content>
+
+        </pm:page>
+        <pm:page id="sentier" >
+            <pm:header title="Choix de sentier" swatch="a">
+                <a data-rel="back">Back</a>
+                
+                    <p:button value="Zone" icon="back" href="#main?reverse=true" styleClass="ui-btn-active"/>
+                    <p:button value="carte 2d" icon="info" href="m_map.re" />
+                    <p:button value="climat" icon="info" href="m_temps.re" />
+               
+            </pm:header>
+            <pm:content>  
+                <h:form>
+                  <p:panel header=" Descrition de la ville : #{mobileBean.ligne.nom}" >
+                  <h:outputText value="#{mobileBean.ligne.nom}" />
+                  <h:outputText value="#{mobileBean.ligne.description}" />
+                </p:panel>
+                <p:panel header= "#{mobileBean.res}" >
+                
+                       
+                            <p:dataList id="m-sentier" value="#{mobileBean.lsentier}"  var="tsentier">
+                                
+                                <p:commandButton action="Carte"  value="#{tsentier.nom}"    >
+                                    <f:setPropertyActionListener target="#{mobileBean.res}" value="#{tsentier.nom}" />
+                                </p:commandButton>
+                                <h:outputText value="#{tsentier.description}"  /> 
+                            </p:dataList>
+                    
+                
+                </p:panel>
+                </h:form>  
+            </pm:content>
+        </pm:page>
+       
+        <pm:page id="rchTheme" >
+            <pm:header title="Recherche Thématique" swatch="a">
+                <a data-rel="back">Back</a>
+               
+                    <p:button value="Zone" icon="back" href="#main?reverse=true"/>
+                    <p:button value="carte 2d" icon="info" href="m_map.re" />
+                    <p:button value="climat" icon="info" href="m_temps.re" />
+              
+            </pm:header>
+            <pm:content>
+                <h:form>
+                <p:panel  >
+                 <pm:field >
+                   
+                           
+                         <p:dataList id="m-theme" value="#{mobileBean.lcateg}" var="tcateg" >
+                            <p:commandButton  value="#{tcateg}" update="@this"  >
+                                <f:setPropertyActionListener target="#{mobileBean.res}" value="#{tcateg}"  />
+                            </p:commandButton>
+                        </p:dataList> 
+                         <p:separator />
+                         <p:commandButton  value="#lancer la recherche" action="pm:resTheme"  />    
+                 
+                  
+                  </pm:field>
+                </p:panel>
+              </h:form>  
+            </pm:content>
+
+        </pm:page>
+        
+                   
+         <pm:page id="rchRap" >
+            <pm:header title="Recherche rapide" swatch="a">
+                <a data-rel="back">Back</a>
+               
+                    <p:button value="Zone" icon="back" href="#main?reverse=true"/>
+                    <p:button value="carte 2d" icon="info" href="m_map.re" />
+                    <p:button value="climat" icon="info" href="m_temps.re" />
+            
+            </pm:header>
+            <pm:content>
+              <h:form>  
+                <p:panel  >
+                 <pm:field >
+                    
+                         <p:outputPanel id="content" layout="block">
+                             <p:inputText id="name" value="#{mobileBean.res}"  label="Entrer une recherche"/>
+                             <p:commandButton  value="lancer la recherche"  >
+                            
+                             </p:commandButton>  
+                             </p:outputPanel>  
+                 
+                     <p:separator />
+                     
+                         <p:dataList id="m-result" value="#{mobileBean.lresult}" var="tres" >
+                                <p:outputPanel layout="block" style="text-align:center">
+                                    <p:commandButton action="Carte" value="#{tres.nom}"  >
+                                        <f:setPropertyActionListener target="#{mobileBean.res}" value="#{tres.nom}" />
+                                    </p:commandButton>
+                                    
+                                    <p:separator/>
+                                    #{tres.description}
+                                </p:outputPanel>
+
+                            </p:dataList> 
+                    
+                  </pm:field>
+                </p:panel>
+             </h:form>   
+            </pm:content>
+
+        </pm:page>
+       
+    </h:body>
+
+
+</html>

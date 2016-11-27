@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="m_temps.xhtml" x="3400" y="450" zoom="true"/>
+        <Node id="visite.xhtml" x="2400" y="150" zoom="true"/>
+        <Node id="TemplateSL.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="m_map.xhtml" x="900" y="1650" zoom="true"/>
+        <Node id="plateforme.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="run.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="Template.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="err.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="m_entrer.xhtml" x="1150" y="150" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

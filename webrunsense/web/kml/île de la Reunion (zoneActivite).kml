@@ -1,0 +1,2450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>île de la Reunion (zoneActivite).kml</name>
+	<open>1</open>
+	<Style id="s_ylw-pushpin50">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl30">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin70">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin50</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl30</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>île de la Reunion</name>
+		<open>1</open>
+		<Folder>
+			<name>Nord</name>
+			<open>1</open>
+			<Folder>
+				<name>LaPossession</name>
+				<Placemark>
+					<name>STADE YOURI GAGARINE</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE YOURI GAGARINE La Possession 97419 LA POSSESSION</description>
+					<LookAt>
+						<longitude>55.33143939653671</longitude>
+						<latitude>-20.93394953729803</latitude>
+						<altitude>0</altitude>
+						<heading>-0.02555593758941434</heading>
+						<tilt>29.08874318936256</tilt>
+						<range>279.0066978742528</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.33194334280037,-20.93391808194836,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE VALENTIN ABRAL</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE VALENTIN ABRAL La Possession 97419 LA POSSESSION</description>
+					<LookAt>
+						<longitude>55.71632520372503</longitude>
+						<latitude>-21.03520024633111</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1572820207015113</heading>
+						<tilt>24.60532936459566</tilt>
+						<range>330.1616679707792</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.34135000000001,-20.926866,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Raquette-club d&apos;Ekwalis</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club_
+tél: 02 62 91 09 16_  
+mail: http://www.ekwalis.com/nvxsite/index/raquettes/</description>
+					<LookAt>
+						<longitude>55.32895442764254</longitude>
+						<latitude>-20.95811094796861</latitude>
+						<altitude>0</altitude>
+						<heading>3.396536702203249e-005</heading>
+						<tilt>25.12479972964065</tilt>
+						<range>246.3884031834301</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.32876222723097,-20.95804456578312,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade la rivière des galets</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.31087883434638</longitude>
+						<latitude>-20.95834478348003</latitude>
+						<altitude>0</altitude>
+						<heading>0.003325970325076908</heading>
+						<tilt>31.49918304440696</tilt>
+						<range>377.9534182012387</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.31076003935383,-20.95822743536435,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>LePort</name>
+				<Placemark>
+					<name>STADE GEORGES LAMBRAKIS</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE GEORGES LAMBRAKIS 1 AVENUE RAYMOND MONDON 97420 LE PORT</description>
+					<LookAt>
+						<longitude>55.4973354668415</longitude>
+						<latitude>-20.91600654329989</latitude>
+						<altitude>0</altitude>
+						<heading>-0.08831772267543311</heading>
+						<tilt>32.6493985732555</tilt>
+						<range>998.1651711217235</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.30084,-20.932899,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>COMPLEXE SPORTIF</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+COMPLEXE SPORTIF 1 TERRAIN A Le Port 97420 LE PORT</description>
+					<LookAt>
+						<longitude>55.56155770833406</longitude>
+						<latitude>-21.26214851659887</latitude>
+						<altitude>0</altitude>
+						<heading>0.05764850589551306</heading>
+						<tilt>31.07368797853479</tilt>
+						<range>28248.46003934813</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.2899611111111,-20.948384,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Union sportive de la pointe des Galets</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.29971177151791</longitude>
+						<latitude>-20.93331087898157</latitude>
+						<altitude>0</altitude>
+						<heading>-9.569869499578886e-005</heading>
+						<tilt>11.98063551044473</tilt>
+						<range>395.6605306314611</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.29984107802356,-20.93287614468713,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SainteMarie</name>
+				<Placemark>
+					<name>STADE DUPARC</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE DUPARC Rue Marcel Goulette 97438 STE MARIE</description>
+					<LookAt>
+						<longitude>55.52135664305511</longitude>
+						<latitude>-20.90325306047419</latitude>
+						<altitude>0</altitude>
+						<heading>0.06451623632798355</heading>
+						<tilt>27.48052123848785</tilt>
+						<range>328.4780116163243</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.52101029929088,-20.90310562247694,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Association sportive et culturelle de l’Aviation civile</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.50976236174002</longitude>
+						<latitude>-20.89313677609652</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0001179172109050054</heading>
+						<tilt>14.5317606921747</tilt>
+						<range>480.118228516281</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.50953142762496,-20.89299624642469,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Sainte-Marie tennis-club</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.51432582736277</longitude>
+						<latitude>-20.91451240025549</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0001136063040977571</heading>
+						<tilt>12.94410436853769</tilt>
+						<range>448.8561561559328</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.5145401411802,-20.91418417564771,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.51431438980943</longitude>
+						<latitude>-20.91474167733694</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0001095227078425604</heading>
+						<tilt>12.94410233330222</tilt>
+						<range>447.8446631113499</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.5144486800784,-20.91467849095505,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintDenis</name>
+				<Placemark>
+					<name>STADE Olympique PAUL JULIUS BENARD</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot, stade d&apos;athlétisme_
+STADE PAUL JULIUS BENARD RUE JACQUOT 97460 ST PAUL</description>
+					<LookAt>
+						<longitude>55.29048084859026</longitude>
+						<latitude>-20.98271743355696</latitude>
+						<altitude>0</altitude>
+						<heading>0.1485167631320896</heading>
+						<tilt>29.66223234467207</tilt>
+						<range>1138.269872342747</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin10</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.29027663012494,-20.98246925828941,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DE LA BRETAGNE</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE DE LA BRETAGNE St Denis 97400 ST DENIS</description>
+					<LookAt>
+						<longitude>55.49605680894918</longitude>
+						<latitude>-20.91492648597356</latitude>
+						<altitude>0</altitude>
+						<heading>-0.08366499491559733</heading>
+						<tilt>29.24540959919889</tilt>
+						<range>282.3718462304053</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.49644284429315,-20.9148939898187,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DE L EST JEAN IVOULA</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE DE L EST JEAN IVOULA 10 RUE DU STADE DE L EST COMMUNE PRIMA 97490 ST DENIS</description>
+					<LookAt>
+						<longitude>55.50112786891783</longitude>
+						<latitude>-20.895504473637</latitude>
+						<altitude>0</altitude>
+						<heading>-0.07082583774465083</heading>
+						<tilt>20.27496350559188</tilt>
+						<range>327.37629335446</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.50146091657843,-20.89510963737571,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DEUX CANONS</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE DEUX CANONS St Denis 97400 ST DENIS</description>
+					<LookAt>
+						<longitude>55.47493639305998</longitude>
+						<latitude>-20.89105123628195</latitude>
+						<altitude>0</altitude>
+						<heading>0.08418431326118175</heading>
+						<tilt>29.66925927913506</tilt>
+						<range>506.5255691351083</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47503833264367,-20.89068821042726,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE CHAUDRON</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE CHAUDRON B St Denis 97400 ST DENIS</description>
+					<LookAt>
+						<longitude>55.48885012399489</longitude>
+						<latitude>-20.88909778632803</latitude>
+						<altitude>0</altitude>
+						<heading>0.07423162256163289</heading>
+						<tilt>33.40002613496289</tilt>
+						<range>256.9559818594076</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.4888706131531,-20.88898222422334,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DU MOUFIA</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE DU MOUFIA St Denis 97400 ST DENIS</description>
+					<LookAt>
+						<longitude>55.48177674389056</longitude>
+						<latitude>-20.90796837471667</latitude>
+						<altitude>0</altitude>
+						<heading>0.08417328906082922</heading>
+						<tilt>41.46013663288579</tilt>
+						<range>459.7582505559499</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.48230826933606,-20.90798882823142,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club des Vacoas</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.71636560150729</longitude>
+						<latitude>-21.04537138793092</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1408708810233067</heading>
+						<tilt>25.51166707277964</tilt>
+						<range>502.187907607808</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.71636560150729,-21.04537138793092,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Club sportif et artistique Lambert</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.44378929421384</longitude>
+						<latitude>-20.88250617193784</latitude>
+						<altitude>0</altitude>
+						<heading>-0.06014352785864995</heading>
+						<tilt>60.00502899974181</tilt>
+						<range>433.5872832721971</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.44313965954022,-20.88296065890009,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>ASPTT-Réunion</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.49484389090012</longitude>
+						<latitude>-20.89225428267058</latitude>
+						<altitude>0</altitude>
+						<heading>-3.536241597312521e-005</heading>
+						<tilt>22.45787556896594</tilt>
+						<range>325.4085216203464</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.4945581726106,-20.89233153322912,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Bourbon olympique tennis-club</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.44417149637187</longitude>
+						<latitude>-20.88732462499777</latitude>
+						<altitude>0</altitude>
+						<heading>0.06570354480531909</heading>
+						<tilt>35.66513595712113</tilt>
+						<range>395.2982252647306</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.4439575288961,-20.88639038992188,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club Dionysien</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.33896159461227</longitude>
+						<latitude>-21.26791633401361</latitude>
+						<altitude>0</altitude>
+						<heading>0.02845476405821011</heading>
+						<tilt>40.99373962652769</tilt>
+						<range>2462.067031204683</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.495295,-20.887873,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Ligue réunionnaise de tennis</name>
+					<description>zoneActivité: tennis ligue</description>
+					<LookAt>
+						<longitude>55.48661120912657</longitude>
+						<latitude>-20.89690156598455</latitude>
+						<altitude>0</altitude>
+						<heading>-0.008876930202986704</heading>
+						<tilt>44.61126223908176</tilt>
+						<range>6450.927224035386</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.48661120912657,-20.89690156598455,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Association sportive des électriciens de la Réunion - Électricité de France</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.44646070895765</longitude>
+						<latitude>-20.88609420018598</latitude>
+						<altitude>0</altitude>
+						<heading>0.01419737237934932</heading>
+						<tilt>10.30538701765113</tilt>
+						<range>669.4981704007486</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.44411513559455,-20.88640967559533,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club municipal de Champ-Fleuri</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.46803039404581</longitude>
+						<latitude>-20.89116288935524</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0004466441674192757</heading>
+						<tilt>7.242367553532871</tilt>
+						<range>647.747210923648</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46795301911952,-20.89115350808433,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de La Montagne</name>
+					<description>zoneActivité: tennis club
+tél: 02 62 23 43 72
+liens: http://www.tcm974.com</description>
+					<LookAt>
+						<longitude>55.42547681977447</longitude>
+						<latitude>-20.90188501242946</latitude>
+						<altitude>0</altitude>
+						<heading>0.007278577030644703</heading>
+						<tilt>53.68828768874521</tilt>
+						<range>380.6410394795345</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.4254033636113,-20.90219194005034,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Association tennis-club du Nord</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.50184610959263</longitude>
+						<latitude>-20.89762831340684</latitude>
+						<altitude>0</altitude>
+						<heading>-3.688752158247635e-005</heading>
+						<tilt>13.32314458872187</tilt>
+						<range>491.842147631259</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.50160240511946,-20.89735616955791,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade prima</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.50184610959263</longitude>
+						<latitude>-20.89762831340684</latitude>
+						<altitude>0</altitude>
+						<heading>-3.688752158247635e-005</heading>
+						<tilt>13.32314458872187</tilt>
+						<range>491.842147631259</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.50242554891283,-20.8969027197038,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de champ fleuri</name>
+					<description>zoneActivité: stade d&apos;athlétisme</description>
+					<LookAt>
+						<longitude>55.47002516154556</longitude>
+						<latitude>-20.89107936607785</latitude>
+						<altitude>0</altitude>
+						<heading>-0.02645881644817107</heading>
+						<tilt>30.82625757644158</tilt>
+						<range>535.3686703096759</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46991078689297,-20.89020591286058,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade synthétique</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.4673332888058</longitude>
+						<latitude>-20.88991844433499</latitude>
+						<altitude>0</altitude>
+						<heading>-0.05220091671366672</heading>
+						<tilt>27.01634598105903</tilt>
+						<range>324.4365303166327</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46709747253223,-20.88974000893935,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de montgaillard</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.4691209533899</longitude>
+						<latitude>-20.90105601369451</latitude>
+						<altitude>0</altitude>
+						<heading>0.02939789954517899</heading>
+						<tilt>42.85243684603321</tilt>
+						<range>325.3412498037919</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46883588788828,-20.90125266630533,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>vélodrome</name>
+					<description>zoneActivité: piste cyclisme</description>
+					<LookAt>
+						<longitude>55.47178131377343</longitude>
+						<latitude>-20.89247175176302</latitude>
+						<altitude>0</altitude>
+						<heading>-0.004731510532770807</heading>
+						<tilt>34.45614087517023</tilt>
+						<range>400.4490661198748</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47216076118064,-20.89245368624389,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>skatePark béton</name>
+					<description>zoneActivité: skate</description>
+					<LookAt>
+						<longitude>55.47187347817045</longitude>
+						<latitude>-20.8937147478125</latitude>
+						<altitude>0</altitude>
+						<heading>-0.03124354076138707</heading>
+						<tilt>29.58512129677886</tilt>
+						<range>316.7601108120447</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47123698473397,-20.89347400486836,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Le Green Billard Academy</name>
+					<description>zoneActivité: billard _
+tél: 0692 65 58 21</description>
+					<LookAt>
+						<longitude>55.44838359085776</longitude>
+						<latitude>-20.87457071091025</latitude>
+						<altitude>0</altitude>
+						<heading>-0.01265084160777429</heading>
+						<tilt>26.99034049509556</tilt>
+						<range>140.741119686806</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.44831582313289,-20.87454856113572,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SainteSuzanne</name>
+				<open>1</open>
+				<Placemark>
+					<name>STADE GEORGES REPIQUET</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE GEORGES REPIQUET BOCAGE 97441 STE SUZANNE</description>
+					<LookAt>
+						<longitude>55.61317311103719</longitude>
+						<latitude>-20.91269699738314</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1278152681558308</heading>
+						<tilt>27.34197594329116</tilt>
+						<range>463.5477824382506</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.61398878033809,-20.91258082487644,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club du Bocage</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.61516283264219</longitude>
+						<latitude>-20.91166490404762</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1078370326712856</heading>
+						<tilt>27.95067622818189</tilt>
+						<range>275.6046732913381</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.61498890744363,-20.91155173955544,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade quartier</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.6355329972363</longitude>
+						<latitude>-20.9276198395066</latitude>
+						<altitude>0</altitude>
+						<heading>-0.114466774665901</heading>
+						<tilt>28.83994543130106</tilt>
+						<range>275.0113042318852</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.63541434209738,-20.92733446050873,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Ouest</name>
+			<Folder>
+				<name>SaintLeu</name>
+				<Placemark>
+					<name>STADE DU CENTRE VILLE</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE DU CENTRE VILLE RUE DU GENERAL LAMBERT 97436 ST LEU</description>
+					<LookAt>
+						<longitude>55.28821949900886</longitude>
+						<latitude>-21.16730206969999</latitude>
+						<altitude>0</altitude>
+						<heading>0.04983632490030435</heading>
+						<tilt>41.11759239676963</tilt>
+						<range>525.2104027816112</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28895100293287,-21.16770350575415,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade piton saint-leu</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.29612692683923</longitude>
+						<latitude>-21.20638604343498</latitude>
+						<altitude>0</altitude>
+						<heading>65.39747804912946</heading>
+						<tilt>42.80504314973165</tilt>
+						<range>1361.83465718135</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.29500726469812,-21.2071643742436,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Stade de Saint-Leu</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot club: Marsouin</description>
+					<LookAt>
+						<longitude>55.28910169586511</longitude>
+						<latitude>-21.16717446217992</latitude>
+						<altitude>0</altitude>
+						<heading>0.03046342166635198</heading>
+						<tilt>60.00456492988035</tilt>
+						<range>392.510925470074</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28911851408677,-21.16767351046598,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Club de pelote basque et de tennis de Saint-Leu</name>
+					<description>zoneActivité: tennis club, pelote basque</description>
+					<LookAt>
+						<longitude>55.28931592260517</longitude>
+						<latitude>-21.16798895029901</latitude>
+						<altitude>0</altitude>
+						<heading>0.00024643993051025</heading>
+						<tilt>30.91342168693478</tilt>
+						<range>459.7401292390582</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28955061252024,-21.16807688770645,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade des hauts saint-leu</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.31884643838676</longitude>
+						<latitude>-21.1506603360642</latitude>
+						<altitude>0</altitude>
+						<heading>65.39225974579354</heading>
+						<tilt>60.01519539927117</tilt>
+						<range>856.0957452074077</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.31792042345762,-21.15061186481906,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>TroisBassins</name>
+				<Placemark>
+					<name>STADE SERGE SAINT ALME</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot_
+STADE SERGE SAINT ALME Trois Bassins 97426 LES TROIS BASSINS</description>
+					<LookAt>
+						<longitude>55.71632520379528</longitude>
+						<latitude>-21.03520024620376</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1572820205828269</heading>
+						<tilt>24.60558177777557</tilt>
+						<range>330.1617218802844</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin7</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.29254722222221,-21.104307,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintGille</name>
+				<open>1</open>
+				<Placemark>
+					<name>Sain Gym</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club _
+tél: 02 62 24 56 42 _
+liens: http://www.sain-gym.com_</description>
+					<LookAt>
+						<longitude>55.22444360326699</longitude>
+						<latitude>-21.07080268253008</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0004605749408608852</heading>
+						<tilt>16.06243007782877</tilt>
+						<range>462.2984724039598</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22401871589579,-21.07097351770075,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Hermitage académie tennis</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.22511235008943</longitude>
+						<latitude>-21.07270145105952</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0001908549890819133</heading>
+						<tilt>23.15285960256493</tilt>
+						<range>278.0675967498651</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22519911489863,-21.07262749253485,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de Saint-Gilles-les-Bains</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.22759462596062</longitude>
+						<latitude>-21.04473214598064</latitude>
+						<altitude>0</altitude>
+						<heading>0.006293157571975797</heading>
+						<tilt>26.28611231451363</tilt>
+						<range>287.6544227002916</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22732229765559,-21.04491414531614,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tropic tennis-club</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.2221133562425</longitude>
+						<latitude>-21.06561542055336</latitude>
+						<altitude>0</altitude>
+						<heading>-9.140725360461769e-005</heading>
+						<tilt>30.00087870085977</tilt>
+						<range>195.6822160309928</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.22211335652175,-21.06565937844613,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintPaul</name>
+				<Placemark>
+					<name>STADE LA PALMERAIE</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE LA PALMERAIE LE BOURG 97460 ST PAUL</description>
+					<LookAt>
+						<longitude>55.28767443159942</longitude>
+						<latitude>-20.98143034073124</latitude>
+						<altitude>0</altitude>
+						<heading>0.01985558918722074</heading>
+						<tilt>24.79271449997453</tilt>
+						<range>428.7976640105545</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.28793736360784,-20.98089532880649,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DU CORBEIL</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE DU CORBEIL st paul 97460 ST PAUL</description>
+					<LookAt>
+						<longitude>55.47493639305998</longitude>
+						<latitude>-20.89105123628195</latitude>
+						<altitude>0</altitude>
+						<heading>0.08418431326118175</heading>
+						<tilt>29.66925927913506</tilt>
+						<range>506.5255691351083</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.27886899999999,-21.068535,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DE TAN ROUGE</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE DE TAN ROUGE st paul 97460 ST PAUL</description>
+					<LookAt>
+						<longitude>55.70108653919909</longitude>
+						<latitude>-21.17149032433138</latitude>
+						<altitude>0</altitude>
+						<heading>0.006509206530945773</heading>
+						<tilt>31.44202318805899</tilt>
+						<range>108146.6251147325</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.33192222222223,-21.241535,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE DE PLATEAU CAILLOUX</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE DE PLATEAU CAILLOUX st paul 97460 ST PAUL</description>
+					<LookAt>
+						<longitude>55.70108653919909</longitude>
+						<latitude>-21.17149032433138</latitude>
+						<altitude>0</altitude>
+						<heading>0.006509206530945773</heading>
+						<tilt>31.44202318805899</tilt>
+						<range>108146.6251147325</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.26864,-21.028735,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de la baie de Saint-Paul</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.27914284482196</longitude>
+						<latitude>-20.99963096427514</latitude>
+						<altitude>0</altitude>
+						<heading>-0.001868769781077759</heading>
+						<tilt>20.24999190148051</tilt>
+						<range>283.5625977466656</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.2795134553924,-20.99955861243037,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de l’Oasis</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.29877582934149</longitude>
+						<latitude>-20.97511411383215</latitude>
+						<altitude>0</altitude>
+						<heading>0.001730082834163724</heading>
+						<tilt>24.24039859723439</tilt>
+						<range>175.6521305277297</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.29872671417038,-20.9751067968853,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Mafate</name>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Sud</name>
+			<Folder>
+				<name>PlaineDesCafres</name>
+				<Placemark>
+					<name>stade</name>
+					<description>zoneActivité: stade de foot, stade d&apos;athlétisme</description>
+					<LookAt>
+						<longitude>55.55066707737005</longitude>
+						<latitude>-21.21855087769633</latitude>
+						<altitude>0</altitude>
+						<heading>0.08190036372260987</heading>
+						<tilt>40.93026805726723</tilt>
+						<range>477.1026409964018</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.54977267942906,-21.21871726160687,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>LesAvirons</name>
+				<Placemark>
+					<name>Tennis-club des Avirons</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.34047822298826</longitude>
+						<latitude>-21.23483314597035</latitude>
+						<altitude>0</altitude>
+						<heading>0.003904097875957416</heading>
+						<tilt>60.00359268200175</tilt>
+						<range>276.3450772724522</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.34114865249807,-21.23511102770338,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de foot</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.34018963785885</longitude>
+						<latitude>-21.23488102047993</latitude>
+						<altitude>0</altitude>
+						<heading>0.004008621011774191</heading>
+						<tilt>60.00362667729021</tilt>
+						<range>280.7182436408432</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.34069355953416,-21.23452282627559,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade</name>
+					<description>zoneActivité: stade de foot, stade d&apos;athlétisme</description>
+					<LookAt>
+						<longitude>55.33982671891506</longitude>
+						<latitude>-21.23491145351222</latitude>
+						<altitude>0</altitude>
+						<heading>0.004140067206689984</heading>
+						<tilt>60.00463037970359</tilt>
+						<range>287.6899018406554</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.33902903617535,-21.23500851158345,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.35762373022293</longitude>
+						<latitude>-21.20829488357373</latitude>
+						<altitude>0</altitude>
+						<heading>-0.001046328108211235</heading>
+						<tilt>52.88486116906651</tilt>
+						<range>281.4388379127956</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.35769937551323,-21.20841780368654,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintLouis</name>
+				<Placemark>
+					<name>stade</name>
+					<open>1</open>
+					<description>zoneActivité: stade d&apos;athlétisme</description>
+					<LookAt>
+						<longitude>55.4346395269645</longitude>
+						<latitude>-21.27049052434218</latitude>
+						<altitude>0</altitude>
+						<heading>-0.06009957910120579</heading>
+						<tilt>19.78771272985307</tilt>
+						<range>283.0621486922043</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.43469803261836,-21.2706287991666,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE THÉOPHILE HOARAU</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE THÉOPHILE HOARAU 1 TERRAIN (A) 97450 ST LOUIS</description>
+					<LookAt>
+						<longitude>55.71632520379528</longitude>
+						<latitude>-21.03520024620376</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1572820205828269</heading>
+						<tilt>24.60558177777557</tilt>
+						<range>330.1617218802844</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.40388888888888,-21.28778055555556,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE LUDOVIC VIADÈRE LE</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE LUDOVIC VIADÈRE LE BOURG 97450 ST LOUIS</description>
+					<LookAt>
+						<longitude>55.28767443159942</longitude>
+						<latitude>-20.98143034073124</latitude>
+						<altitude>0</altitude>
+						<heading>0.01985558918722074</heading>
+						<tilt>24.79271449997453</tilt>
+						<range>428.7976640105545</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.438006,-21.267752,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de Saint-Louis</name>
+					<description>zoneActivité: tennis club _
+tél: 02 62 26 78 62 _
+mail: http://www.club.fft.fr/tcsl974</description>
+					<LookAt>
+						<longitude>55.4055820573495</longitude>
+						<latitude>-21.28843982479132</latitude>
+						<altitude>0</altitude>
+						<heading>0.00562306999349668</heading>
+						<tilt>24.56188007417517</tilt>
+						<range>238.1623525465426</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.40488270029924,-21.28827719891629,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>EntreDeux</name>
+				<Placemark>
+					<name>Tennis-club d’Entre-Deux</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.46526750971019</longitude>
+						<latitude>-21.24723175394045</latitude>
+						<altitude>0</altitude>
+						<heading>0.0176459338728323</heading>
+						<tilt>60.00547482060182</tilt>
+						<range>605.4409680459054</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46483556898836,-21.24721797489297,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>EtangSale</name>
+				<Placemark>
+					<name>plage</name>
+					<description>zoneActivité: beachTennis, surf</description>
+					<styleUrl>#m_ylw-pushpin1</styleUrl>
+					<Polygon>
+						<tessellate>1</tessellate>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									55.33210990474876,-21.26469747423456,0 55.33259368712142,-21.26396584354342,0 55.3323102940151,-21.26136876549535,0 55.33004820858016,-21.25794862230395,0 55.32936087336265,-21.25828143829876,0 55.3311363224347,-21.26560829338678,0 55.33222329765904,-21.26558923095913,0 55.33210990474876,-21.26469747423456,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>stade</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.36977580143812</longitude>
+						<latitude>-21.26666600633945</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0006093611680688089</heading>
+						<tilt>21.62607075842562</tilt>
+						<range>314.939482595497</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.36999954419724,-21.26652722732229,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade d&apos;athlétisme</name>
+					<description>zoneActivité: stade d&apos;athlétisme</description>
+					<LookAt>
+						<longitude>55.37312956439396</longitude>
+						<latitude>-21.27016458344408</latitude>
+						<altitude>0</altitude>
+						<heading>-0.001929239971979927</heading>
+						<tilt>25.61935861559735</tilt>
+						<range>290.2937763271233</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.37321295083609,-21.26998585752414,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club Dominicain</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.37412747078292</longitude>
+						<latitude>-21.26996016012583</latitude>
+						<altitude>0</altitude>
+						<heading>-0.002291243825732141</heading>
+						<tilt>25.61936880808172</tilt>
+						<range>292.7732970893489</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.37399825018483,-21.26976683343312,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Cilaos</name>
+				<Placemark>
+					<name>STADE IRÉNÉE ACCOT</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE IRÉNÉE ACCOT 1 RUE DU STADE 97413 CILAOS</description>
+					<LookAt>
+						<longitude>55.52135664305511</longitude>
+						<latitude>-20.90325306047419</latitude>
+						<altitude>0</altitude>
+						<heading>0.06451623632798355</heading>
+						<tilt>27.48052123848785</tilt>
+						<range>328.4780116163243</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.4749,-21.1367,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Club de tennis de Cilaos</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.47451917237263</longitude>
+						<latitude>-21.13605488377285</latitude>
+						<altitude>0</altitude>
+						<heading>0.001636279168167533</heading>
+						<tilt>38.84715319184419</tilt>
+						<range>318.0310166709393</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47498894807916,-21.13596990615841,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Tampon</name>
+				<Placemark>
+					<name>STADE KLEBERT PICARD</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE KLEBERT PICARD 57 RUE ROLAND GARROS 97430 LE TAMPON</description>
+					<LookAt>
+						<longitude>55.61317311076419</longitude>
+						<latitude>-20.91269699736941</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1278152685514912</heading>
+						<tilt>27.34197594330544</tilt>
+						<range>463.5477881934328</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.52191111111111,-21.272457,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>STADE BRAS CREUX</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE BRAS CREUX Le Tampon 97430 LE TAMPON</description>
+					<LookAt>
+						<longitude>55.48898319292728</longitude>
+						<latitude>-20.88904049273092</latitude>
+						<altitude>0</altitude>
+						<heading>0.07418413648157546</heading>
+						<tilt>33.40139024997794</tilt>
+						<range>532.7835806988958</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.515319,-21.274849,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club municipal du Tampon</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.52630490094448</longitude>
+						<latitude>-21.28500723239471</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0004634990099913001</heading>
+						<tilt>16.67155909936133</tilt>
+						<range>280.9679333495132</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.52563423697934,-21.28490571128356,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club du Tampon</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.5209052058927</longitude>
+						<latitude>-21.27226640938519</latitude>
+						<altitude>0</altitude>
+						<heading>102.141939330134</heading>
+						<tilt>36.17662689797223</tilt>
+						<range>306.0618004606478</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.52098890905855,-21.27194228290565,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>PetiteIle</name>
+				<Placemark>
+					<name>stade</name>
+					<open>1</open>
+					<description>zoneActivité: stade d&apos;athlétisme</description>
+					<LookAt>
+						<longitude>55.55902298886048</longitude>
+						<latitude>-21.34684042209832</latitude>
+						<altitude>0</altitude>
+						<heading>-0.08271466994275274</heading>
+						<tilt>55.21949781296703</tilt>
+						<range>371.1664137136443</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.55843258242289,-21.34693766998633,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de Petite-Île</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.56390379043626</longitude>
+						<latitude>-21.35296129602414</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1084164036821399</heading>
+						<tilt>47.93821822849128</tilt>
+						<range>480.4645027665543</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.56416907429233,-21.35315708949236,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintPierre</name>
+				<open>1</open>
+				<Placemark>
+					<name>STADE MICHEL VOLNAY</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE MICHEL VOLNAY 20 RUE CAYENNE 97410 ST PIERRE</description>
+					<LookAt>
+						<longitude>55.6140745066507</longitude>
+						<latitude>-20.91277668270367</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1281370207926769</heading>
+						<tilt>27.34177916648759</tilt>
+						<range>467.7525972637429</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.468125,-21.338615,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Association méridionale de tennis de Saint-Pierre</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.47088245512458</longitude>
+						<latitude>-21.33344667985038</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0006332071385916118</heading>
+						<tilt>15.47714694849403</tilt>
+						<range>447.7595690513121</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47082388001268,-21.33331424087276,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de Saint-Pierre</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.46903374623448</longitude>
+						<latitude>-21.31658112677219</latitude>
+						<altitude>0</altitude>
+						<heading>0.001599974783209057</heading>
+						<tilt>30.00089874183441</tilt>
+						<range>249.696072115349</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46883725753669,-21.31686328217093,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de terre sainte</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.48070076080919</longitude>
+						<latitude>-21.32875579046874</latitude>
+						<altitude>0</altitude>
+						<heading>0.0007953871252869017</heading>
+						<tilt>30.00158588194295</tilt>
+						<range>470.2691546759433</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.48045514879041,-21.32886608228652,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de Terre-Sainte</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.47867493735736</longitude>
+						<latitude>-21.33143394731795</latitude>
+						<altitude>0</altitude>
+						<heading>0.00178696846417901</heading>
+						<tilt>29.80224624332921</tilt>
+						<range>276.4987907090051</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47917550858479,-21.3315113037333,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Sud Beach tennis-club</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.46350392818916</longitude>
+						<latitude>-21.34140814800704</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0002226680058524392</heading>
+						<tilt>29.79403465489496</tilt>
+						<range>240.5818629519111</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46329390431976,-21.34142507132616,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de la ravine blanche</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.46153625317429</longitude>
+						<latitude>-21.3372147140894</latitude>
+						<altitude>0</altitude>
+						<heading>0.0005086420823502167</heading>
+						<tilt>28.01948997170213</tilt>
+						<range>200.8694126553117</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46129226389078,-21.33720216410667,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>BILLARD CLUB</name>
+					<description>zoneActivité: billard</description>
+					<LookAt>
+						<longitude>55.49975289277523</longitude>
+						<latitude>-21.30151350681603</latitude>
+						<altitude>0</altitude>
+						<heading>-0.002584770430278576</heading>
+						<tilt>0</tilt>
+						<range>15500.2724461891</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.49245582386576,-21.30491292638761,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintJoseph</name>
+				<Placemark>
+					<name>Tennis-club de Saint-Joseph</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.59361989458542</longitude>
+						<latitude>-21.37661379272595</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0007220283696606534</heading>
+						<tilt>44.79426833739139</tilt>
+						<range>427.5257702174919</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.59358636343388,-21.37672937712678,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade</name>
+					<description>zoneActivité: stade loisir</description>
+					<LookAt>
+						<longitude>55.60952715635553</longitude>
+						<latitude>-21.38443558286635</latitude>
+						<altitude>0</altitude>
+						<heading>0.02250193657255073</heading>
+						<tilt>30.00135097777632</tilt>
+						<range>300.7625908816186</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.60945954604146,-21.38455620176851,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.63415395426276</longitude>
+						<latitude>-21.37590403327825</latitude>
+						<altitude>0</altitude>
+						<heading>0.0110211305522593</heading>
+						<tilt>23.6130094237816</tilt>
+						<range>285.6869687571495</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.63414511856716,-21.37548023445613,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club municipal de Saint-Joseph</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.62495023669472</longitude>
+						<latitude>-21.37825409189117</latitude>
+						<altitude>0</altitude>
+						<heading>0.01619161032904969</heading>
+						<tilt>30.54324686303644</tilt>
+						<range>502.2678004029006</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.62497124473362,-21.37786385976776,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>saintPhillipe</name>
+				<Placemark>
+					<name>stade de foot</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.7692461469449</longitude>
+						<latitude>-21.3604250263884</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1817214612174508</heading>
+						<tilt>36.02926626701407</tilt>
+						<range>371.0466819244668</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.76850712991028,-21.36056277845833,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade</name>
+					<description>zoneActivité: stade d&apos;athlétisme</description>
+					<LookAt>
+						<longitude>55.76799308281945</longitude>
+						<latitude>-21.36159101502421</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1819806409333979</heading>
+						<tilt>32.32044838404193</tilt>
+						<range>281.9059425073052</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.76746710745355,-21.36129384281462,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>enclosTremblet</name>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Est</name>
+			<Folder>
+				<name>SainteAnne</name>
+				<Placemark>
+					<name>stade d&apos;athlétisme</name>
+					<description>zoneActivité: stade</description>
+					<LookAt>
+						<longitude>55.74119015546303</longitude>
+						<latitude>-21.07796002374528</latitude>
+						<altitude>0</altitude>
+						<heading>-0.01026365931022792</heading>
+						<tilt>26.59729179954312</tilt>
+						<range>368.3705131808332</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.74023148069373,-21.07790806848191,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de Sainte-Anne</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.74301509563386</longitude>
+						<latitude>-21.0852771190164</latitude>
+						<altitude>0</altitude>
+						<heading>-0.01085994693005107</heading>
+						<tilt>29.26262834250263</tilt>
+						<range>326.8313773121641</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.74297210499737,-21.08518920101144,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de saint-anne</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.74375396624308</longitude>
+						<latitude>-21.08633280403375</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1711055987230659</heading>
+						<tilt>32.01705246782302</tilt>
+						<range>347.5020489919942</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.74336833320715,-21.08627517892175,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintAndre</name>
+				<open>1</open>
+				<Placemark>
+					<name>stade mille roches</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.6510024271623</longitude>
+						<latitude>-20.96832120017669</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1387210836177966</heading>
+						<tilt>30.00118584075311</tilt>
+						<range>381.1599055317576</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.65063112442871,-20.96832278291596,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club Croix de Saint-André</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.6511919295781</longitude>
+						<latitude>-20.9675927268684</latitude>
+						<altitude>0</altitude>
+						<heading>-0.000128547774234936</heading>
+						<tilt>19.47403466580995</tilt>
+						<range>289.6133500692166</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.65085799464256,-20.96765534020289,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade d&apos;athlétisme</name>
+					<description>zoneActivité: stade d&apos;athlétisme</description>
+					<LookAt>
+						<longitude>55.65630187930695</longitude>
+						<latitude>-20.96562277058128</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1406175928854571</heading>
+						<tilt>30.0015997537713</tilt>
+						<range>356.1783366494651</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.65645243346432,-20.96571690627737,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade ti&apos;bazard</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.64886519731152</longitude>
+						<latitude>-20.94373326859807</latitude>
+						<altitude>0</altitude>
+						<heading>-0.138183137295788</heading>
+						<tilt>27.51346384841791</tilt>
+						<range>197.4151933183508</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.64855133148739,-20.94384054521937,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de cambuston</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.64624358775977</longitude>
+						<latitude>-20.93032414546745</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1368989252154719</heading>
+						<tilt>30.00243867421458</tilt>
+						<range>569.3386165986937</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.64559946434292,-20.9309211873821,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de champ-borne</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.67632692729531</longitude>
+						<latitude>-20.93974412678502</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1475704965894551</heading>
+						<tilt>27.95661498455694</tilt>
+						<range>539.9650480626839</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.67663255642761,-20.94012028354526,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SaintBenoit</name>
+				<open>1</open>
+				<Placemark>
+					<name>STADE ROLAND ARNOUX</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot _
+STADE ROLAND ARNOUX St Benoit 97470 ST BENOIT</description>
+					<LookAt>
+						<longitude>55.71632520372503</longitude>
+						<latitude>-21.03520024633111</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1572820207015113</heading>
+						<tilt>24.60532936459566</tilt>
+						<range>330.1616679707792</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.71595990066702,-21.03483603734256,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de saint-benoit</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot, stade d&apos;athlétisme</description>
+					<LookAt>
+						<longitude>55.71675127400718</longitude>
+						<latitude>-21.04628941198725</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1623835034590752</heading>
+						<tilt>29.13802895699341</tilt>
+						<range>507.944320776611</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.71741349859967,-21.04638257813554,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de Saint-Benoît</name>
+					<open>1</open>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.71672323199157</longitude>
+						<latitude>-21.04525083641057</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1409665159310483</heading>
+						<tilt>25.97719831185621</tilt>
+						<range>221.1881539054196</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.71638777343972,-21.04538006248687,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de L’Étang-Salé</name>
+					<description>zoneActivité: tennis club</description>
+					<LookAt>
+						<longitude>55.33439049589696</longitude>
+						<latitude>-21.27197493760023</latitude>
+						<altitude>0</altitude>
+						<heading>-0.006500132312923092</heading>
+						<tilt>30.00117987289879</tilt>
+						<range>262.7572249429703</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.33404829209064,-21.27193176262744,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Association sportive de la Sécurité sociale</name>
+					<description>zoneActivité: tennis club _
+tél: 02 62 40 30 40</description>
+					<LookAt>
+						<longitude>55.4605312145604</longitude>
+						<latitude>-20.89058637639778</latitude>
+						<altitude>0</altitude>
+						<heading>-0.001546389606632017</heading>
+						<tilt>28.55743711583286</tilt>
+						<range>261.0971611558373</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.46012497226641,-20.89060514943357,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>BrasPanon</name>
+				<open>1</open>
+				<Placemark>
+					<name>stade de la Gauloise</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.68467576053835</longitude>
+						<latitude>-20.99973842367961</latitude>
+						<altitude>0</altitude>
+						<heading>-0.002710021346317299</heading>
+						<tilt>14.14822071595281</tilt>
+						<range>399.6074953015231</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.68479505934615,-20.99975142433585,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Vélo club de l&apos;est</name>
+					<description>zoneActivité: piste cyclisme</description>
+					<LookAt>
+						<longitude>55.68467576053835</longitude>
+						<latitude>-20.99973842367961</latitude>
+						<altitude>0</altitude>
+						<heading>-0.002710021346317299</heading>
+						<tilt>14.14822071595281</tilt>
+						<range>399.6074953015231</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.68467576053835,-20.99973842367961,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de la rivière des roches</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.69829216858742</longitude>
+						<latitude>-21.00675455151612</latitude>
+						<altitude>0</altitude>
+						<heading>-0.008464921097400961</heading>
+						<tilt>25.37356681719954</tilt>
+						<range>337.4943786864248</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.69841622921355,-21.00636986062796,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>Tennis-club de Bras-Panon</name>
+					<description>zoneActivité: tennis club _
+té: 02 62 51 75 70</description>
+					<LookAt>
+						<longitude>55.68345522398399</longitude>
+						<latitude>-20.99952163220959</latitude>
+						<altitude>0</altitude>
+						<heading>-0.003325025669262495</heading>
+						<tilt>27.15493501335042</tilt>
+						<range>278.2147274623844</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.68327614800868,-20.99935609988522,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>rivière des roches</name>
+					<description>zoneActivité: court de tennis</description>
+					<LookAt>
+						<longitude>55.69920247563314</longitude>
+						<latitude>-21.00677864452484</latitude>
+						<altitude>0</altitude>
+						<heading>-0.009156473907350856</heading>
+						<tilt>29.93506099039566</tilt>
+						<range>468.1366064453055</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.69923018377924,-21.00686087415284,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade rivère du mat</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.64321494744456</longitude>
+						<latitude>-20.98463727741338</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1360036013969529</heading>
+						<tilt>30.00095428596705</tilt>
+						<range>329.7254932702312</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.64305369041847,-20.98500639168729,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>SainteRose</name>
+				<Placemark>
+					<name>stade de bois blanc</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.82132170455341</longitude>
+						<latitude>-21.19492585661515</latitude>
+						<altitude>0</altitude>
+						<heading>-0.2011506780132082</heading>
+						<tilt>60.00447384706223</tilt>
+						<range>370.4645383098329</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.82150951119493,-21.19538533853357,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de la ravinne glissante</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.80859605108248</longitude>
+						<latitude>-21.13673125038033</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1965403970430985</heading>
+						<tilt>58.85032138132865</tilt>
+						<range>248.2211520644372</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.80833932907572,-21.13714280471895,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de sainte-rose</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.7943315933824</longitude>
+						<latitude>-21.12685450013789</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1915108462500633</heading>
+						<tilt>60.00507657163187</tilt>
+						<range>411.0604275496896</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.79364645491403,-21.12716425407847,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>LaPlaineDesPalmiste</name>
+				<Placemark>
+					<name>Stade</name>
+					<description>zoneActivité: stade de foot, stade d&apos;athlétisme</description>
+					<LookAt>
+						<longitude>55.6209496938038</longitude>
+						<latitude>-21.13354896579416</latitude>
+						<altitude>0</altitude>
+						<heading>0.05763454351862537</heading>
+						<tilt>43.74152214706414</tilt>
+						<range>709.9856366513629</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.62076311394097,-21.13411551724407,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Salazie</name>
+				<Placemark>
+					<name>stade grand-ilet</name>
+					<open>1</open>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.47220857778992</longitude>
+						<latitude>-21.03313693524561</latitude>
+						<altitude>0</altitude>
+						<heading>-0.07834176350598925</heading>
+						<tilt>60.00604353089906</tilt>
+						<range>532.4987667954352</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.47196810563497,-21.03427375755707,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade de hell bourg</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.5214123259905</longitude>
+						<latitude>-21.06932462110435</latitude>
+						<altitude>0</altitude>
+						<heading>-0.09601663731714405</heading>
+						<tilt>60.00704090389444</tilt>
+						<range>424.4808667413391</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.52140716434128,-21.07017094416736,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>stade salazie</name>
+					<description>zoneActivité: stade de foot</description>
+					<LookAt>
+						<longitude>55.54371580469256</longitude>
+						<latitude>-21.02400211439729</latitude>
+						<altitude>0</altitude>
+						<heading>-0.1040279188580376</heading>
+						<tilt>60.00345126372128</tilt>
+						<range>304.9401598822548</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#m_ylw-pushpin70</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>55.54340689064239,-21.02448152022322,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

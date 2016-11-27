@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p3="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <f:view>
+    
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="./resources/css/default.css" rel="stylesheet" type="text/css" />
+        <link href="./resources/css/cssLayout.css" rel="stylesheet" type="text/css" />
+        <link href="./photoSS.css" rel="stylesheet" type="text/css" />
+        <script src="http://www.google.com/jsapi?key=AIzaSyBv84GY3Ay5J2p0oBNrxNjKzru-MyOXN4A?sensor=true" type="text/javascript"></script>
+       <!-- <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyAQCmtzvFlxcP2m95QtpKtn_Ugm9hAYsHY" type="text/javascript"></script>-->
+        <script type="text/javascript" src="processing.js"></script>
+        <script type="text/javascript" src="init.js"></script>
+        <title>#{msg.titre}</title>
+        <script type="text/javascript" src="./resources/js/extensions-0.2.1.pack.js"></script>
+        <script type="text/javascript" src="./resources/js/fetch.js"></script>
+        
+        <script type="text/javascript" src="./resources/js/redirect.js">
+            
+        </script>
+
+    </h:head>
+
+    <h:body onload="init()" >
+       
+    <div class="confirm" id="instPlug"/> 
+    
+        <div class="fond"> 
+                    <script type="application/processing">
+                       float a=0.0;
+                                void setup() 
+                                {
+                                    size(800, 600, P3D);
+                                    
+                                    PFont font = loadFont("Arial");
+                                    textFont(font,50); 
+                                } 
+
+                                void draw(){
+
+                                
+                                a += 0.015;
+                                if(a > TWO_PI) { 
+                                    a = 0.0; 
+                                }
+
+                                translate(width/2, height/2.0);
+                                rotateY(a);
+                                //rotateY(a * 2.0);
+
+                                //rect(5, 5, 20, 5);
+                                fill(0, 102, 153);
+                                text("RunSense", 10, -75, 10);
+                                //text("second");
+                                fill(0, 102, 153);
+                                text("Run$en$e", 10, -75, 0); 
+                                //text("trois");
+                                fill(0, 102, 153);
+                                text("RunSen$e", 10, -75, -10); 
+
+                                }
+                    </script>
+                        <canvas ></canvas>
+                    </div>
+
+                
+            <div id="logo">
+                
+             
+            
+              
+        </div>
+
+        <div >
+            
+            <h:form id="f_left" >
+                    <h:inputHidden  id="kml-url"  value="#{treetable.btnMap}" /><br/>
+                    <h:inputHidden  id="kml-tracer"  value="#{treetable.btnTracer}" /><br/>
+                   <!-- <input type="submit" onclick="fetchKml()" value="Entrer dans la visite!"/>
+                    <br/>
+                    <input type="submit" onclick="enterTour()" value="enterTour"/>
+                    <input type="submit"  onclick="playTour()" value="Lancer la visite"/>
+                    <input type="submit" onclick="pauseTour()" value="pause"/>
+                    <input type="submit" onclick="resetTour()" value="Réinitialiser"/>
+                    <input type="submit" onclick="exitTour()" value="Sortir de la visite"/>-->
+                </h:form>
+                <ui:insert name="left"></ui:insert>
+            <div id="right">
+               <!-- <ui:insert name="right"></ui:insert>-->
+            </div>
+            <div id="content" class="content">
+                <p3:panel id="map3d" header="map3D" widgetVar="panel" style="width: 100%; height: 380px;" > 
+                         
+                </p3:panel> 
+                
+                <ui:insert name="content"></ui:insert>
+                <div id="bottom">
+                    <em > Copyright &copy; 2012 Runsense -Ile de la reunion - 974</em>
+                </div>
+            </div>
+        </div>
+            
+    </h:body>
+    </f:view>
+</html>

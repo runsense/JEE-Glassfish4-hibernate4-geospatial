@@ -1,0 +1,105 @@
+body {
+    
+    background-color: #ffffff;
+    font-size: 12px;
+    font-family:lucida, "Lucida Grande CE",  Verdana, "Verdana CE",  Arial, "Arial CE", "Helvetica CE", sans-serif;
+    color: #000000;  
+    margin: 10px;
+    background-image: url(../../image/fond.png);
+
+    background-repeat: repeat-y;
+    background-position: center top;
+    
+}
+.txtRouge{
+    text-decoration-color: #ff0000!important;
+}
+#google a{
+    color: indianred;
+}
+#logo {
+
+
+    left: 1px;
+    top: 5%;
+    
+       background: url("../../image/LogoRunSense.gif");
+       width:270px;
+       height:122px;
+       /*position:left;*/
+          background-repeat: no-repeat;
+    
+}
+h1 
+{
+    font-family: "Lucida Grande CE", lucida,Arial, "Arial CE",  "Helvetica CE", sans-serif;
+    border-bottom: 1px solid #AFAFAF; 
+    font-size:  16px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #D20005;
+}
+
+a:link, a:visited {
+  color: #045491;
+  font-weight : bold;
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover  {
+  color: #045491;
+  font-weight : bold;
+  text-decoration : underline;
+}
+
+#ident{  
+    text-align: right;    
+    font-family: Georgia,'Times New Roman',times,serif;
+    font-size: 12px;
+    right: 1%;
+    position: absolute;
+    color: silver;
+}
+
+#actualité{
+    
+    position: absolute;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    top: 15%;
+}
+#baniere {
+        clear:both;
+       background: url("../../image/Entete_StBenoit.gif");
+       width:auto;
+       height:333px;
+         
+        margin-top:20px; 
+        /*padding:5px; */
+        
+        filter: alpha(opacity=100);-moz-opacity: 1;opacity: 1;
+         border:1px solid #b0b0b0;
+         border-radius:20px; 
+   
+}
+
+#image{
+    width:10%;
+    height:10%;
+    
+}
+
+#map3d{
+    
+    z-index: 0;
+    left: 1%;
+    right: 20%;
+}
+
+#f_iti a:link {color:#000000;} /* unvisited link */
+#f_iti a:visited {color:#ff0000;} /* visited link */
+#f_iti a:hover {color:#ffff00;} /* mouse over link */
+#f_iti a:active {color:#000000;} /* selected link */

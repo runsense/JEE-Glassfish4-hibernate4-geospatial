@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <f:view>
+    
+    <h:head>
+        <!--id bing -->
+        <meta name="msvalidate.01" content="D338E487A839830CD45141EF5545AAA8" />
+        <meta name="google-site-verification" content="pxSCEvO2QDnHvV_38l3V6h44Qs3k0eT6MlHC-xS1wz0" />
+        
+        <!--referencement -->
+        
+            <meta name="Description" content="#{msg.tmpdesc}" />
+            <meta name="Keywords" content="#{msg.tmpkeywords}" />
+        
+        <meta name="Author" content="Runsense S2I" />
+        <meta name="Reply-to" content="runsense974@gmail.com" />
+        <meta name="Copyright" content="runsense s2i" />
+        <meta name="robots" content="Index, follow" />
+        
+        <meta name="refresh" content="360" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="./resources/css/default.css" rel="stylesheet" type="text/css" />
+       
+        <link href="./resources/css/overPfce.css" rel="stylesheet" type="text/css" />
+        <style>
+            img [id="f_rch:j_idt54"] > img{
+                
+            }
+            
+        </style>
+        <script src="http://www.google.com/jsapi?key=AIzaSyD2otijFAsU4Dr1PrkLb8wzFanEkUV268U?sensor=false" type="text/javascript"></script>
+        <!--AIzaSyD2otijFAsU4Dr1PrkLb8wzFanEkUV268U   AIzaSyC_3Ol7FT5EpVQ2cT2TlE5kpB0HzOCqeDU -->
+        
+        <h:outputScript library="primefaces" name="jquery/jquery.js" />
+       
+        <script type="text/javascript" src="processing.js"></script>
+        
+        <script type="text/javascript" src="init.js">
+            
+        </script>
+        
+        <title>#{msg.titre}</title>
+       
+        <script type="text/javascript" src="./resources/js/geo-0.2.pack.js"></script>
+        <script type="text/javascript" src="./resources/js/extensions-0.2.1.pack.js"></script>
+        <script type="text/javascript" src="./resources/js/fetch.js">
+           
+        </script>
+        <script type="text/javascript" src="./resources/js/iti.js"/>    
+
+        <!--<script type="text/javascript" src="./resources/js/custmPri.js"/>
+       
+        <script type="text/javascript" src="./resources/js/redirect.js"/>-->
+        
+        
+        <script type="text/javascript" >
+            PrimeFaces.locales ['fr'] = {
+                closeText: 'Fermer',
+                prevText: 'na retourn',
+                nextText: 'sa t après',
+                monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre' ],
+                monthNamesShort: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc' ],
+                dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+                dayNamesShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+                dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+                weekHeader: 'Semaine',
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix:'',
+                timeOnlyTitle: 'Choisir l\'heure',
+                timeText: 'Heure',
+                hourText: 'Heures',
+                minuteText: 'Minutes',
+                secondText: 'Secondes',
+                currentText: 'Estèr',
+                ampm: false,
+                month: 'Mois',
+                week: 'Semaine',
+                day: 'Jour',
+                allDayText: 'Toute la journée'
+            };
+        </script>  
+       
+    </h:head>
+        
+        <h:body onload="init();"  >
+            <div id="cacheMap"  style="z-index: -1;display: none;"/>
+        <div class="confirm" id="instPlug" style="z-index: -1;"/> 
+   
+                    <ui:insert name="content"></ui:insert>
+               
+    </h:body>
+    </f:view>
+</html>

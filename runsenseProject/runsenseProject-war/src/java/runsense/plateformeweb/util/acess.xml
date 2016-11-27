@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rci_request version="1.1">
+	<do_command target="idigi_dia">
+		<channel_get name="watchport_t0.temperature"/>
+	</do_command>
+</rci_request>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pm="http://primefaces.org/mobile">
+     
+    <f:view renderKitId="PRIMEFACES_MOBILE" />
+     
+    <h:head>
+        <link type="text/css" rel="stylesheet"
+            href="#{request.contextPath}/resources/css/run.min.css" />
+        <h:outputScript library="primefaces" name="jquery/jquery.js" />
+            
+             <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+            
+                <script src="#{request.contextPath}/resources/js/jquery.ui.map.full.min.js" type="text/javascript"></script>
+          
+             <script type="text/javascript">
+               /* <![CDATA[ */
+               
+                var mobile;
+                var latlng;
+                
+                var centre;
+                var b=true;
+               
+                $(function() {
+                        // Also works with: var yourStartLatLng = '59.3426606750, 18.0736160278';
+                        var yourStartLatLng = new google.maps.LatLng(59.3426606750, 18.0736160278);
+                        $('#m_map').gmap({'center': yourStartLatLng});
+                });
+
+                findMe = function () {
+                   
+                    navigator.geolocation.getCurrentPosition(
+                        function(position) {
+                             map = document.getElementById('m_map').getMap(),
+                            latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+                            map.setCenter(latlng);
+
+                            var marker = new google.maps.Marker({
+                                position: latlng
+                                
+                            });
+                            
+                            marker.setMap(map);
+                        },
+                        function(error) {
+                            alert(error.message);
+                        },
+                        {
+                           enableHighAccuracy: true
+                        });
+
+                };
+
+                tracer = function (){
+
+                    if(b)
+                    {
+                        try{
+                            createTr();
+                            b=false;
+                          }catch(ex)
+                          {
+                              alert(ex);
+                          }
+                    }
+                    else{
+                        positionne();
+                    }
+                  
+
+                };
+                createTr = function (){
+                    
+                    var lat =document.getElementById('f_tracer:lat').value;
+                    var lng =document.getElementById('f_tracer:lng').value;
+                    
+                         map =  document.getElementById('f_tracer:m_map'),
+                        
+                        
+                       /* latlng = new google.maps.LatLng(lat, lng);
+                        var marker = new google.maps.Marker({
+                                position: latlng
+                            }); 
+                          
+                         marker.setMap(map);*/
+                         var cligne= trace();
+                         var i=cligne.length-1;
+                         
+                         latlng = cligne[i];
+                        
+                            var iconBase='http://maps.google.com/mapfiles/kml/shapes/';
+                            var marker = new google.maps.Marker({
+                                    position: latlng,
+                                    icon: iconBase + 'trail.png'
+
+                                }); 
+                           i -= 1; 
+                           marker.setMap(map); 
+                          latlng = cligne[0];
+                          var iconBase='http://maps.google.com/mapfiles/kml/shapes/';
+                             marker = new google.maps.Marker({
+                                    position: latlng,
+                                    icon: iconBase + 'trail.png'
+
+                                }); 
+                           
+                           marker.setMap(map);
+                             
+                         
+                         
+                        while(i!==1)
+                        {
+        
+                                if(i===Math.round(cligne.length/2))
+                                    {
+                                      centre= cligne[i]; 
+                                      //map.setCenter(centre);
+                                      map.panTo(centre);
+                                    }
+                                     i -= 1;
+                        }
+
+                        var poly = new google.maps.Polyline({
+                            path: cligne,
+                            strokeColor: "#FF0000",
+                            strokeOpacity: 1.0,
+                            strokeWeight: 2
+                          });
+                          poly.setMap(map);
+
+                          addEvent();
+                   
+                };
+                positionne = function(){
+                    
+                    map.setCenter(centre);
+                    map.setZoom(18);
+                };
+
+                trace = function()
+                {
+
+                    var trcr =document.getElementById('f_tracer:tracer').value;
+                    
+                    var split = trcr.split('_');
+                     
+                    var coords= [];
+
+                     var tl=split.length-2;
+
+                     while(tl !==-1)
+                         {                        
+                             var spl = split[tl];
+                             
+                             var sp =  spl.split(',');
+                             
+                             coords[tl] = new google.maps.LatLng(sp[1],sp[0]);
+                        
+                             tl -= 1;
+                             
+                             
+                         }
+
+
+                       return coords;
+                };
+           
+      
+                   addEvent = function() 
+                   {
+                       
+                       map =  document.getElementById('f_tracer:m_map'),
+                        google.maps.event.addListener(map, 'click', function(event) {
+                            latlng = event.latLng;
+                            alert(latlng);
+                            getAddressFromLatLong(latlng);
+                            document.getElementById('f_tracer:iti_dep').value=latlng;
+                            map.setCenter(latlng);
+                            map.setZoom(18);
+                          });
+
+                   };       
+                 
+                                
+             iti = function()
+             {
+                map = document.getElementById('f_tracer:m_map'),
+               var directionsVue = new google.maps.DirectionsRenderer();
+               var directionsService = new google.maps.DirectionsService();
+               
+               
+               directionsVue.setMap(map);
+               
+               var start = document.getElementById('f_tracer:iti_dep').value;
+               
+                var end = document.getElementById('f_tracer:iti_arv').value;
+                var request = {
+                  origin:start,
+                  destination:end,
+                  travelMode: google.maps.TravelMode.DRIVING
+                };
+                alert(start);alert(end);
+                alert(request);
+                directionsService.route(request, function(result, status) {
+                  if (status === google.maps.DirectionsStatus.OK) {
+                    directionsDisplay.setDirections(result);
+                    alert('directionsDisplay');
+                  }
+                });
+
+
+             };
+            chLoc = function() {
+                var geocoder = new google.maps.Geocoder();
+                var query = "12 henry street, dublin 1, dublin, ireland";
+                var address = query;   
+                geocoder.geocode( { 'address': address}, function(results, status) {
+                  if (status === google.maps.GeocoderStatus.OK) {
+                    var latLng = results[0].geometry.location;
+                    alert('Geocode succesful ' + latLng);
+                  } else {
+                    alert("Geocode was not successful for the following reason: " + status);
+                  }
+                });  
+              };
+              
+             getAddressFromLatLong = function (latlng)
+            {
+                    alert(latlng);
+                    geocoder = new google.maps.Geocoder();
+                    
+                    
+                        /* Appel au service de geocodage avec l'adresse en paramètre */
+                        geocoder.geocode( { 'latLng': latlng}, function(results, status) {
+                         /* Si l'adresse a pu être géolocalisée */
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            if (results[1]) {
+                             document.getElementById('f_tracer:iti_dep').value=results[1].formatted_address;
+                            } else {
+                              alert("No results found");
+                            }
+                          } else {
+                            alert("Geocoder failed due to: " + status);
+                          }
+                        });
+                      
+                };
+                
+                findMe();
+    /* ]]> */   
+            </script>
+    </h:head>
+     
+    <h:body>
+         
+        <pm:page id="first" title="map">
+           <pm:header title="Navigation">
+                <a data-rel="back">Back</a>
+              
+                    <p:button value="Recherche" icon="search" href="m_entrer.re" styleClass="ui-btn-active"/>
+                    
+                    <p:button value="carte 2d" icon="info" href="#map?reverse=true" />
+                    
+               
+
+            </pm:header>
+            <pm:content>
+               
+           
+                 <h:form id="f_sentier">
+                     <h:selectOneMenu  value="#{mobileBean.res}"  >
+                         <f:selectItems itemLabel="#{sets.nom}" itemValue="#{sets.nom}" value="#{mobileBean.lsentier}" var="sets" />
+                        <p:ajax listener="#{mobileBean.slcSentier()}" oncomplete="tracer();"  ></p:ajax>
+                    </h:selectOneMenu>
+                 
+                  </h:form>
+              
+            <h:form id="f_tracer" >
+                 <div id="m_map" />
+               
+                <h:outputText value="#{mobileBean.ligne.description}" title="Description du choix" />
+                    <p:separator />
+
+                    <p:commandButton  type="button" value="Localisation" onclick="findMe();"   />
+                    <p:commandButton  id="m_sentier" value="#{mobileBean.res}" onclick="tracer();"  />
+                   
+                    <p:inputText id="iti_dep"  value="saint-denis" label="Depart : " />
+               
+                    <p:inputText id="iti_arv" value="saint-marie" label="Arrivé : " />
+                    
+                  <p:commandButton id="btn_iti" icon="check"  value="chercher itinéraire" onclick="iti();"  />
+                    
+                     <!-- <p:commandButton id="btn_click_iti"  value="Voir itinéraire" onclick="click();"  />-->
+                    <p:watermark for="iti_dep" value="cliquer sur la carte ou entrer une adresse"/>
+                    <p:watermark for="iti_arv" value="cliquer sur la carte ou entrer une adresse"/>
+                    
+                    <div id="res_iti">	
+                        <div id="directions"></div>
+                    </div>
+                    
+                    <h:inputHidden id="tracer" value="#{mobileBean.tracer}" />
+                    <h:inputHidden id="lat" value="#{mobileBean.lat}" />
+                    <h:inputHidden id="lng" value="#{mobileBean.lng}" />
+                    
+            </h:form>
+           </pm:content>
+        </pm:page>
+   
+ 
+    </h:body>
+
+
+</html>

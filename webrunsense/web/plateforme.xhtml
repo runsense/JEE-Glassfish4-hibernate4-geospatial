@@ -1,0 +1,1163 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:pe="http://primefaces.org/ui/extensions"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+  
+
+   
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./TemplateSL.xhtml"
+                >
+   
+    <ui:define name="content"  >
+        
+         <script type="text/javascript">
+                
+            initRing =function()
+            {
+              // alert('wgt_ring');
+                wgt_ring.select("NORD");
+            };
+            selectChild = function()
+            {
+                document.getElementById("map3d:tlb_aff").focus();
+            };
+            
+            cmplte = function(xhr, statuts, args)
+            {
+                alert('complete');
+                try{
+                fetchKml('visite');
+                }catch( ex)
+                {
+                    alert(ex);
+                }
+                document.getElementById("map3d:tlb_aff").focus();
+                debloque();
+            };
+            
+            ctrlFrame=function()
+            {
+                var frame = document.getElementById('f_haut:webcam');
+                    frame = frame.contentDocument || frame.document;
+            }
+        </script> 
+        <div id="o" >
+            
+                        <h:form id="f_haut" style="background: none;position: relative; top: 1px;border-style: none; "   >
+                               
+                            <h:panelGrid columns="10" style="width: 65%;"> 
+                           
+                                <h:panelGrid columns="1" >
+                                            <p:outputLabel  for="rzone" value="Raccourcis" />
+                                            <p:selectOneListbox  id="rzone" value="#{rchBean.zone}" style="height: 80px">
+                                                <p:ajax listener="#{rchBean.slcZone()}"  oncomplete="fetchKml('visite');"
+                                                                           update=":map3d:ajstt, :map3d,
+                                                                                      :plt_rght"
+                                                                                       />
+                                                <f:selectItems value="#{rchBean.lzone}"  var="zone" />
+                                                <p:column>   
+                                                    <p:graphicImage title="Choix de zone: #{zone}"  width="75px" height="75px" value="./image/reunion/reunion#{zone}.gif" alt="#{zone}" >
+                                                    </p:graphicImage>
+                                                </p:column>
+                                                <p:column>
+                                                    #{zone}
+                                                </p:column>
+                                            </p:selectOneListbox>
+                                            
+                                        </h:panelGrid>
+                                       <h:panelGrid columns="3" rendered="#{BeanPltfrm.badmin}" >
+                                        <f:facet name="header">
+                                            total de visite: #{BeanPltfrm.nbrevis} 
+                                        </f:facet>
+                                        <p:dataTable value="#{BeanPltfrm.nbreip}" var="ip" tableStyle="width:auto"
+                                                                                  scrollable="true" scrollHeight="150"
+                                                                                 >  
+                                            <f:facet name="header">
+                                                tot: #{BeanPltfrm.nbreip.size()}
+                                            </f:facet>
+                                                                        <p:column  headerText="ip" >
+                                                                          #{ip}
+                                                                        </p:column>
+
+                                         </p:dataTable> 
+                                        <p:dataTable value="#{BeanPltfrm.dern}"  var="stat" tableStyle="width:auto"
+                                                                                  scrollable="true" scrollHeight="150"
+                                                                                 >  
+
+                                                                        <p:column  headerText="dernier passage" >
+                                                                          #{stat} 
+                                                                        </p:column>
+
+                                        </p:dataTable> 
+                                           <p:dataTable value="#{BeanPltfrm.qte}"  var="qte" tableStyle="width:auto"
+                                                                                  scrollable="true" scrollHeight="150"
+                                                                                 >  
+
+                                                                        <p:column  headerText="qut/ip" >
+                                                                          #{qte} 
+                                                                        </p:column>
+
+                                        </p:dataTable>
+                                    </h:panelGrid>
+                                
+                                       <pe:spotlight id="spotident"  widgetVar="wgt_ident"> 
+                                          <h:panelGrid id="id_aut" columns="2"
+                                                       style="border-style: none; " rendered="#{BeanPltfrm.bident}" >
+                                                   
+                                                 <p:outputLabel for="u_nom" value="Nom"/>
+                                                <p:inputText id="u_nom" value="#{BeanPltfrm.nom}"/>
+
+                                                <p:outputLabel for="u_pswd" value="mOt de pAsse"/>
+
+                                                <p:inputText id="u_pswd" value="#{BeanPltfrm.pswd}" >
+
+                                                </p:inputText>
+
+                                                <p:commandButton id="sw_auth" value="AutHentificatiOn" action="#{BeanPltfrm.ident}"
+                                                                 
+                                                                 onstart="PF('wgt_ident').block();"  oncomplete="PF('wgt_ident').unblock();" 
+                                                                  update=":f_haut, :f_dtl, :plt_rght">
+                                                 </p:commandButton>
+
+                                                 <p:commandButton id="cmd_sw" value="voUleZ-vouS créEr votre Compte" action="#{BeanPltfrm.cComte}" 
+                                                                  onstart="PF('wgt_ident').block();" oncomplete="PF('wgt_ident').unblock();PF('wgt_chgUp').block();" 
+                                                                  update=":f_haut, :f_dtl, :plt_rght" >
+                                                 </p:commandButton>
+                                              
+                                         </h:panelGrid>
+                                        </pe:spotlight>       
+                                    <!--
+                                    LIGNE
+                                    -->
+                                  <pe:spotlight id="spotaff"  widgetVar="wgt_aff"> 
+                                       
+                                    <h:panelGrid rendered="#{BeanPltfrm.blg}" columns="2" style="  height: 5%; ">
+                                        <p:dataTable id="i_cpte_lgn"  value="#{BeanPltfrm.llg}"  var="tblgn"
+                                                     editable="true" editMode="cell" tableStyle="width:auto" 
+                                                     frozenRows="#{BeanPltfrm.lfltTbLgn}" filteredValue="#{BeanPltfrm.lfltTbLgn}" scrollable="true" scrollHeight="100"
+                                                     >
+                                            
+                                                     <f:facet name="header">
+                                                         De #{BeanPltfrm.nom} avec #{BeanPltfrm.llg.size()} tracer
+                                                    </f:facet>
+                                            <p:ajax event="cellEdit"  listener="#{BeanPltfrm.updateLg}" process="@this"  update="@this" >
+                                               
+                                            </p:ajax>
+                                                
+                                            <p:ajax event="rowSelect" listener="#{BeanPltfrm.vueKml}" update=":plt_rght" />
+                                                
+                                            <p:column  sortBy="nom"  filterBy="nom"  filterMatchMode="contains" >
+                                                <f:facet name="header">
+                                                    <h:outputText style="width:100%" value="nom" />
+                                                       </f:facet>
+                                                <p:cellEditor>  
+                                                    <f:facet name="output">  
+                                                        <h:outputText value="#{tblgn.nom}"/> 
+                                                    </f:facet>  
+                                                    <f:facet name="input">  
+                                                        <p:inputText value="#{tblgn.nom}" style="width:100%" label="nom" >
+                                         
+                                                        </p:inputText>  
+                                                    </f:facet>
+                                                   
+                                                </p:cellEditor>
+                                               </p:column>
+                                               <p:column sortBy="adresse"  filterBy="adresse"  filterMatchMode="contains" > 
+                                                   <f:facet name="header">
+                                                            <h:outputText style="width:100%" value="adresse" />
+                                                       </f:facet>
+                                                  <p:cellEditor>  
+                                                    <f:facet name="output">  
+                                                        <h:outputText value="#{tblgn.adresse}" />
+                                                    </f:facet>  
+                                                    <f:facet name="input">  
+                                                        <p:inputText value="#{tblgn.adresse}" style="width:100%" label="adresse" >
+                                                        
+                                                        </p:inputText>  
+                                                    </f:facet>
+                                                   
+                                                </p:cellEditor>
+                                                     
+                                                  
+                                                </p:column>
+                                                <p:column sortBy="description"  filterBy="description"  filterMatchMode="contains" >
+                                                    <f:facet name="header">
+                                                            <h:outputText style="width:100%" value="description" />
+                                                       </f:facet>
+                                                    <p:cellEditor>  
+                                                    <f:facet name="output">  
+                                                        <h:outputText value="#{tblgn.description}" />
+                                                    </f:facet>  
+                                                    <f:facet name="input">  
+                                                        <p:inputText value="#{tblgn.description}" style="width:100%" label="description" />  
+                                                    </f:facet>
+                                                   
+                                                </p:cellEditor>
+                                                        
+                                                    
+                                                </p:column>
+                                               
+
+                                             </p:dataTable>
+                                        <p:dataTable id="dt_coords"   value="#{BeanPltfrm.lco}"  var="tblcords"
+                                                     editable="true" editMode="cell" tableStyle="width:auto" 
+                                                     frozenRows="#{BeanPltfrm.lfltTbCo}"  scrollable="true" scrollHeight="100" >
+                                            <p:ajax event="cellEdit"  listener="#{BeanPltfrm.updateCo(event)}"  process="@this"  update="@this" />  
+                                                <f:facet name="header">
+                                                    Coordonnée du tracer de #{BeanPltfrm.lgn.nom}
+                                                    </f:facet>
+                                            
+                                            <p:column selectionMode="single"  style="height: 20px!important;">
+                                                    <f:facet name="header">
+                                                            latitude
+                                                       </f:facet>
+                                                    <p:cellEditor>  
+                                                    <f:facet name="output">  
+                                                        <h:outputText value="#{tblcords.latitude}"/>
+                                                    </f:facet>  
+                                                    <f:facet name="input">  
+                                                        <p:inputText value="#{tblcords.latitude}" style="width:100%" label="latitude"/>  
+                                                    </f:facet>
+                                                   
+                                                </p:cellEditor>
+                                                    
+
+                                                    </p:column> 
+                                                    <p:column >
+                                                       <f:facet name="header">
+                                                            longitude
+                                                       </f:facet> 
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                <h:outputText value="#{tblcords.longitude}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tblcords.longitude}" style="width:100%" label="longitude"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                        
+
+                                                    </p:column> 
+                                                    <p:column >
+                                                        <f:facet name="header">
+                                                            alt
+                                                       </f:facet>
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                <h:outputText value="#{tblcords.alt}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tblcords.alt}" style="width:100%" label="alt"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                        
+
+                                                    </p:column> 
+                                                    
+                                                </p:dataTable>
+                                    </h:panelGrid>
+                                    
+                                    <!--
+                                    POINT
+                                    -->
+                                    
+                                    <h:panelGrid rendered="#{BeanPltfrm.blpt}" columns="1"  style="height: 5%; ">
+                                        <p:dataTable id="i_cpte_pt"  value="#{BeanPltfrm.lpt}"  var="tbpt"
+                                                     editable="true" editMode="cell" tableStyle="width:auto"
+                                                     frozenRows="#{BeanPltfrm.lfltTbPt}" filteredValue="#{BeanPltfrm.lfltTbPt}" scrollable="true" scrollHeight="100"> 
+                                                     <f:facet name="header">
+                                                         De #{BeanPltfrm.nom} avec #{BeanPltfrm.lpt.size()} point
+                                                    </f:facet>
+                                            <p:ajax event="cellEdit" listener="#{BeanPltfrm.updatePt}" process="@this"  update="@this"  />  
+                                            <p:ajax event="rowSelect" listener="#{BeanPltfrm.vueKml}" update=":plt_rght" />
+                                               <p:column sortBy="nom"  filterBy="nom"  filterMatchMode="contains"   > 
+                                                   <f:facet name="header">
+                                                         nom
+                                                    </f:facet>
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                <h:outputText value="#{tbpt.nom}"/> 
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbpt.nom}" style="width:100%" label="nom"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                               
+                                               </p:column>
+                                               <p:column sortBy="adresse"  filterBy="adresse"  filterMatchMode="contains"  >
+                                                   <f:facet name="header">
+                                                         adresse
+                                                    </f:facet>
+                                                   <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbpt.adresse}" /> 
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                            <p:inputText value="#{tbpt.adresse}" style="width:100%" label="adresse"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                             
+                                                </p:column>
+                                                <p:column sortBy="description"  filterBy="description"  filterMatchMode="contains"  >
+                                                    <f:facet name="header">
+                                                         description
+                                                    </f:facet>
+                                                    <p:cellEditor >  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbpt.description}"  /> 
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbpt.description}" style="width:100%"   label="description"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                    <h:outputText value="#{tbpt.description}" />
+                                                </p:column>
+                                                <p:column  >
+                                                    <f:facet name="header">
+                                                         latitude
+                                                    </f:facet>
+                                                    <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbpt.coord.latitude}" />
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbpt.coord.latitude}" style="width:100%" label="latitude"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                               
+                                                </p:column>
+                                            <p:column  >
+                                                <f:facet name="header">
+                                                         longitude
+                                                    </f:facet>
+                                                <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbpt.coord.longitude}" />
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbpt.coord.longitude}" style="width:100%" label="longitude"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                
+                                                </p:column>
+                                            <p:column  >
+                                                <f:facet name="header">
+                                                         altitude
+                                                </f:facet>
+                                                <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbpt.coord.alt}" />
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbpt.coord.alt}" style="width:100%" label="alt"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                <h:outputText value="#{tbpt.coord.alt}" />
+                                             </p:column>
+                                                    
+                                             </p:dataTable>
+                                    </h:panelGrid>
+                                     <!--
+                                    EVENEMENT
+                                    -->
+                                    
+                                    <h:panelGrid rendered="#{BeanPltfrm.blevnmt}"  style="  height: 5%; ">
+                                        <p:dataTable id="i_cpte_evnmt"  value="#{BeanPltfrm.levnmt}"  var="tbevnmt"
+                                                     editable="true" editMode="cell" tableStyle="width:auto"
+                                                     frozenRows="#{BeanPltfrm.lfltTbEv}" scrollable="true" scrollHeight="100" > 
+                                                     <f:facet name="header">
+                                                         detail du compte de #{BeanPltfrm.nom} avec #{BeanPltfrm.levnmt.size()}
+                                                    </f:facet>
+                                            <p:ajax event="cellEdit" listener="#{BeanPltfrm.updatePt(event)}" process="@this"  update="@this" />  
+                                            <p:ajax event="rowSelect" listener="#{BeanPltfrm.vueKml}" update=":plt_rght" />
+                                               <p:column   >
+                                                   <f:facet name="header">
+                                                         nom
+                                                    </f:facet>
+                                                   <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbevnmt.nom}" />
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbevnmt.nom}" style="width:100%" label="nom"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                  
+                                               </p:column>
+                                               <p:column  >  
+                                                   <f:facet name="header">
+                                                         categ
+                                                    </f:facet>
+                                                   <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbevnmt.categ}" />
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbevnmt.categ}" style="width:100%" label="categ"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                             
+                                                </p:column>
+                                              
+                                            <p:column  >
+                                                <f:facet name="header">
+                                                         debut
+                                                </f:facet>
+                                                <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbevnmt.deb}" />
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbevnmt.deb}" style="width: 100%" label="debut">
+                                                                    <pe:keyFilter regEx="^(0[1-9]|1[1-9]|2[1-9]|3[01])[- /.](0[1-9]|1[012])[- /.](20)\d\d" />
+                                                                </p:inputText>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                               
+
+                                                </p:column>
+                                            <p:column >
+                                                <f:facet name="header">
+                                                         fin
+                                                 </f:facet>
+                                                <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbevnmt.fin}" />
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbevnmt.fin}" style="width: 100%" label="fin">
+                                                                    <pe:keyFilter regEx="^(0[1-9]|1[1-9]|2[1-9]|3[01])[- /.](0[1-9]|1[012])[- /.](20)\d\d" />
+                                                                </p:inputText>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                              
+                                                   
+                                                </p:column>
+
+                                                    <p:column headerText="modIf">
+                                                    <f:facet name="header">
+                                                        <h:outputText value="modIf"/>
+                                                     </f:facet>
+                                                       <p:rowEditor />
+                                                    </p:column>
+                                             </p:dataTable>
+                                        
+                                    </h:panelGrid> 
+                                      <!--
+                                    MUSIQUE
+                                    -->
+                                    
+                                    <h:panelGrid rendered="#{BeanPltfrm.blmu}"  style=" height: 5%; ">
+                                        <p:dataTable id="i_cpte_mus"  value="#{BeanPltfrm.lmu}"  var="tbmu" 
+                                                     editable="true" editMode="cell" tableStyle="width:auto"
+                                                    paginator="true" rows="1" scrollable="true" style="  height: 15%" > 
+                                                     <f:facet name="header">
+                                                         detail du compte de #{BeanPltfrm.nom} avec #{BeanPltfrm.lmu.size()}
+                                                    </f:facet>
+                                               <p:ajax event="cellEdit" listener="#{BeanPltfrm.updateRs(event)}" process="@this"  update="@this" />  
+                                               <p:ajax event="rowSelect" listener="#{BeanPltfrm.vueKml}" update=":plt_rght" />
+                                               <p:column  >
+                                                <f:facet name="header">
+                                                   <h:outputText value="nom"/>
+                                                </f:facet>
+                                                   <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbmu.nom}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbmu.nom}" style="width:100%" label="nom"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                   
+                                                   
+                                               </p:column>
+                                               <p:column>   
+                                                <f:facet name="header">
+                                                   <h:outputText value="ARTISTE"/>
+                                                </f:facet>
+                                                   <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbmu.artiste}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbmu.artiste}" style="width:100%" label="artiste"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                             
+                                                </p:column>
+                                                <p:column >
+                                                <f:facet name="header">
+                                                   <h:outputText value="GENRE"/>
+                                                </f:facet>
+                                                    <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                 <h:outputText value="#{tbmu.genre}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbmu.genre}" style="width:100%" label="genre"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                   
+
+                                                </p:column>
+                                            <p:column  >
+                                                <f:facet name="header">
+                                                   <h:outputText value="LIENS"/>
+                                                </f:facet>
+                                                <p:inputText value="#{tbmu.liens}" style="width: 100%">
+                                                    </p:inputText>
+                                                </p:column>
+                                            <p:column headerText="SORTIE" >
+                                                <f:facet name="header">
+                                                   <h:outputText value="SORTIE"/>
+                                                </f:facet>
+                                                <p:inputText value="#{tbmu.sortie}" style="width: 100%">
+
+                                                    </p:inputText>
+
+                                                </p:column>
+
+                                                    <p:column >
+                                                        <f:facet name="header">
+                                                            <h:outputText value="modIf"/>
+                                                          </f:facet>
+                                                       <p:rowEditor />
+                                                    </p:column>
+                                             </p:dataTable>
+                                    </h:panelGrid>  
+                                    <h:panelGrid columns="2" rendered="#{BeanPltfrm.bltr}"  style="  height: 5%; ">
+                                        <p:dataTable id="dt_tour" lazy="true"  value="#{BeanPltfrm.lvueTour}"   var="tbltour"
+                                                     editable="true" editMode="cell" tableStyle="width:auto"
+                                                     frozenRows="#{BeanPltfrm.lfltTbtr}" filteredValue="#{BeanPltfrm.lfltTbtr}" scrollable="true" scrollHeight="100"  >
+                                                    <f:facet name="header">
+                                                      liste de tour : #{BeanPltfrm.lvueTour.size()}
+                                                    </f:facet>
+                                            <p:ajax event="cellEdit" listener="#{BeanPltfrm.updateTr(event)}" process="@this"  update="@this" /> 
+                                            <p:ajax event="rowSelect" listener="#{BeanPltfrm.vueKml}" update=":plt_rght" />
+                                            <p:column  sortBy="nmTour"   filterBy="nmTour" filterMatchMode="contains"  >
+                                                <f:facet name="header">
+                                                         nom
+                                                    </f:facet>
+                                                    <p:cellEditor >  
+                                                            <f:facet name="output">  
+                                                                  <h:outputText value="#{tbltour.nmTour}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tbltour.nmTour}" style="width:100%" label="nmTour"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                       
+                                                         
+                                                       
+                                                    </p:column>
+                                                <p:column  width="10%">
+                                                    <f:facet name="header">
+                                                         vue paramètre
+                                                    </f:facet>
+                                                    <p:commandButton  value="detail" action="#{BeanPltfrm.chDetTour}" update=":f_haut" process=":f_haut" >
+                                                        <f:setPropertyActionListener value="#{tbltour}" target="#{BeanPltfrm.tour}"/>
+                                                     </p:commandButton>
+                                                </p:column>
+                                    </p:dataTable>
+                                        <p:dataTable id="dt_prmt"   value="#{BeanPltfrm.lprmtr}"  var="tblprmtr"
+                                                     editable="true" editMode="cell" tableStyle="width:auto"
+                                                         frozenRows="#{BeanPltfrm.lfltTbpmr}" scrollable="true" scrollHeight="100" >
+                                                <f:facet name="header">
+                                                    Paramètre de #{BeanPltfrm.tour.nmTour} 
+                                                    </f:facet>
+                                            <p:ajax event="cellEdit" listener="#{BeanPltfrm.updatePrmtr(event)}" process="@this"  update="@this"  />  
+                                               
+                                                    <p:column >
+                                                         <f:facet name="header">
+                                                            anim. ligne
+                                                       </f:facet>
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                <h:outputText value="#{tblprmtr.geoanimat}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <h:selectOneMenu value="#{tblprmtr.geoanimat}" style="width:100%">  
+                                                                    <f:selectItems value="#{BeanPltfrm.llg}" var="lgn" itemLabel="#{lgn.nom}" itemValue="#{lgn.id}" />  
+                                                                </h:selectOneMenu>
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                          
+
+                                                    </p:column> 
+                                                    <p:column >
+                                                        <f:facet name="header">
+                                                            duree
+                                                       </f:facet>
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                  <h:outputText value="#{tblprmtr.dura}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tblprmtr.dura}" style="width:100%" label="duree"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                          
+
+                                                    </p:column>
+                                                <p:column style="height: 20px!important;">
+                                                    <f:facet name="header">
+                                                            alt mode
+                                                       </f:facet>
+                                                    <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                  <h:outputText value="#{tblprmtr.altMode}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tblprmtr.altMode}" style="width:100%" label="altMode"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                            
+
+                                                    </p:column> 
+                                                    
+                                                    <p:column >
+                                                        <f:facet name="header">
+                                                            fly mode
+                                                       </f:facet>
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                  <h:outputText value="#{tblprmtr.flyMode}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tblprmtr.flyMode}" style="width:100%" label="flyMode"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                     
+
+                                                    </p:column> 
+                                                    <p:column >
+                                                        <f:facet name="header">
+                                                            head
+                                                       </f:facet>
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                  <h:outputText value="#{tblprmtr.head}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tblprmtr.head}" style="width:100%" label="head"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                          
+
+                                                    </p:column> 
+                                                    <p:column >
+                                                        <f:facet name="header">
+                                                            range
+                                                       </f:facet>
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                  <h:outputText value="#{tblprmtr.range}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tblprmtr.range}" style="width:100%" label="range"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                           
+
+                                                    </p:column> 
+                                                    <p:column >
+                                                        <f:facet name="header">
+                                                            tilt
+                                                       </f:facet>
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                  <h:outputText value="#{tblprmtr.tilt}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tblprmtr.tilt}" style="width:100%" label="tilt"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                    
+
+                                                    </p:column>
+                                                <p:column >
+                                                    <f:facet name="header">
+                                                            latitude
+                                                       </f:facet>
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                <h:outputText value="#{tblprmtr.latitude}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tblprmtr.latitude}" style="width:100%" label="latitude"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                       
+
+                                                    </p:column>
+                                                <p:column >
+                                                    <f:facet name="header">
+                                                            longitude
+                                                       </f:facet>
+                                                        <p:cellEditor>  
+                                                            <f:facet name="output">  
+                                                                <h:outputText value="#{tblprmtr.longitude}"/>
+                                                            </f:facet>  
+                                                            <f:facet name="input">  
+                                                                <p:inputText value="#{tblprmtr.longitude}" style="width:100%" label="longitude"/>  
+                                                            </f:facet>
+
+                                                        </p:cellEditor>
+                                                           
+
+                                                    </p:column>
+                                                </p:dataTable>
+                                        </h:panelGrid>
+                                 
+                                            
+                                  </pe:spotlight>
+                        </h:panelGrid>
+                                    
+                        </h:form>                    
+                       
+ 
+        </div >
+        
+
+        <h:form id="map3d"   style="position: relative;  height: 450px;width: 70%;" > 
+               
+               <pe:spotlight blocked="false" widgetVar="wgt_mapblck">
+                   <p:commandButton id="hidblckmap" style="display: none;"  process="map3d"  onclick="PF('wgt_mapblck').block();" /> 
+                   <p:commandButton id="hidunblckmap" style="display: none;"  process="map3d"  onclick="PF('wgt_mapblck').unblock();" />   
+                 <script type="text/javascript">
+                      bloque=function()
+                      {
+                          //buiMp.show();
+                          //document.getElementById('map3d:hidblckmap').click();
+                      };
+                      debloque=function()
+                      {
+                          
+                          document.getElementById('map3d:hidunblckmap').click();
+                      };
+                      
+                      
+                  </script>
+                   
+                   <p:toolbar>
+                <p:toolbarGroup align="left" style="width: 25%;">
+                                    <p:menuButton value="Module" >
+                                        <p:menuitem  outcome="Mobile" value="mobile" />
+                                        <p:menuitem outcome="Web" value="web" onstart="#{BeanPltfrm.disetPlftrm()}" />
+                                        
+                                    </p:menuButton>
+                                 </p:toolbarGroup>
+                    <p:toolbarGroup id="tlb_but" style="width: 40%;">
+                        <p:selectOneRadio   value="#{BeanPltfrm.gbool}"
+                                                           >
+                                            <p:ajax event="valueChange" listener="#{BeanPltfrm.vrfRnederer()}"
+                                                    onstart="PF('wgt_aff').block();" oncomplete="PF('wgt_aff').unblock();"
+                                                    update=":f_haut" />
+                                            <f:selectItem itemLabel="tracer" itemValue="tracer" />
+                                            <f:selectItem itemLabel="point" itemValue="point" />
+                                            <f:selectItem itemLabel="tour" itemValue="tour" />
+                                            <f:selectItem itemLabel="evenement" itemValue="evenement" />
+                                            <f:selectItem itemLabel="musik" itemValue="musik" />
+                                            <f:selectItems value="#{BeanPltfrm.lrdbtn}" var="rdbtn"  itemLabel="#{rdbtn}" itemValue="#{rdbtn}" />
+                        </p:selectOneRadio>   
+                         
+                     
+                    </p:toolbarGroup>
+                   
+                    <p:toolbarGroup style="text-decoration-color: indianred; border-color: green;
+                                       text-align: center;">
+                        
+                               <h:outputText id="tlb_aff" value="#{BeanPltfrm.res}"
+                                       />
+                       
+                            <h:outputText id="lat" value="#{BeanPltfrm.latkml}"/>
+                         
+                            <h:outputText id="long" value="#{BeanPltfrm.lngkml}"/>        
+                       
+                                <p:ajaxStatus id="ajstt"   >
+                                        <f:facet name="default">
+                                            <h:outputText value="#{msg.Informationderecherche}"/>
+                                        </f:facet>
+                                        <f:facet name="prestart">
+                                            <h:outputText value="#{msg.applicationserveur}"/>
+                                        </f:facet>
+                                        <f:facet name="complete">
+                                            <h:outputText value="#{msg.solutiondelarecherche}"/>
+                                        </f:facet>
+                                    </p:ajaxStatus>
+                    </p:toolbarGroup>
+                  
+                                <p:toolbarGroup align="right" >
+                                    <p:menuButton value="nouveau">
+                                        <p:menuitem value="ajout d'évenement" onclick="f_dtl:wdgt_ajtevnmt.show();"/>
+                                        <p:menuitem value="ajout d'activité" onclick="f_dtl:wdgt_ajtact.show();"/>
+                                        <p:menuitem value="ajout de point d'interet" onclick="f_dtl:wdgt_ajtpoint.show();" />
+                                        <p:menuitem value="ajout de tracer" onclick="f_dtl:wdgt_ajttr.show();"/>
+                                       
+                                    </p:menuButton>
+                                </p:toolbarGroup>
+                 </p:toolbar> 
+                 </pe:spotlight>
+                   <p:growl id="gwl_map3d" autoUpdate="true" for="map3d " widgetVar="wdg_map3d" />  
+                            <!--<p3:growl  autoUpdate="true" for="slct_djv" /> --> 
+
+                  
+             
+               </h:form> 
+   
+            
+       
+        <div id="coeur" style="position: relative; height: 40%;" >  
+            <h:form id="f_dia" >
+                <p:panelGrid columns="2" >
+                    
+                                  <p:dialog id="dia_ajtevnmt" widgetVar="wdgt_ajtevnmt" modal="true" position="top" hideEffect="explode">
+                                     <f:facet name="header">
+                                         <h:outputText value="nouvelle Evenements" />
+                                     </f:facet>
+                                    <p:outputLabel for="evnmt_nom" value="nom" />
+                                    <p:inputText id="evnmt_nom" value="#{BeanPltfrm.evnmt.nom}" />
+                                    
+                                    <p:outputLabel for="evnmt_categ" value="categ" />
+                                    <p:inputText id="evnmt_categ" value="#{BeanPltfrm.evnmt.categ}" />
+                                    
+                                    <p:outputLabel for="evnmt_dt" value="debut" />
+                                    <p:inputText id="evnmt_dt" value="#{BeanPltfrm.evnmt.dt}" />
+                                    
+                                    <p:watermark for="lat_evnmt" value="#{msg.cliquericipuissurlacarte}" />
+                                    <p:inputText id="lat_evnmt" value="#{BeanPltfrm.latkml}" >
+                                        <p:ajax event="valueChange"        
+                                          update=":map3d:gwl_map3d"         />
+                                    </p:inputText>
+                                    <p:watermark for="long_evnmt" value="#{msg.cliquericipuissurlacarte}" />
+                                    <p:inputText id="long_evnmt"  value="#{BeanPltfrm.lngkml}" >
+                                       
+                                    </p:inputText>   
+                                    
+                                  </p:dialog>
+                    
+                                <p:dialog  widgetVar="wdgt_ajtact" modal="true" position="top" hideEffect="explode">
+                                    <f:facet name="header">
+                                         <h:outputText value="nouvelle Activitée" />
+                                     </f:facet>
+                                  
+                                    <p:panelGrid id="dia_ajtact" >
+                                            <f:facet name="header">
+                                                Entrer Activité
+                                            </f:facet>
+                                            <p:row>
+                                                <p:column  rowspan="1" colspan="4">
+                                                    <p:outputLabel for="actv_nom" value="nom" />
+                                                    <p:inputText id="actv_nom" value="#{BeanPltfrm.activite.nom}" />
+                                                </p:column>
+                                            </p:row>
+                                            <p:row>
+                                                <p:column colspan="2">
+                                                    <f:facet name="header">
+                                                        activité
+                                                    </f:facet>
+                                                     
+                                                            <h:outputText value="#{BeanPltfrm.activite.act}"/>
+                                                 
+                                                            <p:selectOneListbox value="#{BeanPltfrm.activite.act}" style="height: 60px"  >
+                                                                <p:ajax event="change"  update=":f_dia:dia_ajtact"/>
+
+                                                                <f:selectItems value="#{BeanPltfrm.activite.acts}" var="acts" />
+                                                                <p:column>
+                                                                    <h:outputText  value="#{acts}"  />
+                                                                </p:column>
+                                                            </p:selectOneListbox> 
+                                                        
+                                                    
+                                                    
+                                                </p:column>
+                                                <p:column rowspan="1">
+                                                    <p:outputLabel for="actv_tel" value="tel" />
+                                                    <p:inputText id="actv_tel" value="#{BeanPltfrm.activite.tel}" />
+                                                </p:column>
+                                                <p:column rowspan="1">
+                                                    <p:outputLabel for="actv_gsm" value="gsm" />
+                                                    <p:inputText id="actv_gsm" value="#{BeanPltfrm.activite.gsm}" />
+                                                </p:column>
+                                            </p:row>
+                                            <p:row>
+                                                <p:column rowspan="2" colspan="4">
+                                                    <p:outputLabel for="actv_desc" value="desc" />
+                                                    <p:inputTextarea id="actv_desc" value="#{BeanPltfrm.activite.desc}" />
+                                                </p:column>
+                                            </p:row>
+                                            <p:row>
+                                                <p:column >
+                                                    <p:outputLabel for="actv_lat" value="latitude" />
+                                                    <p:inputTextarea id="actv_lat" value="#{BeanPltfrm.latkml}" />
+                                                </p:column>
+                                                <p:column >
+                                                    <p:outputLabel for="actv_lng" value="longitude" />
+                                                    <p:inputTextarea id="actv_lng" value="#{BeanPltfrm.lngkml}" />
+                                                </p:column>
+                                            </p:row>
+                                        </p:panelGrid>
+                    
+                                </p:dialog>
+                                <p:dialog id="dia_point" widgetVar="wdgt_ajtpoint" modal="true" position="top" hideEffect="explode">
+                                    <f:facet name="header">
+                                         <h:outputText value="nouveau point d'interet" />
+                                     </f:facet>
+                                    <p:outputLabel for="point_nom" value="nom" />
+                                    <p:inputText id="point_nom" value="#{BeanPltfrm.pt.nom}" />
+                                                                        
+                                    <p:outputLabel for="point_desc" value="description" />
+                                    <p:inputText id="point_desc" value="#{BeanPltfrm.pt.description}" />
+                                    <p:watermark for="lat_point" value="#{msg.cliquericipuissurlacarte}" />
+                                    <p:inputText id="lat_point" value="#{BeanPltfrm.latkml}" >
+                                        <p:ajax event="valueChange"        
+                                          update=":map3d:gwl_map3d"         />
+                                    </p:inputText>
+                                    <p:watermark for="long_point" value="#{msg.cliquericipuissurlacarte}" />
+                                    <p:inputText id="long_point"  value="#{BeanPltfrm.lngkml}" >
+                                       
+                                    </p:inputText>   
+                                </p:dialog>
+                               <p:dialog id="dia_tr" widgetVar="wdgt_ajttr" modal="true" position="top" hideEffect="explode">
+                                    <f:facet name="header">
+                                         <h:outputText value="nouveau tracer" />
+                                     </f:facet>
+                                    <p:outputLabel for="tr_nom" value="nom" />
+                                    <p:inputText id="tr_nom" value="#{BeanPltfrm.lgn.nom}" />
+                                                                        
+                                    <p:outputLabel for="tr_desc" value="description" />
+                                    <p:inputText id="tr_desc" value="#{BeanPltfrm.lgn.description}" />
+                                    <p:watermark for="lat_tr" value="#{msg.cliquericipuissurlacarte}" />
+                                    <p:inputText id="lat_tr" value="#{BeanPltfrm.latkml}" >
+                                        <p:ajax event="valueChange"        
+                                          update=":map3d:gwl_map3d"         />
+                                    </p:inputText>
+                                    <p:watermark for="long_tr" value="#{msg.cliquericipuissurlacarte}" />
+                                    <p:inputText id="long_tr"  value="#{BeanPltfrm.lngkml}" >
+                                       
+                                    </p:inputText>   
+                                </p:dialog>
+                            
+                </p:panelGrid>
+               
+            </h:form>
+            <h:form id="f_dtl" style="width: 70%;" >
+                <p:panelGrid columns="2"> 
+                    <p:commandButton action="#{BeanPltfrm.verifKml()}" value="verif kml" update="f_dtl" />
+                    <p:selectBooleanButton id="sbb_dt" onLabel="kml" offLabel="rsentite" value="#{BeanPltfrm.bdt}"  >
+                        <p:ajax update="@form" />
+                    </p:selectBooleanButton>
+                </p:panelGrid> 
+           
+                <h:panelGrid id="dt_detail"  columns="2"  
+                            style="border-style: none; height: 5%; " >
+                   <!-- format kml -->
+                   <f:facet name="header">
+                        <h:outputText value="modification avant entrer ... format KML" />
+                   </f:facet>
+                   <p:dataTable lazy="true"  value="#{BeanPltfrm.detail}"  var="tblDet" 
+                                 editable="true" style="  height: 15%" editMode="cell" tableStyle="width:auto"
+                                 frozenRows="#{BeanPltfrm.lfltTbLgn}" filteredValue="#{BeanPltfrm.lfltTbLgn}"
+                                 scrollable="true" scrollHeight="150" >
+                        <p:ajax event="cellEdit" listener="#{BeanPltfrm.updateRs(event)}" process="@this"  update="@this" />  
+                        
+                        <f:facet name="header">
+                            détAil kml
+                        </f:facet>
+                   <p:column  >
+                       <f:facet name="header">
+                          nom
+                       </f:facet>
+                       <p:cellEditor>  
+                             <f:facet name="output">  
+                                 <h:outputText value="#{tblDet.name}"/>
+                              </f:facet>  
+                              <f:facet name="input">  
+                                 <p:inputText value="#{tblDet.name}" style="width:100%" label="longitude"/>  
+                              </f:facet>
+                       </p:cellEditor>
+                   </p:column>
+                   <p:column  > 
+                       <f:facet name="header">
+                          adresse
+                       </f:facet>
+                       <p:cellEditor>  
+                             <f:facet name="output">  
+                                 <h:outputText value="#{tblDet.address}"/>
+                              </f:facet>  
+                              <f:facet name="input">  
+                                 <p:inputText value="#{tblDet.address}" style="width:100%" label="adresse"/>  
+                              </f:facet>
+                       </p:cellEditor>
+                      
+                    </p:column>
+                    <p:column >
+                        <f:facet name="header">
+                          description
+                       </f:facet>
+                       <p:cellEditor>  
+                             <f:facet name="output">  
+                                 <h:outputText value="#{tblDet.description}"/>
+                              </f:facet>  
+                              <f:facet name="input">  
+                                 <p:inputText value="#{tblDet.description}" onclick="verifDesc(#{tblDet.description});" style="width:100%" label="description"/>  
+                              </f:facet>
+                       </p:cellEditor>
+                 
+                    </p:column>
+                        <p:column headerText="modIf">
+                            <p:commandButton  value="update" action="#{BeanPltfrm.updatenode()}" update=":f_dtl:dt_detail" >
+                                <f:setPropertyActionListener value="#{tblDet}" target="#{BeanPltfrm.plcmk}"/>
+                             </p:commandButton>
+                        </p:column>
+                 </p:dataTable>   
+                   <script type="text/javascript">
+                       verifDesc = function(desc)
+                       {
+                           if(!desc.contains("_"))
+                               dlg_node.show();
+                       };
+                   </script>
+                   <p:dialog widgetVar="dlg_node" header="critères" modal="true" >
+                       <p:selectOneRadio value="#{BeanPltfrm.critere}" columns="4"   layout="grid"   >
+                                        <f:selectItem itemLabel="sentier" itemValue="sentier" />  
+                                        <f:selectItem itemLabel="zoneSentier" itemValue="zoneSentier" /> 
+                                        <f:selectItem itemLabel="chemin" itemValue="chemin" />  
+                                        <f:selectItem itemLabel="route" itemValue="route" />  
+
+                                        <f:selectItem itemLabel="zone" itemValue="zone" />  
+                                        <f:selectItem itemLabel="secteur" itemValue="secteur" />  
+                                        <f:selectItem itemLabel="ville" itemValue="ville" />  
+                                        <f:selectItem itemLabel="lieuDit" itemValue="lieuDit" /> 
+
+                                        <f:selectItem itemLabel="manger" itemValue="manger" />  
+                                        <f:selectItem itemLabel="dormir" itemValue="dormir" />  
+                                        <f:selectItem itemLabel="info" itemValue="info" /> 
+                                        
+                                        <f:selectItem itemLabel="activite" itemValue="activite" />  
+                                        <f:selectItem itemLabel="pointInteret" itemValue="pointInteret" />  
+                                        <f:selectItem itemLabel="zoneActivite" itemValue="zoneActivite" /> 
+                       </p:selectOneRadio>
+
+
+                    </p:dialog>   
+                   
+                    
+                    
+                </h:panelGrid>
+                <p:inputText  id="lat" type="hidden"   value="#{BeanPltfrm.latkml}"/>
+                <p:inputText  id="long" type="hidden"   value="#{rchBean.lngkml}">
+                <p:ajax event="valueChange"        
+                                          update=":map3d:gwl_map3d"         />
+                </p:inputText>                  
+            </h:form> 
+    
+        </div>
+    </ui:define>
+    <ui:define name="right">
+        <h:form id="plt_rght" style="position: relative;" >
+            
+            <p:commandButton  value="téléchargement" action="#{BeanPltfrm.download()}" ajax="false" onclick="PrimeFaces.monitorDownload(start, stop);"   
+                    icon="ui-icon-document">  
+                <p:fileDownload value="#{BeanPltfrm.dwnld}" />  
+            </p:commandButton>  
+         <pe:spotlight id="spotchgUp"  widgetVar="wgt_chgUp"> 
+             <!--oncomplete=PF('wgt_tree').block();-->
+         <p:fileUpload id="flupload"
+                          mode="advanced"
+                       label="chArger fichier KML" value="#{BeanPltfrm.upload}"
+                       styleClass="fupl"  auto="true"
+                       allowTypes="/(\.|\/)(kml)$/" 
+                       fileUploadListener="#{BeanPltfrm.chgUpload}"
+                       oncomplete="PF('wgt_chgUp').unblock();"
+                       update=":f_dtl
+                       ,:plt_rght:t_node, :plt_rght:flupload 
+                       ">
+            
+         </p:fileUpload>
+            
+             <h:panelGrid columns="1" style="border-style: none; ">
+               <p:outputLabel for="chguplod" value="fichier dans dossier temporaire" />
+               <p:selectOneListbox  id="chguplod" value="#{BeanPltfrm.temp}" style="overflow: hidden;width: 100%;" >
+                    
+                    <f:selectItems value="#{BeanPltfrm.ltemp}"  var="temp" />
+                      <p:column>   
+                        #{temp}
+                      </p:column>
+               </p:selectOneListbox>
+            </h:panelGrid>
+            </pe:spotlight>
+            
+            <pe:spotlight id="spotchg"  widgetVar="wgt_chg"> 
+            <h:panelGrid columns="2" style="border-style: none; "
+                         rendered="#{BeanPltfrm.bchg}" >
+                     
+                <p:commandButton widgetVar="wdgt_chgp" action="#{BeanPltfrm.chargePartie()}" onstart="PF('wgt_chg').unblock();PF('wgt_mapblck').block();"
+                                 oncomplete="PF('wgt_mapblck').unblock();"
+                                          value="Intégrer la selection"  update=":f_haut, :f_dtl, :plt_rght"
+                                          />
+                <p:commandButton  value="vue modification objet"  onclick="PF('wgt_chg').unblock();document.getElementById('f_dtl').focus();"
+                                  update=" :f_dtl"/>
+                 
+            </h:panelGrid>
+           </pe:spotlight> 
+            <pe:spotlight id="spottree"  widgetVar="wgt_tree"> 
+                 <!--PF('wgt_tree').unblock();  -->
+                    <p:tree id="t_node" value="#{BeanPltfrm.node}" var="noeud"
+                            selectionMode="checkbox" selection="#{BeanPltfrm.select}" 
+                            style="width: 300px;">
+                        <p:ajax event="select" listener="#{BeanPltfrm.onNode}"
+                                 onstart="PF('wgt_mapblck').block();" oncomplete="PF('wgt_mapblck').unblock();PF('wgt_chg').block();fetchKml('pltf');" update=":f_haut,:plt_rght,:f_dtl "/>
+                       
+                                
+                        <p:ajax event="unselect" listener="#{BeanPltfrm.unNode}"  
+                                update=":plt_rght ,:f_dtl "/>
+                        
+                    <p:treeNode>
+                            <h:outputText  value="#{noeud}"/>
+                            
+                        </p:treeNode>
+                    </p:tree>
+            
+                        <h:inputHidden id="kml_tracer"   value="#{BeanPltfrm.trKml}"
+                                     />  
+                        <h:inputHidden id="kml_tour"   value="#{BeanPltfrm.tourKml}"
+                                     />
+            </pe:spotlight>
+       </h:form>
+        
+    </ui:define>
+</ui:composition>
+
+
+    
+</html>

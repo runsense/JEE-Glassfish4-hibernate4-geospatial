@@ -1,0 +1,100 @@
+.fupl .ui-fileupload-browser{
+    
+}
+
+.ui-datatable .ui-column-filter {
+    //display: block;
+    width:100px;
+    margin:auto;
+}
+
+.ui-datatable .ui-datatable-data td, .ui-datatable .ui-datatable-data-empty td {
+  border-style: none;
+}
+.ui-datatable .ui-datatable-header {
+    border-bottom: 0px none;
+    //width: 100%;   
+}
+
+
+.ui-datagrid-data{
+    background: none;
+}
+.ui-datagrid-column{
+    background: none;
+}    
+.cal .ui-datepicker {
+    width: 50%;
+    height: 50%;
+}
+
+.jqplot-target{/*conteneur graph*/
+    
+}
+
+.ui-menu .ui-menuitem-text {
+    color: indianred;
+    background-color: #dddddd;
+}
+
+.ui-panel{
+    opacity: 0.0;
+}
+.ui-panelgrid td{
+    position: relative; top: 1px;
+    background: none;
+    border-style: none;
+}
+ .ui-ring {
+      z-index: 1;
+    list-style: none;
+    width: 75%;
+    height: 6em;
+    
+    
+}
+.ui-ring-item {
+    height: 0;
+    width: 0;
+    cursor: pointer;
+    margin-top: -20px;
+    margin-left: -30px;
+}
+.ui-autocomplete-query {
+    background-color: buttonhighlight;
+    text-decoration-color: #000000;
+}
+/*.ui-selectonemenu-item.ui-selectonemenu-list-item.ui-state-highlight{
+    background-color: buttonhighlight; 
+    text-decoration-color: #000000;
+}*/
+
+.ui-tooltip{
+    position: relative;
+    width:  200px;
+    bottom: 1px;
+    background-color: crimson;
+}
+.ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-header .ui-chkbox-box{
+display: none;
+}
+.ui-toolbar .ui-divider{
+    text-decoration-color: indianred;
+    border-color: green;
+    text-align: center;
+}
+.ui-tagcloud {width:250px;}
+.ui-tagcloud ul {margin:1em;padding:0.1em;text-align:center;}
+.ui-tagcloud li {margin:0;padding:0;list-style:none;display:inline-block;}
+.ui-tagcloud li {*display:inline;}
+.ui-tagcloud li a {text-decoration:indianred; padding:0 5px;}
+.ui-tagcloud-strength-1{font-size:100%;}
+.ui-tagcloud-strength-2{font-size:120%;}
+.ui-tagcloud-strength-3{font-size:140%;}
+.ui-tagcloud-strength-4{font-size:180%;}
+.ui-tagcloud-strength-5{font-size:2700%;}
+.ui-tagcloud li.ui-state-hover {border: 0px none;font-weight: inherit;*font-weight: normal;}
+
+
+
+
